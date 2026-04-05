@@ -1,2 +1,8 @@
 # Local model weights — never commit
 model_qwen/
+
+# AutoDL / Jupyter / local IDE junk — never commit
+.autodl/
+.ipynb_checkpoints/
+.msc
+.mv
