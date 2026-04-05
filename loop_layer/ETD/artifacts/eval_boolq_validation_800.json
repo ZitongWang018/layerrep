@@ -1,0 +1,14 @@
+{
+  "dataset": "boolq",
+  "split": "validation",
+  "n_examples": 800,
+  "layer_file": "artifacts/boolq_layers.json",
+  "n_e": 3,
+  "n_t": 30,
+  "n_d": 3,
+  "accuracy": {
+    "baseline": 0.8575,
+    "k=2": 0.86,
+    "k=3": 0.7675
+  }
+}

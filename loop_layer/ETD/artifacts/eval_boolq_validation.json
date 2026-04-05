@@ -1,0 +1,14 @@
+{
+  "dataset": "boolq",
+  "split": "validation",
+  "n_examples": 20,
+  "layer_file": "/root/autodl-tmp/loop_layer/ETD/artifacts/boolq_layers.json",
+  "n_e": 3,
+  "n_t": 30,
+  "n_d": 3,
+  "accuracy": {
+    "baseline": 0.9,
+    "k=2": 0.85,
+    "k=3": 0.9
+  }
+}

@@ -1,0 +1,41 @@
+# lm-eval 配置：Qwen3-8B 本地权重 + 核心 benchmark 套件
+# 用法: lm-eval run --config /root/autodl-tmp/eval_tools/eval_qwen_core.yaml
+# 或通过 run_eval_qwen.sh 传入环境变量覆盖 model / wandb
+
+model: hf
+model_args:
+  pretrained: /root/autodl-tmp/model_qwen
+  dtype: auto
+
+tasks:
+  - triviaqa
+  - gsm8k
+  - hendrycks_math
+  - commonsense_qa
+  - boolq
+  - arc_easy
+  - arc_challenge
+  - humaneval
+  - truthfulqa_mc1
+
+num_fewshot: 0
+batch_size: auto
+device: cuda
+apply_chat_template: true
+
+output_path: /root/autodl-tmp/eval_tools/results/latest
+log_samples: false
+
+# W&B：run 级名称建议在脚本里用环境变量覆盖，便于区分实验
+wandb_args:
+  project: lm-eval-qwen3-8b
+  name: qwen3-8b-baseline
+  group: default
+  job_type: lm-eval
+
+wandb_config_args:
+  model_name: Qwen3-8B
+  eval_suite: core9
+  # 任务列表见上方 tasks:；勿在此用逗号拼接长字符串，以免与 YAML+CLI 混用时混淆
+
+trust_remote_code: true

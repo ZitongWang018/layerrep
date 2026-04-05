@@ -1,0 +1,14 @@
+{
+  "dataset": "arc",
+  "split": "test",
+  "n_examples": 400,
+  "layer_file": "artifacts/arc_layers.json",
+  "n_e": 3,
+  "n_t": 30,
+  "n_d": 3,
+  "accuracy": {
+    "baseline": 0.525,
+    "k=2": 0.3225,
+    "k=3": 0.295
+  }
+}

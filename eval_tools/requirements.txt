@@ -1,0 +1,4 @@
+# 在 lm-evaluation-harness 目录执行:
+#   pip install -e ".[hf,math]"
+# 本目录额外需要:
+wandb>=0.13.6
