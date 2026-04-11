@@ -1,0 +1,127 @@
+{
+  "phase": 2,
+  "N": 500,
+  "results": {
+    "BoolQ": {
+      "accuracies": {
+        "Baseline": 0.862,
+        "Champion": 0.88,
+        "S1_slope0.05_e53": 0.88,
+        "S6_streak4": 0.88,
+        "S6_streak3": 0.88,
+        "S7_e6low05": 0.88,
+        "S8_compound": 0.88
+      },
+      "entropy_8_mean": 8.546392074584961,
+      "entropy_8_std": 0.21004088737690024,
+      "slope_8_mean": -0.6404844779968262,
+      "streak_8_mean": 0.078,
+      "streak_8_skip_rate": 0.0
+    },
+    "ARC-C": {
+      "accuracies": {
+        "Baseline": 0.532,
+        "Champion": 0.574,
+        "S1_slope0.05_e53": 0.574,
+        "S6_streak4": 0.574,
+        "S6_streak3": 0.574,
+        "S7_e6low05": 0.574,
+        "S8_compound": 0.574
+      },
+      "entropy_8_mean": 7.861063650131226,
+      "entropy_8_std": 0.264190441339991,
+      "slope_8_mean": -0.6971408452987671,
+      "streak_8_mean": 0.272,
+      "streak_8_skip_rate": 0.0
+    },
+    "ARC-Easy": {
+      "accuracies": {
+        "Baseline": 0.84,
+        "Champion": 0.84,
+        "S1_slope0.05_e53": 0.84,
+        "S6_streak4": 0.84,
+        "S6_streak3": 0.84,
+        "S7_e6low05": 0.84,
+        "S8_compound": 0.84
+      },
+      "entropy_8_mean": 7.823331638336182,
+      "entropy_8_std": 0.24617977757173432,
+      "slope_8_mean": -0.6965111331939697,
+      "streak_8_mean": 0.21,
+      "streak_8_skip_rate": 0.0
+    },
+    "CSQA": {
+      "accuracies": {
+        "Baseline": 0.674,
+        "Champion": 0.688,
+        "S1_slope0.05_e53": 0.688,
+        "S6_streak4": 0.688,
+        "S6_streak3": 0.688,
+        "S7_e6low05": 0.688,
+        "S8_compound": 0.688
+      },
+      "entropy_8_mean": 8.096442996025086,
+      "entropy_8_std": 0.18924161668119577,
+      "slope_8_mean": -0.6069724307060241,
+      "streak_8_mean": 0.014,
+      "streak_8_skip_rate": 0.0
+    },
+    "TruthfulQA": {
+      "accuracies": {
+        "Baseline": 0.28,
+        "Champion": 0.298,
+        "S1_slope0.05_e53": 0.298,
+        "S6_streak4": 0.298,
+        "S6_streak3": 0.298,
+        "S7_e6low05": 0.298,
+        "S8_compound": 0.298
+      },
+      "entropy_8_mean": 7.956532637596131,
+      "entropy_8_std": 0.29191705180683575,
+      "slope_8_mean": -0.6882920517921448,
+      "streak_8_mean": 0.032,
+      "streak_8_skip_rate": 0.0
+    },
+    "MMLU-HS-Math": {
+      "accuracies": {
+        "Baseline": 0.4074074074074074,
+        "Champion": 0.3962962962962963,
+        "S1_slope0.05_e53": 0.3962962962962963,
+        "S6_streak4": 0.3962962962962963,
+        "S6_streak3": 0.3962962962962963,
+        "S7_e6low05": 0.3962962962962963,
+        "S8_compound": 0.3962962962962963
+      },
+      "entropy_8_mean": 8.578748881375349,
+      "entropy_8_std": 0.44605177679411245,
+      "slope_8_mean": -0.6539714698438291,
+      "streak_8_mean": 0.21851851851851853,
+      "streak_8_skip_rate": 0.0
+    },
+    "MMLU-Col-Math": {
+      "accuracies": {
+        "Baseline": 0.34,
+        "Champion": 0.37,
+        "S1_slope0.05_e53": 0.37,
+        "S6_streak4": 0.37,
+        "S6_streak3": 0.37,
+        "S7_e6low05": 0.37,
+        "S8_compound": 0.37
+      },
+      "entropy_8_mean": 8.532915167808532,
+      "entropy_8_std": 0.43203675766156935,
+      "slope_8_mean": -0.6361800217628479,
+      "streak_8_mean": 0.16,
+      "streak_8_skip_rate": 0.0
+    }
+  },
+  "final_avgs": {
+    "Baseline": 0.5622010582010581,
+    "Champion": 0.5780423280423281,
+    "S1_slope0.05_e53": 0.5780423280423281,
+    "S6_streak4": 0.5780423280423281,
+    "S6_streak3": 0.5780423280423281,
+    "S7_e6low05": 0.5780423280423281,
+    "S8_compound": 0.5780423280423281
+  }
+}

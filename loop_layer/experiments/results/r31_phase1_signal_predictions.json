@@ -1,0 +1,108 @@
+{
+  "config": {
+    "samples_per_bench": 44,
+    "oracle_samples": 18,
+    "model_path": "/root/autodl-tmp/model_qwen",
+    "oracle_pairs": [
+      [
+        9,
+        18
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        12,
+        18
+      ],
+      [
+        14,
+        20
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        16,
+        19
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        10,
+        22
+      ],
+      [
+        12,
+        20
+      ]
+    ]
+  },
+  "wall_time_seconds": 356.23,
+  "per_benchmark": {
+    "ARC-C": {
+      "n": 44,
+      "accuracy": {
+        "baseline": 0.431818,
+        "champion": 0.545455,
+        "macro_top1": 0.409091,
+        "adaptive_p2": 0.272727,
+        "adaptive_p1_rule": 0.25
+      },
+      "oracle_hit_rate": 0.666667,
+      "routing_accuracy_vs_prior": 0.386364,
+      "t_start_mae_vs_oracle_subset": 7.0
+    },
+    "TruthfulQA": {
+      "n": 44,
+      "accuracy": {
+        "baseline": 0.159091,
+        "champion": 0.204545,
+        "macro_top1": 0.227273,
+        "adaptive_p2": 0.272727,
+        "adaptive_p1_rule": 0.25
+      },
+      "oracle_hit_rate": 0.277778,
+      "routing_accuracy_vs_prior": 0.227273,
+      "t_start_mae_vs_oracle_subset": 8.2
+    },
+    "CSQA": {
+      "n": 44,
+      "accuracy": {
+        "baseline": 0.636364,
+        "champion": 0.590909,
+        "macro_top1": 0.568182,
+        "adaptive_p2": 0.227273,
+        "adaptive_p1_rule": 0.227273
+      },
+      "oracle_hit_rate": 0.833333,
+      "routing_accuracy_vs_prior": 0.886364,
+      "t_start_mae_vs_oracle_subset": 7.4667
+    },
+    "MMLU-HS-Math": {
+      "n": 44,
+      "accuracy": {
+        "baseline": 0.363636,
+        "champion": 0.409091,
+        "macro_top1": 0.454545,
+        "adaptive_p2": 0.272727,
+        "adaptive_p1_rule": 0.272727
+      },
+      "oracle_hit_rate": 0.666667,
+      "routing_accuracy_vs_prior": 0.613636,
+      "t_start_mae_vs_oracle_subset": 7.25
+    }
+  },
+  "macro_avg_accuracy": {
+    "baseline": 0.39772725000000003,
+    "champion": 0.4375,
+    "macro_top1": 0.41477274999999997,
+    "adaptive_p2": 0.26136349999999997,
+    "adaptive_p1_rule": 0.25
+  },
+  "adaptive_p2_pool_acc": 0.261364
+}

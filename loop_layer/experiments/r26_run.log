@@ -1,0 +1,87 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model …
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<01:06,  5.94it/s]Loading weights:   4%|▍         | 15/399 [00:00<00:09, 40.39it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:06, 57.92it/s]Loading weights:   9%|▉         | 37/399 [00:00<00:05, 65.59it/s]Loading weights:  12%|█▏        | 49/399 [00:00<00:04, 78.34it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:04, 83.78it/s]Loading weights:  18%|█▊        | 71/399 [00:01<00:03, 83.57it/s]Loading weights:  21%|██        | 82/399 [00:01<00:03, 85.18it/s]Loading weights:  23%|██▎       | 93/399 [00:01<00:03, 85.76it/s]Loading weights:  26%|██▌       | 104/399 [00:01<00:03, 85.91it/s]Loading weights:  29%|██▉       | 115/399 [00:01<00:03, 87.14it/s]Loading weights:  32%|███▏      | 126/399 [00:01<00:03, 85.74it/s]Loading weights:  34%|███▍      | 137/399 [00:01<00:03, 85.15it/s]Loading weights:  37%|███▋      | 148/399 [00:01<00:02, 86.44it/s]Loading weights:  40%|███▉      | 159/399 [00:02<00:02, 87.33it/s]Loading weights:  43%|████▎     | 170/399 [00:02<00:02, 88.52it/s]Loading weights:  45%|████▌     | 181/399 [00:02<00:02, 88.95it/s]Loading weights:  48%|████▊     | 192/399 [00:02<00:02, 91.37it/s]Loading weights:  51%|█████     | 203/399 [00:02<00:02, 93.84it/s]Loading weights:  54%|█████▎    | 214/399 [00:02<00:02, 91.89it/s]Loading weights:  56%|█████▋    | 225/399 [00:02<00:01, 90.42it/s]Loading weights:  59%|█████▉    | 236/399 [00:02<00:01, 90.56it/s]Loading weights:  62%|██████▏   | 247/399 [00:03<00:01, 90.30it/s]Loading weights:  65%|██████▍   | 258/399 [00:03<00:01, 89.93it/s]Loading weights:  67%|██████▋   | 268/399 [00:03<00:01, 88.36it/s]Loading weights:  70%|██████▉   | 279/399 [00:03<00:01, 89.33it/s]Loading weights:  73%|███████▎  | 291/399 [00:03<00:01, 94.02it/s]Loading weights:  76%|███████▌  | 302/399 [00:03<00:01, 92.75it/s]Loading weights:  78%|███████▊  | 312/399 [00:03<00:00, 89.56it/s]Loading weights:  81%|████████  | 324/399 [00:03<00:00, 92.18it/s]Loading weights:  84%|████████▍ | 335/399 [00:04<00:00, 89.41it/s]Loading weights:  87%|████████▋ | 346/399 [00:04<00:00, 87.91it/s]Loading weights:  89%|████████▉ | 357/399 [00:04<00:00, 88.29it/s]Loading weights:  92%|█████████▏| 368/399 [00:04<00:00, 88.57it/s]Loading weights:  95%|█████████▍| 379/399 [00:04<00:00, 88.83it/s]Loading weights:  98%|█████████▊| 390/399 [00:04<00:00, 87.89it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 85.00it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/aps/super_glue/resolve/3de24cf8022e94f4ee4b9d55a6f539891524d646/super_glue.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ai2_arc.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ai2_arc.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'ARC-Easy' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:25 2026).
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/tau/commonsense_qa/resolve/94630fe30dad47192a8546eb75f094926d47e155/commonsense_qa.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/truthfulqa/truthful_qa/resolve/741b8276f2d1982aa3d5b832d3ee81ed3b896490/truthful_qa.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+
+============================================================
+Phase 1: N=200 Screening
+============================================================
+
+[Phase1] Benchmark: BoolQ (N=200)
+  [50/200] Baseline=0.860(+0.000) Champion=0.860(+0.000) EncBias-Filter=0.860(+0.000) S1_slope0.05_e53=0.860(+0.000) S3_conf07_flat003=0.860(+0.000) S3_conf08_flat003=0.860(+0.000) S3_conf07_flat005=0.860(+0.000) S4_norm12=0.860(+0.000) S4_norm15=0.860(+0.000) S5_compound=0.860(+0.000) 
+  [100/200] Baseline=0.770(+0.000) Champion=0.770(+0.000) EncBias-Filter=0.770(+0.000) S1_slope0.05_e53=0.770(+0.000) S3_conf07_flat003=0.770(+0.000) S3_conf08_flat003=0.770(+0.000) S3_conf07_flat005=0.770(+0.000) S4_norm12=0.770(+0.000) S4_norm15=0.770(+0.000) S5_compound=0.770(+0.000) 
+  [150/200] Baseline=0.760(+0.000) Champion=0.740(-0.020) EncBias-Filter=0.760(+0.000) S1_slope0.05_e53=0.740(-0.020) S3_conf07_flat003=0.740(-0.020) S3_conf08_flat003=0.740(-0.020) S3_conf07_flat005=0.740(-0.020) S4_norm12=0.740(-0.020) S4_norm15=0.740(-0.020) S5_compound=0.740(-0.020) 
+  [200/200] Baseline=0.770(+0.000) Champion=0.725(-0.045) EncBias-Filter=0.770(+0.000) S1_slope0.05_e53=0.725(-0.045) S3_conf07_flat003=0.725(-0.045) S3_conf08_flat003=0.725(-0.045) S3_conf07_flat005=0.725(-0.045) S4_norm12=0.725(-0.045) S4_norm15=0.725(-0.045) S5_compound=0.725(-0.045) 
+  Final | Baseline=0.770 Champion=0.725 EncBias-Filter=0.770 S1_slope0.05_e53=0.725 S3_conf07_flat003=0.725 S3_conf08_flat003=0.725 S3_conf07_flat005=0.725 S4_norm12=0.725 S4_norm15=0.725 S5_compound=0.725 
+
+[Phase1] Benchmark: ARC-C (N=200)
+  [50/200] Baseline=0.320(+0.000) Champion=0.200(-0.120) EncBias-Filter=0.320(+0.000) S1_slope0.05_e53=0.200(-0.120) S3_conf07_flat003=0.200(-0.120) S3_conf08_flat003=0.200(-0.120) S3_conf07_flat005=0.200(-0.120) S4_norm12=0.200(-0.120) S4_norm15=0.200(-0.120) S5_compound=0.200(-0.120) 
+  [100/200] Baseline=0.320(+0.000) Champion=0.260(-0.060) EncBias-Filter=0.320(+0.000) S1_slope0.05_e53=0.260(-0.060) S3_conf07_flat003=0.260(-0.060) S3_conf08_flat003=0.260(-0.060) S3_conf07_flat005=0.260(-0.060) S4_norm12=0.260(-0.060) S4_norm15=0.260(-0.060) S5_compound=0.260(-0.060) 
+  [150/200] Baseline=0.313(+0.000) Champion=0.267(-0.047) EncBias-Filter=0.313(+0.000) S1_slope0.05_e53=0.267(-0.047) S3_conf07_flat003=0.267(-0.047) S3_conf08_flat003=0.267(-0.047) S3_conf07_flat005=0.267(-0.047) S4_norm12=0.267(-0.047) S4_norm15=0.267(-0.047) S5_compound=0.267(-0.047) 
+  [200/200] Baseline=0.310(+0.000) Champion=0.275(-0.035) EncBias-Filter=0.310(+0.000) S1_slope0.05_e53=0.275(-0.035) S3_conf07_flat003=0.275(-0.035) S3_conf08_flat003=0.275(-0.035) S3_conf07_flat005=0.275(-0.035) S4_norm12=0.275(-0.035) S4_norm15=0.275(-0.035) S5_compound=0.275(-0.035) 
+  Final | Baseline=0.310 Champion=0.275 EncBias-Filter=0.310 S1_slope0.05_e53=0.275 S3_conf07_flat003=0.275 S3_conf08_flat003=0.275 S3_conf07_flat005=0.275 S4_norm12=0.275 S4_norm15=0.275 S5_compound=0.275 
+
+[Phase1] Benchmark: ARC-Easy (N=200)
+  [50/200] Baseline=0.280(+0.000) Champion=0.380(+0.100) EncBias-Filter=0.280(+0.000) S1_slope0.05_e53=0.380(+0.100) S3_conf07_flat003=0.380(+0.100) S3_conf08_flat003=0.380(+0.100) S3_conf07_flat005=0.380(+0.100) S4_norm12=0.380(+0.100) S4_norm15=0.380(+0.100) S5_compound=0.380(+0.100) 
+  [100/200] Baseline=0.350(+0.000) Champion=0.380(+0.030) EncBias-Filter=0.350(+0.000) S1_slope0.05_e53=0.380(+0.030) S3_conf07_flat003=0.380(+0.030) S3_conf08_flat003=0.380(+0.030) S3_conf07_flat005=0.380(+0.030) S4_norm12=0.380(+0.030) S4_norm15=0.380(+0.030) S5_compound=0.380(+0.030) 
+  [150/200] Baseline=0.347(+0.000) Champion=0.353(+0.007) EncBias-Filter=0.347(+0.000) S1_slope0.05_e53=0.353(+0.007) S3_conf07_flat003=0.353(+0.007) S3_conf08_flat003=0.353(+0.007) S3_conf07_flat005=0.353(+0.007) S4_norm12=0.353(+0.007) S4_norm15=0.353(+0.007) S5_compound=0.353(+0.007) 
+  [200/200] Baseline=0.315(+0.000) Champion=0.305(-0.010) EncBias-Filter=0.315(+0.000) S1_slope0.05_e53=0.305(-0.010) S3_conf07_flat003=0.305(-0.010) S3_conf08_flat003=0.305(-0.010) S3_conf07_flat005=0.305(-0.010) S4_norm12=0.305(-0.010) S4_norm15=0.305(-0.010) S5_compound=0.305(-0.010) 
+  Final | Baseline=0.315 Champion=0.305 EncBias-Filter=0.315 S1_slope0.05_e53=0.305 S3_conf07_flat003=0.305 S3_conf08_flat003=0.305 S3_conf07_flat005=0.305 S4_norm12=0.305 S4_norm15=0.305 S5_compound=0.305 
+
+[Phase1] Benchmark: CSQA (N=200)
+  [50/200] Baseline=0.340(+0.000) Champion=0.380(+0.040) EncBias-Filter=0.340(+0.000) S1_slope0.05_e53=0.380(+0.040) S3_conf07_flat003=0.380(+0.040) S3_conf08_flat003=0.380(+0.040) S3_conf07_flat005=0.380(+0.040) S4_norm12=0.380(+0.040) S4_norm15=0.380(+0.040) S5_compound=0.380(+0.040) 
+  [100/200] Baseline=0.290(+0.000) Champion=0.370(+0.080) EncBias-Filter=0.290(+0.000) S1_slope0.05_e53=0.370(+0.080) S3_conf07_flat003=0.370(+0.080) S3_conf08_flat003=0.370(+0.080) S3_conf07_flat005=0.370(+0.080) S4_norm12=0.370(+0.080) S4_norm15=0.370(+0.080) S5_compound=0.370(+0.080) 
+  [150/200] Baseline=0.300(+0.000) Champion=0.353(+0.053) EncBias-Filter=0.300(+0.000) S1_slope0.05_e53=0.353(+0.053) S3_conf07_flat003=0.353(+0.053) S3_conf08_flat003=0.353(+0.053) S3_conf07_flat005=0.353(+0.053) S4_norm12=0.353(+0.053) S4_norm15=0.353(+0.053) S5_compound=0.353(+0.053) 
+  [200/200] Baseline=0.300(+0.000) Champion=0.335(+0.035) EncBias-Filter=0.300(+0.000) S1_slope0.05_e53=0.335(+0.035) S3_conf07_flat003=0.335(+0.035) S3_conf08_flat003=0.335(+0.035) S3_conf07_flat005=0.335(+0.035) S4_norm12=0.335(+0.035) S4_norm15=0.335(+0.035) S5_compound=0.335(+0.035) 
+  Final | Baseline=0.300 Champion=0.335 EncBias-Filter=0.300 S1_slope0.05_e53=0.335 S3_conf07_flat003=0.335 S3_conf08_flat003=0.335 S3_conf07_flat005=0.335 S4_norm12=0.335 S4_norm15=0.335 S5_compound=0.335 
+
+[Phase1] Benchmark: TruthfulQA (N=200)
+  [50/200] Baseline=0.460(+0.000) Champion=0.480(+0.020) EncBias-Filter=0.460(+0.000) S1_slope0.05_e53=0.480(+0.020) S3_conf07_flat003=0.480(+0.020) S3_conf08_flat003=0.480(+0.020) S3_conf07_flat005=0.480(+0.020) S4_norm12=0.480(+0.020) S4_norm15=0.480(+0.020) S5_compound=0.480(+0.020) 
+  [100/200] Baseline=0.470(+0.000) Champion=0.500(+0.030) EncBias-Filter=0.470(+0.000) S1_slope0.05_e53=0.500(+0.030) S3_conf07_flat003=0.500(+0.030) S3_conf08_flat003=0.500(+0.030) S3_conf07_flat005=0.500(+0.030) S4_norm12=0.500(+0.030) S4_norm15=0.500(+0.030) S5_compound=0.500(+0.030) 
+  [150/200] Baseline=0.513(+0.000) Champion=0.540(+0.027) EncBias-Filter=0.513(+0.000) S1_slope0.05_e53=0.540(+0.027) S3_conf07_flat003=0.540(+0.027) S3_conf08_flat003=0.540(+0.027) S3_conf07_flat005=0.540(+0.027) S4_norm12=0.540(+0.027) S4_norm15=0.540(+0.027) S5_compound=0.540(+0.027) 
+  [200/200] Baseline=0.480(+0.000) Champion=0.520(+0.040) EncBias-Filter=0.480(+0.000) S1_slope0.05_e53=0.520(+0.040) S3_conf07_flat003=0.520(+0.040) S3_conf08_flat003=0.520(+0.040) S3_conf07_flat005=0.520(+0.040) S4_norm12=0.520(+0.040) S4_norm15=0.520(+0.040) S5_compound=0.520(+0.040) 
+  Final | Baseline=0.480 Champion=0.520 EncBias-Filter=0.480 S1_slope0.05_e53=0.520 S3_conf07_flat003=0.520 S3_conf08_flat003=0.520 S3_conf07_flat005=0.520 S4_norm12=0.520 S4_norm15=0.520 S5_compound=0.520 
+
+Phase 1 done in 28.3 min
+
+[Phase 1 Summary]
+Strategy                             BoolQ       ARC-C    ARC-Easy        CSQA  TruthfulQA       Avg
+----------------------------------------------------------------------------------------------------
+Baseline                       0.770(+0.00 0.310(+0.00 0.315(+0.00 0.300(+0.00 0.480(+0.00     0.435
+Champion                       0.725(-0.04 0.275(-0.03 0.305(-0.01 0.335(+0.03 0.520(+0.04     0.432
+EncBias-Filter                 0.770(+0.00 0.310(+0.00 0.315(+0.00 0.300(+0.00 0.480(+0.00     0.435
+S1_slope0.05_e53               0.725(-0.04 0.275(-0.03 0.305(-0.01 0.335(+0.03 0.520(+0.04     0.432
+S3_conf07_flat003              0.725(-0.04 0.275(-0.03 0.305(-0.01 0.335(+0.03 0.520(+0.04     0.432
+S3_conf08_flat003              0.725(-0.04 0.275(-0.03 0.305(-0.01 0.335(+0.03 0.520(+0.04     0.432
+S3_conf07_flat005              0.725(-0.04 0.275(-0.03 0.305(-0.01 0.335(+0.03 0.520(+0.04     0.432
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/aps/super_glue/resolve/3de24cf8022e94f4ee4b9d55a6f539891524d646/super_glue.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ai2_arc.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ai2_arc.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'ARC-Easy' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:25 2026).

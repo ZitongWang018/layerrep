@@ -1,0 +1,1206 @@
+{
+  "results": {
+    "triviaqa": {
+      "name": "triviaqa",
+      "alias": "triviaqa",
+      "sample_len": 17944,
+      "exact_match,remove_whitespace": 0.0,
+      "exact_match_stderr,remove_whitespace": 0.0
+    },
+    "gsm8k": {
+      "name": "gsm8k",
+      "alias": "gsm8k",
+      "sample_len": 1319,
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.09021986353297953,
+      "exact_match_stderr,flexible-extract": 0.007891537108449953
+    },
+    "hendrycks_math_algebra": {
+      "name": "hendrycks_math_algebra",
+      "alias": "hendrycks_math_algebra",
+      "sample_len": 1187,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "hendrycks_math_counting_and_prob": {
+      "name": "hendrycks_math_counting_and_prob",
+      "alias": "hendrycks_math_counting_and_prob",
+      "sample_len": 474,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "hendrycks_math_geometry": {
+      "name": "hendrycks_math_geometry",
+      "alias": "hendrycks_math_geometry",
+      "sample_len": 479,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "name": "hendrycks_math_intermediate_algebra",
+      "alias": "hendrycks_math_intermediate_algebra",
+      "sample_len": 903,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "hendrycks_math_num_theory": {
+      "name": "hendrycks_math_num_theory",
+      "alias": "hendrycks_math_num_theory",
+      "sample_len": 540,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "hendrycks_math_prealgebra": {
+      "name": "hendrycks_math_prealgebra",
+      "alias": "hendrycks_math_prealgebra",
+      "sample_len": 871,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "hendrycks_math_precalc": {
+      "name": "hendrycks_math_precalc",
+      "alias": "hendrycks_math_precalc",
+      "sample_len": 546,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "commonsense_qa": {
+      "name": "commonsense_qa",
+      "alias": "commonsense_qa",
+      "sample_len": 1221,
+      "acc,none": 0.19574119574119575,
+      "acc_stderr,none": 0.011359497363584397
+    },
+    "boolq": {
+      "name": "boolq",
+      "alias": "boolq",
+      "sample_len": 3270,
+      "acc,none": 0.4975535168195719,
+      "acc_stderr,none": 0.008744950292567142
+    },
+    "arc_easy": {
+      "name": "arc_easy",
+      "alias": "arc_easy",
+      "sample_len": 2376,
+      "acc,none": 0.5033670033670034,
+      "acc_stderr,none": 0.010259550893799069,
+      "acc_norm,none": 0.4414983164983165,
+      "acc_norm_stderr,none": 0.010189314382749861
+    },
+    "arc_challenge": {
+      "name": "arc_challenge",
+      "alias": "arc_challenge",
+      "sample_len": 1172,
+      "acc,none": 0.3583617747440273,
+      "acc_stderr,none": 0.014012883334859918,
+      "acc_norm,none": 0.3856655290102389,
+      "acc_norm_stderr,none": 0.014224250973257123
+    },
+    "humaneval": {
+      "name": "humaneval",
+      "alias": "humaneval",
+      "sample_len": 164,
+      "pass@1,create_test": 0.0,
+      "pass@1_stderr,create_test": 0.0
+    },
+    "truthfulqa_mc1": {
+      "name": "truthfulqa_mc1",
+      "alias": "truthfulqa_mc1",
+      "sample_len": 817,
+      "acc,none": 0.34394124847001223,
+      "acc_stderr,none": 0.016629087514276827
+    },
+    "hendrycks_math": {
+      "alias": "hendrycks_math",
+      "name": "hendrycks_math",
+      "sample_len": 5000,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0,
+      "sample_count": {
+        "exact_match,none": 5000
+      }
+    }
+  },
+  "groups": {
+    "hendrycks_math": {
+      "alias": "hendrycks_math",
+      "name": "hendrycks_math",
+      "sample_len": 5000,
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0,
+      "sample_count": {
+        "exact_match,none": 5000
+      }
+    }
+  },
+  "group_subtasks": {
+    "hendrycks_math": [
+      "hendrycks_math_algebra",
+      "hendrycks_math_counting_and_prob",
+      "hendrycks_math_geometry",
+      "hendrycks_math_intermediate_algebra",
+      "hendrycks_math_num_theory",
+      "hendrycks_math_prealgebra",
+      "hendrycks_math_precalc"
+    ]
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Question: {{question}}\nAnswer:",
+        "doc_to_choice": "{{choices.text}}",
+        "doc_to_target": "{{choices.label.index(answerKey)}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/arc/arc_challenge.yaml"
+      }
+    },
+    "arc_easy": {
+      "task": "arc_easy",
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Question: {{question}}\nAnswer:",
+        "doc_to_choice": "{{choices.text}}",
+        "doc_to_target": "{{choices.label.index(answerKey)}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/arc/arc_easy.yaml"
+      }
+    },
+    "boolq": {
+      "task": "boolq",
+      "dataset_path": "aps/super_glue",
+      "dataset_name": "boolq",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "no",
+        "yes"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+        "doc_to_choice": [
+          "no",
+          "yes"
+        ],
+        "doc_to_target": "label",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "passage",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/super_glue/boolq/default.yaml"
+      }
+    },
+    "commonsense_qa": {
+      "task": "commonsense_qa",
+      "dataset_path": "tau/commonsense_qa",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{ question.strip() }}\nA. {{choices['text'][0]}}\nB. {{choices['text'][1]}}\nC. {{choices['text'][2]}}\nD. {{choices['text'][3]}}\nE. {{choices['text'][4]}}\nAnswer:",
+      "doc_to_target": "answerKey",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Question: {{ question.strip() }}\nA. {{choices['text'][0]}}\nB. {{choices['text'][1]}}\nC. {{choices['text'][2]}}\nD. {{choices['text'][3]}}\nE. {{choices['text'][4]}}\nAnswer:",
+        "doc_to_choice": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "doc_to_target": "answerKey",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/commonsense_qa/default.yaml"
+      }
+    },
+    "gsm8k": {
+      "task": "gsm8k",
+      "dataset_path": "openai/gsm8k",
+      "dataset_name": "main",
+      "training_split": "train",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": "train",
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Question: {{question}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": false,
+          "regexes_to_ignore": [
+            ",",
+            "\\$",
+            "(?s).*#### ",
+            "\\.$"
+          ]
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Question:",
+          "</s>",
+          "<|im_end|>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "#### (\\-?[0-9\\.\\,]+)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "regex",
+              "group_select": -1,
+              "regex_pattern": "(-?[$0-9.,]{2,})|(-?[0-9]+)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 3.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/gsm8k/gsm8k.yaml"
+      }
+    },
+    "hendrycks_math_algebra": {
+      "task": "hendrycks_math_algebra",
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "algebra",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x7fa1c24e8e00>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Problem: {{problem}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/hendrycks_math/hendrycks_math_algebra.yaml"
+      }
+    },
+    "hendrycks_math_counting_and_prob": {
+      "task": "hendrycks_math_counting_and_prob",
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "counting_and_probability",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x7fa1c24e8e00>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Problem: {{problem}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/hendrycks_math/hendrycks_math_counting_and_prob.yaml"
+      }
+    },
+    "hendrycks_math_geometry": {
+      "task": "hendrycks_math_geometry",
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "geometry",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x7fa1c24e8e00>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Problem: {{problem}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/hendrycks_math/hendrycks_math_geometry.yaml"
+      }
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "task": "hendrycks_math_intermediate_algebra",
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "intermediate_algebra",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x7fa1c24e8e00>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Problem: {{problem}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/hendrycks_math/hendrycks_math_intermediate_algebra.yaml"
+      }
+    },
+    "hendrycks_math_num_theory": {
+      "task": "hendrycks_math_num_theory",
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "number_theory",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x7fa1c24e8e00>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Problem: {{problem}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/hendrycks_math/hendrycks_math_num_theory.yaml"
+      }
+    },
+    "hendrycks_math_prealgebra": {
+      "task": "hendrycks_math_prealgebra",
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "prealgebra",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x7fa1c24e8e00>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Problem: {{problem}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/hendrycks_math/hendrycks_math_prealgebra.yaml"
+      }
+    },
+    "hendrycks_math_precalc": {
+      "task": "hendrycks_math_precalc",
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "precalculus",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x7fa1c24e8e00>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Problem: {{problem}}\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/hendrycks_math/hendrycks_math_precalc.yaml"
+      }
+    },
+    "humaneval": {
+      "task": "humaneval",
+      "dataset_path": "openai/openai_humaneval",
+      "test_split": "test",
+      "doc_to_text": "{{prompt}}",
+      "doc_to_target": "{{test}}\ncheck({{entry_point}})",
+      "unsafe_code": true,
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "{{prompt}}",
+        "doc_to_choice": null,
+        "doc_to_target": "{{test}}\ncheck({{entry_point}})",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "def pass_at_k(references: list[str], predictions: list[list[str]], k: list[int] = None):\n    global compute_\n    assert k is not None\n    if isinstance(k, int):\n        k = [k]\n    res = compute_.compute(\n        references=references,\n        predictions=predictions,\n        k=k,\n    )\n    return res[0]\n",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "k": [
+            1
+          ]
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\nclass",
+          "\ndef",
+          "\n#",
+          "\nif",
+          "\nprint"
+        ],
+        "max_gen_toks": 1024,
+        "do_sample": false
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "create_test",
+          "filter": [
+            {
+              "function": "custom",
+              "filter_fn": "<function build_predictions at 0x7fa1bef3f2e0>"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/humaneval/humaneval.yaml"
+      }
+    },
+    "triviaqa": {
+      "task": "triviaqa",
+      "dataset_path": "mandarjoshi/trivia_qa",
+      "dataset_name": "rc.nocontext",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{question}}?\nAnswer:",
+      "doc_to_target": "{{answer.aliases}}",
+      "unsafe_code": false,
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "Question: {{question}}?\nAnswer:",
+        "doc_to_choice": null,
+        "doc_to_target": "{{answer.aliases}}",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n",
+          ".",
+          ","
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "remove_whitespace",
+          "filter": [
+            {
+              "function": "remove_whitespace"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question",
+      "metadata": {
+        "version": 3.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/triviaqa/default.yaml"
+      }
+    },
+    "truthfulqa_mc1": {
+      "task": "truthfulqa_mc1",
+      "dataset_path": "truthfulqa/truthful_qa",
+      "dataset_name": "multiple_choice",
+      "validation_split": "validation",
+      "doc_to_text": "{% set prompt_qa = 'Q: What is human life expectancy in the United States?\nA: Human life expectancy in the United States is 78 years.\n\nQ: Who was president of the United States in 1955?\nA: Dwight D. Eisenhower was president of the United States in 1955.\n\nQ: Which party did he belong to?\nA: He belonged to the Republican Party.\n\nQ: What is the square root of banana?\nA: I have no comment.\n\nQ: How does a telescope work?\nA: Telescopes use lenses or mirrors to focus light and make objects appear closer.\n\nQ: Where were the 1992 Olympics held?\nA: The 1992 Olympics were held in Barcelona, Spain.'%}{{prompt_qa + '\n\nQ: ' + question + '\nA:'}}",
+      "doc_to_target": 0,
+      "unsafe_code": false,
+      "doc_to_choice": "{{mc1_targets.choices}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "{% set prompt_qa = 'Q: What is human life expectancy in the United States?\nA: Human life expectancy in the United States is 78 years.\n\nQ: Who was president of the United States in 1955?\nA: Dwight D. Eisenhower was president of the United States in 1955.\n\nQ: Which party did he belong to?\nA: He belonged to the Republican Party.\n\nQ: What is the square root of banana?\nA: I have no comment.\n\nQ: How does a telescope work?\nA: Telescopes use lenses or mirrors to focus light and make objects appear closer.\n\nQ: Where were the 1992 Olympics held?\nA: The 1992 Olympics were held in Barcelona, Spain.'%}{{prompt_qa + '\n\nQ: ' + question + '\nA:'}}",
+        "doc_to_choice": "{{mc1_targets.choices}}",
+        "doc_to_target": 0,
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/root/autodl-tmp/model_qwen",
+        "dtype": "auto",
+        "trust_remote_code": true,
+        "config_source": "/root/autodl-tmp/lm-evaluation-harness/lm_eval/tasks/truthfulqa/truthfulqa_mc1.yaml"
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "commonsense_qa": "Yaml",
+    "gsm8k": 3.0,
+    "hendrycks_math": "1.0",
+    "hendrycks_math_algebra": 1.0,
+    "hendrycks_math_counting_and_prob": 1.0,
+    "hendrycks_math_geometry": 1.0,
+    "hendrycks_math_intermediate_algebra": 1.0,
+    "hendrycks_math_num_theory": 1.0,
+    "hendrycks_math_prealgebra": 1.0,
+    "hendrycks_math_precalc": 1.0,
+    "humaneval": 1.0,
+    "triviaqa": 3.0,
+    "truthfulqa_mc1": 2.0
+  },
+  "n-shot": {
+    "arc_challenge": 0,
+    "arc_easy": 0,
+    "boolq": 0,
+    "commonsense_qa": 0,
+    "gsm8k": 0,
+    "hendrycks_math": 0,
+    "hendrycks_math_algebra": 0,
+    "hendrycks_math_counting_and_prob": 0,
+    "hendrycks_math_geometry": 0,
+    "hendrycks_math_intermediate_algebra": 0,
+    "hendrycks_math_num_theory": 0,
+    "hendrycks_math_prealgebra": 0,
+    "hendrycks_math_precalc": 0,
+    "humaneval": 0,
+    "triviaqa": 0,
+    "truthfulqa_mc1": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_easy": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "boolq": {
+      "acc": true
+    },
+    "commonsense_qa": {
+      "acc": true
+    },
+    "gsm8k": {
+      "exact_match": true
+    },
+    "hendrycks_math": {
+      "exact_match": true
+    },
+    "hendrycks_math_algebra": {
+      "exact_match": true
+    },
+    "hendrycks_math_counting_and_prob": {
+      "exact_match": true
+    },
+    "hendrycks_math_geometry": {
+      "exact_match": true
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "exact_match": true
+    },
+    "hendrycks_math_num_theory": {
+      "exact_match": true
+    },
+    "hendrycks_math_prealgebra": {
+      "exact_match": true
+    },
+    "hendrycks_math_precalc": {
+      "exact_match": true
+    },
+    "humaneval": {
+      "pass_at_k": true,
+      "pass@1": true
+    },
+    "triviaqa": {
+      "exact_match": true
+    },
+    "truthfulqa_mc1": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "triviaqa": {
+      "original": 17944,
+      "effective": 17944
+    },
+    "gsm8k": {
+      "original": 1319,
+      "effective": 1319
+    },
+    "hendrycks_math_algebra": {
+      "original": 1187,
+      "effective": 1187
+    },
+    "hendrycks_math_counting_and_prob": {
+      "original": 474,
+      "effective": 474
+    },
+    "hendrycks_math_geometry": {
+      "original": 479,
+      "effective": 479
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "original": 903,
+      "effective": 903
+    },
+    "hendrycks_math_num_theory": {
+      "original": 540,
+      "effective": 540
+    },
+    "hendrycks_math_prealgebra": {
+      "original": 871,
+      "effective": 871
+    },
+    "hendrycks_math_precalc": {
+      "original": 546,
+      "effective": 546
+    },
+    "commonsense_qa": {
+      "original": 1221,
+      "effective": 1221
+    },
+    "boolq": {
+      "original": 3270,
+      "effective": 3270
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    },
+    "humaneval": {
+      "original": 164,
+      "effective": 164
+    },
+    "truthfulqa_mc1": {
+      "original": 817,
+      "effective": 817
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": {
+      "pretrained": "/root/autodl-tmp/model_qwen",
+      "dtype": "auto",
+      "trust_remote_code": true
+    },
+    "model_num_parameters": 8190735360,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "auto",
+    "batch_sizes": [
+      11
+    ],
+    "device": "cuda",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": {},
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "v0.4.10-42-gee7e8f4f",
+  "date": 1775382173.5037646,
+  "pretty_env_info": "PyTorch version: 2.5.1+cu124\nIs debug build: False\nCUDA used to build PyTorch: 12.4\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.4 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nClang version: Could not collect\nCMake version: version 3.22.1\nLibc version: glibc-2.35\n\nPython version: 3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0] (64-bit runtime)\nPython platform: Linux-5.15.0-78-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: 12.4.131\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: GPU 0: NVIDIA GeForce RTX 4090\nNvidia driver version: 580.105.08\ncuDNN version: Probably one of the following:\n/usr/lib/x86_64-linux-gnu/libcudnn.so.9.1.0\n/usr/lib/x86_64-linux-gnu/libcudnn_adv.so.9.1.0\n/usr/lib/x86_64-linux-gnu/libcudnn_cnn.so.9.1.0\n/usr/lib/x86_64-linux-gnu/libcudnn_engines_precompiled.so.9.1.0\n/usr/lib/x86_64-linux-gnu/libcudnn_engines_runtime_compiled.so.9.1.0\n/usr/lib/x86_64-linux-gnu/libcudnn_graph.so.9.1.0\n/usr/lib/x86_64-linux-gnu/libcudnn_heuristic.so.9.1.0\n/usr/lib/x86_64-linux-gnu/libcudnn_ops.so.9.1.0\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nAddress sizes:                   46 bits physical, 57 bits virtual\nByte Order:                      Little Endian\nCPU(s):                          208\nOn-line CPU(s) list:             0-207\nVendor ID:                       GenuineIntel\nModel name:                      Intel(R) Xeon(R) Platinum 8470Q\nCPU family:                      6\nModel:                           143\nThread(s) per core:              2\nCore(s) per socket:              52\nSocket(s):                       2\nStepping:                        8\nFrequency boost:                 enabled\nCPU max MHz:                     3800.0000\nCPU min MHz:                     800.0000\nBogoMIPS:                        4200.00\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                  VT-x\nL1d cache:                       4.9 MiB (104 instances)\nL1i cache:                       3.3 MiB (104 instances)\nL2 cache:                        208 MiB (104 instances)\nL3 cache:                        210 MiB (2 instances)\nNUMA node(s):                    2\nNUMA node0 CPU(s):               0-51,104-155\nNUMA node1 CPU(s):               52-103,156-207\nVulnerability Itlb multihit:     Not affected\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Not affected\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Not affected\nVulnerability Retbleed:          Not affected\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:             Not affected\nVulnerability Tsx async abort:   Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==2.1.3\n[pip3] torch==2.5.1+cu124\n[pip3] torchvision==0.20.1+cu124\n[pip3] triton==3.1.0\n[conda] numpy                     2.1.3                    pypi_0    pypi\n[conda] torch                     2.5.1+cu124              pypi_0    pypi\n[conda] torchvision               0.20.1+cu124             pypi_0    pypi\n[conda] triton                    3.1.0                    pypi_0    pypi",
+  "transformers_version": "5.5.0",
+  "lm_eval_version": "0.4.12.dev0",
+  "upper_git_hash": "b8a0b19f28694a2266bd0671d59cb99fbbc6701c",
+  "tokenizer_pad_token": [
+    "<|endoftext|>",
+    "151643"
+  ],
+  "tokenizer_eos_token": [
+    "<|im_end|>",
+    "151645"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 151645,
+  "max_length": 40960,
+  "task_hashes": {},
+  "model_source": "hf",
+  "model_name": "/root/autodl-tmp/model_qwen",
+  "model_name_sanitized": "__root__autodl-tmp__model_qwen",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": true,
+  "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {{- messages[0].content + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" and message.content is string and not(message.content.startswith('<tool_response>') and message.content.endswith('</tool_response>')) %}\n        {%- set ns.multi_step_tool = false %}\n        {%- set ns.last_query_index = index %}\n    {%- endif %}\n{%- endfor %}\n{%- for message in messages %}\n    {%- if message.content is string %}\n        {%- set content = message.content %}\n    {%- else %}\n        {%- set content = '' %}\n    {%- endif %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {%- if loop.last or (not loop.last and reasoning_content) %}\n                {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content.strip('\\n') + '\\n</think>\\n\\n' + content.lstrip('\\n') }}\n            {%- else %}\n                {{- '<|im_start|>' + message.role + '\\n' + content }}\n            {%- endif %}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}",
+  "chat_template_sha": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "total_evaluation_time_seconds": "69862.72129002586"
+}

@@ -1,0 +1,148 @@
+{
+  "phase1_small": {
+    "BoolQ": {
+      "accuracies": {
+        "Baseline": 0.83,
+        "Champion": 0.87,
+        "EncBias-Filter": 0.84,
+        "C_start_entropy+C_stop_streak_3": 0.83,
+        "C_start_entropy+C_stop_streak_5": 0.81,
+        "C_start_entropy+C_stop_entropy_0.7": 0.84,
+        "C_start_entropy+C_stop_entropy_0.8": 0.84,
+        "C_start_entropy+C_stop_norm_flat": 0.8,
+        "C_start_norm+C_stop_streak_3": 0.31,
+        "C_start_norm+C_stop_streak_5": 0.32,
+        "C_start_norm+C_stop_entropy_0.7": 0.3,
+        "C_start_norm+C_stop_entropy_0.8": 0.3,
+        "C_start_norm+C_stop_norm_flat": 0.47,
+        "C_start_rank+C_stop_streak_3": 0.81,
+        "C_start_rank+C_stop_streak_5": 0.81,
+        "C_start_rank+C_stop_entropy_0.7": 0.83,
+        "C_start_rank+C_stop_entropy_0.8": 0.83,
+        "C_start_rank+C_stop_norm_flat": 0.83
+      }
+    },
+    "ARC-C": {
+      "accuracies": {
+        "Baseline": 0.56,
+        "Champion": 0.56,
+        "EncBias-Filter": 0.57,
+        "C_start_entropy+C_stop_streak_3": 0.54,
+        "C_start_entropy+C_stop_streak_5": 0.55,
+        "C_start_entropy+C_stop_entropy_0.7": 0.5,
+        "C_start_entropy+C_stop_entropy_0.8": 0.49,
+        "C_start_entropy+C_stop_norm_flat": 0.47,
+        "C_start_norm+C_stop_streak_3": 0.23,
+        "C_start_norm+C_stop_streak_5": 0.22,
+        "C_start_norm+C_stop_entropy_0.7": 0.23,
+        "C_start_norm+C_stop_entropy_0.8": 0.23,
+        "C_start_norm+C_stop_norm_flat": 0.27,
+        "C_start_rank+C_stop_streak_3": 0.53,
+        "C_start_rank+C_stop_streak_5": 0.49,
+        "C_start_rank+C_stop_entropy_0.7": 0.48,
+        "C_start_rank+C_stop_entropy_0.8": 0.52,
+        "C_start_rank+C_stop_norm_flat": 0.48
+      }
+    }
+  },
+  "phase2_med": {
+    "BoolQ": {
+      "accuracies": {
+        "Baseline": 0.87,
+        "Champion": 0.8833333333333333,
+        "EncBias-Filter": 0.8766666666666667,
+        "C_start_rank+C_stop_norm_flat": 0.8733333333333333,
+        "C_start_rank+C_stop_streak_5": 0.8566666666666667,
+        "C_start_rank+C_stop_entropy_0.7": 0.86,
+        "C_start_rank+C_stop_entropy_0.8": 0.8566666666666667,
+        "C_start_rank+C_stop_streak_3": 0.85,
+        "C_start_entropy+C_stop_norm_flat": 0.84,
+        "C_start_entropy+C_stop_streak_5": 0.8566666666666667,
+        "C_start_entropy+C_stop_entropy_0.7": 0.8566666666666667,
+        "C_start_entropy+C_stop_entropy_0.8": 0.86,
+        "C_start_entropy+C_stop_streak_3": 0.8633333333333333
+      }
+    },
+    "ARC-C": {
+      "accuracies": {
+        "Baseline": 0.53,
+        "Champion": 0.5666666666666667,
+        "EncBias-Filter": 0.5633333333333334,
+        "C_start_rank+C_stop_norm_flat": 0.48,
+        "C_start_rank+C_stop_streak_5": 0.49666666666666665,
+        "C_start_rank+C_stop_entropy_0.7": 0.5033333333333333,
+        "C_start_rank+C_stop_entropy_0.8": 0.51,
+        "C_start_rank+C_stop_streak_3": 0.5233333333333333,
+        "C_start_entropy+C_stop_norm_flat": 0.49,
+        "C_start_entropy+C_stop_streak_5": 0.57,
+        "C_start_entropy+C_stop_entropy_0.7": 0.5466666666666666,
+        "C_start_entropy+C_stop_entropy_0.8": 0.5333333333333333,
+        "C_start_entropy+C_stop_streak_3": 0.56
+      }
+    },
+    "ARC-Easy": {
+      "accuracies": {
+        "Baseline": 0.83,
+        "Champion": 0.8266666666666667,
+        "EncBias-Filter": 0.8333333333333334,
+        "C_start_rank+C_stop_norm_flat": 0.78,
+        "C_start_rank+C_stop_streak_5": 0.76,
+        "C_start_rank+C_stop_entropy_0.7": 0.7666666666666667,
+        "C_start_rank+C_stop_entropy_0.8": 0.7733333333333333,
+        "C_start_rank+C_stop_streak_3": 0.8,
+        "C_start_entropy+C_stop_norm_flat": 0.7933333333333333,
+        "C_start_entropy+C_stop_streak_5": 0.8166666666666667,
+        "C_start_entropy+C_stop_entropy_0.7": 0.8033333333333333,
+        "C_start_entropy+C_stop_entropy_0.8": 0.8066666666666666,
+        "C_start_entropy+C_stop_streak_3": 0.8
+      }
+    },
+    "CSQA": {
+      "accuracies": {
+        "Baseline": 0.67,
+        "Champion": 0.6666666666666666,
+        "EncBias-Filter": 0.6633333333333333,
+        "C_start_rank+C_stop_norm_flat": 0.59,
+        "C_start_rank+C_stop_streak_5": 0.5966666666666667,
+        "C_start_rank+C_stop_entropy_0.7": 0.6166666666666667,
+        "C_start_rank+C_stop_entropy_0.8": 0.6166666666666667,
+        "C_start_rank+C_stop_streak_3": 0.6,
+        "C_start_entropy+C_stop_norm_flat": 0.5933333333333334,
+        "C_start_entropy+C_stop_streak_5": 0.6333333333333333,
+        "C_start_entropy+C_stop_entropy_0.7": 0.63,
+        "C_start_entropy+C_stop_entropy_0.8": 0.6466666666666666,
+        "C_start_entropy+C_stop_streak_3": 0.6433333333333333
+      }
+    },
+    "TruthfulQA": {
+      "accuracies": {
+        "Baseline": 0.27666666666666667,
+        "Champion": 0.2866666666666667,
+        "EncBias-Filter": 0.29333333333333333,
+        "C_start_rank+C_stop_norm_flat": 0.24,
+        "C_start_rank+C_stop_streak_5": 0.26,
+        "C_start_rank+C_stop_entropy_0.7": 0.27666666666666667,
+        "C_start_rank+C_stop_entropy_0.8": 0.27,
+        "C_start_rank+C_stop_streak_3": 0.28,
+        "C_start_entropy+C_stop_norm_flat": 0.2633333333333333,
+        "C_start_entropy+C_stop_streak_5": 0.25333333333333335,
+        "C_start_entropy+C_stop_entropy_0.7": 0.30333333333333334,
+        "C_start_entropy+C_stop_entropy_0.8": 0.2966666666666667,
+        "C_start_entropy+C_stop_streak_3": 0.26666666666666666
+      }
+    }
+  },
+  "best_causal": "C_start_entropy+C_stop_entropy_0.8",
+  "best_causal_avg": 0.6286666666666667,
+  "surviving_strategies": [
+    "C_start_rank+C_stop_streak_3",
+    "C_start_entropy+C_stop_streak_3",
+    "C_start_entropy+C_stop_entropy_0.8",
+    "C_start_rank+C_stop_norm_flat",
+    "C_start_rank+C_stop_entropy_0.7",
+    "C_start_rank+C_stop_streak_5",
+    "C_start_rank+C_stop_entropy_0.8",
+    "C_start_entropy+C_stop_entropy_0.7",
+    "C_start_entropy+C_stop_streak_5"
+  ]
+}

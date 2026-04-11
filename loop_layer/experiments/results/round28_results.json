@@ -1,0 +1,168 @@
+{
+  "phase": 2,
+  "N": 500,
+  "results": {
+    "BoolQ": {
+      "Baseline": 0.862,
+      "Champion": 0.88,
+      "S1_slope0.05_e53": 0.88,
+      "S9_drop0": 0.88,
+      "S9_drop05": 0.88,
+      "S10_e4low45": 0.88,
+      "S10_e4low50": 0.88,
+      "S11_vshape": 0.866,
+      "S12_comp": 0.88
+    },
+    "ARC-C": {
+      "Baseline": 0.532,
+      "Champion": 0.574,
+      "S1_slope0.05_e53": 0.574,
+      "S9_drop0": 0.574,
+      "S9_drop05": 0.574,
+      "S10_e4low45": 0.574,
+      "S10_e4low50": 0.574,
+      "S11_vshape": 0.572,
+      "S12_comp": 0.574
+    },
+    "ARC-Easy": {
+      "Baseline": 0.84,
+      "Champion": 0.84,
+      "S1_slope0.05_e53": 0.84,
+      "S9_drop0": 0.84,
+      "S9_drop05": 0.84,
+      "S10_e4low45": 0.84,
+      "S10_e4low50": 0.84,
+      "S11_vshape": 0.844,
+      "S12_comp": 0.84
+    },
+    "CSQA": {
+      "Baseline": 0.67,
+      "Champion": 0.684,
+      "S1_slope0.05_e53": 0.684,
+      "S9_drop0": 0.684,
+      "S9_drop05": 0.684,
+      "S10_e4low45": 0.684,
+      "S10_e4low50": 0.684,
+      "S11_vshape": 0.674,
+      "S12_comp": 0.684
+    },
+    "TruthfulQA": {
+      "Baseline": 0.28,
+      "Champion": 0.298,
+      "S1_slope0.05_e53": 0.298,
+      "S9_drop0": 0.298,
+      "S9_drop05": 0.298,
+      "S10_e4low45": 0.298,
+      "S10_e4low50": 0.298,
+      "S11_vshape": 0.284,
+      "S12_comp": 0.298
+    },
+    "MMLU-HS-Math": {
+      "Baseline": 0.4074074074074074,
+      "Champion": 0.3962962962962963,
+      "S1_slope0.05_e53": 0.3962962962962963,
+      "S9_drop0": 0.3962962962962963,
+      "S9_drop05": 0.3962962962962963,
+      "S10_e4low45": 0.3962962962962963,
+      "S10_e4low50": 0.3962962962962963,
+      "S11_vshape": 0.4074074074074074,
+      "S12_comp": 0.3962962962962963
+    },
+    "MMLU-Col-Math": {
+      "Baseline": 0.34,
+      "Champion": 0.37,
+      "S1_slope0.05_e53": 0.37,
+      "S9_drop0": 0.37,
+      "S9_drop05": 0.37,
+      "S10_e4low45": 0.37,
+      "S10_e4low50": 0.37,
+      "S11_vshape": 0.34,
+      "S12_comp": 0.37
+    }
+  },
+  "final_avgs": {
+    "Baseline": 0.5616296296296296,
+    "Champion": 0.5774708994708995,
+    "S1_slope0.05_e53": 0.5774708994708995,
+    "S9_drop0": 0.5774708994708995,
+    "S9_drop05": 0.5774708994708995,
+    "S10_e4low45": 0.5774708994708995,
+    "S10_e4low50": 0.5774708994708995,
+    "S11_vshape": 0.5696296296296296,
+    "S12_comp": 0.5774708994708995
+  },
+  "signal_stats": {
+    "BoolQ": {
+      "entropy_4_mean": 9.273146062850952,
+      "entropy_8_mean": 8.546392074584961,
+      "entropy_drop_mean": 0.7267539882659912,
+      "entropy_drop_std": 0.22225060173506503,
+      "pct_diverging": 0.0,
+      "slope_46_mean": 0.27710748386383055,
+      "slope_68_mean": -0.6404844779968262,
+      "n": 500
+    },
+    "ARC-C": {
+      "entropy_4_mean": 9.144921649932861,
+      "entropy_8_mean": 7.861063650131226,
+      "entropy_drop_mean": 1.2838579998016357,
+      "entropy_drop_std": 0.2778559859322668,
+      "pct_diverging": 0.0,
+      "slope_46_mean": 0.05521184539794922,
+      "slope_68_mean": -0.6971408452987671,
+      "n": 500
+    },
+    "ARC-Easy": {
+      "entropy_4_mean": 9.111178869247437,
+      "entropy_8_mean": 7.823331638336182,
+      "entropy_drop_mean": 1.287847230911255,
+      "entropy_drop_std": 0.2786734956015391,
+      "pct_diverging": 0.0,
+      "slope_46_mean": 0.05258751773834228,
+      "slope_68_mean": -0.6965111331939697,
+      "n": 500
+    },
+    "CSQA": {
+      "entropy_4_mean": 9.07564404296875,
+      "entropy_8_mean": 8.096442996025086,
+      "entropy_drop_mean": 0.9792010469436645,
+      "entropy_drop_std": 0.22976721691994006,
+      "pct_diverging": 0.0,
+      "slope_46_mean": 0.1173719072341919,
+      "slope_68_mean": -0.6069724307060241,
+      "n": 500
+    },
+    "TruthfulQA": {
+      "entropy_4_mean": 9.011283679962158,
+      "entropy_8_mean": 7.956532637596131,
+      "entropy_drop_mean": 1.0547510423660278,
+      "entropy_drop_std": 0.3034998617494799,
+      "pct_diverging": 0.0,
+      "slope_46_mean": 0.16091653060913086,
+      "slope_68_mean": -0.6882920517921448,
+      "n": 500
+    },
+    "MMLU-HS-Math": {
+      "entropy_4_mean": 9.322845517264472,
+      "entropy_8_mean": 8.578748881375349,
+      "entropy_drop_mean": 0.744096635889124,
+      "entropy_drop_std": 0.4768798314499027,
+      "pct_diverging": 0.04814814814814815,
+      "slope_46_mean": 0.28192315189926714,
+      "slope_68_mean": -0.6539714698438291,
+      "n": 270
+    },
+    "MMLU-Col-Math": {
+      "entropy_4_mean": 9.403254842758178,
+      "entropy_8_mean": 8.532915167808532,
+      "entropy_drop_mean": 0.870339674949646,
+      "entropy_drop_std": 0.4183847884823272,
+      "pct_diverging": 0.06,
+      "slope_46_mean": 0.2010101842880249,
+      "slope_68_mean": -0.6361800217628479,
+      "n": 100
+    }
+  },
+  "best_strategy": "Champion",
+  "best_avg": 0.5774708994708995
+}

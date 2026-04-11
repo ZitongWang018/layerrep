@@ -1,0 +1,16 @@
+{
+  "routing_accuracy": {
+    "ARC-C": 0.386364,
+    "TruthfulQA": 0.227273,
+    "CSQA": 0.886364,
+    "MMLU-HS-Math": 0.613636
+  },
+  "expected_early": [
+    "MMLU-HS-Math",
+    "CSQA"
+  ],
+  "expected_late": [
+    "ARC-C",
+    "TruthfulQA"
+  ]
+}

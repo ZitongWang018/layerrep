@@ -1,0 +1,26 @@
+=== Top-2 Per Benchmark ===
+
+ARC-C:
+  #1: t_start=14, t_stop=20, n_t=6, alpha=1.0  acc=0.6000  delta=+0.0400 vs baseline
+  #2: t_start=12, t_stop=18, n_t=6, alpha=1.0  acc=0.5900  delta=+0.0300 vs baseline
+
+TruthfulQA:
+  #1: t_start=16, t_stop=19, n_t=3, alpha=1.0  acc=0.3800  delta=+0.0800 vs baseline
+  #2: t_start=16, t_stop=21, n_t=5, alpha=1.0  acc=0.3800  delta=+0.0800 vs baseline
+
+CSQA:
+  #1: t_start=10, t_stop=22, n_t=12, alpha=0.5  acc=0.7100  delta=+0.0500 vs baseline
+  #2: t_start=10, t_stop=27, n_t=17, alpha=0.352941  acc=0.7100  delta=+0.0500 vs baseline
+
+MMLU-HS-Math:
+  #1: t_start=10, t_stop=18, n_t=8, alpha=0.75  acc=0.4500  delta=+0.0700 vs baseline
+  #2: t_start=12, t_stop=20, n_t=8, alpha=0.75  acc=0.4500  delta=+0.0700 vs baseline
+
+=== Overall Best (macro_avg) ===
+
+  #1: t_start=15, t_stop=20, n_t=5, alpha=1.0  macro=0.5050
+  #2: t_start=9, t_stop=18, n_t=9, alpha=0.666667  macro=0.5000
+
+=== Champion (t_start=8, t_stop=22) ===
+
+  ARC-C=0.5600  TruthfulQA=0.3000  CSQA=0.6800  MMLU-HS-Math=0.3700  macro=0.4775

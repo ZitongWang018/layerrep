@@ -1,0 +1,92 @@
+{
+  "phase": 1,
+  "N": 200,
+  "results": {
+    "BoolQ": {
+      "accuracies": {
+        "Baseline": 0.855,
+        "Champion": 0.89,
+        "S1_slope0.05_e53": 0.89,
+        "S6_streak4": 0.89,
+        "S6_streak3": 0.89,
+        "S7_e6low05": 0.89,
+        "S8_compound": 0.89
+      }
+    },
+    "ARC-C": {
+      "accuracies": {
+        "Baseline": 0.52,
+        "Champion": 0.57,
+        "S1_slope0.05_e53": 0.57,
+        "S6_streak4": 0.57,
+        "S6_streak3": 0.57,
+        "S7_e6low05": 0.57,
+        "S8_compound": 0.57
+      }
+    },
+    "ARC-Easy": {
+      "accuracies": {
+        "Baseline": 0.81,
+        "Champion": 0.81,
+        "S1_slope0.05_e53": 0.81,
+        "S6_streak4": 0.81,
+        "S6_streak3": 0.81,
+        "S7_e6low05": 0.81,
+        "S8_compound": 0.81
+      }
+    },
+    "CSQA": {
+      "accuracies": {
+        "Baseline": 0.66,
+        "Champion": 0.665,
+        "S1_slope0.05_e53": 0.665,
+        "S6_streak4": 0.665,
+        "S6_streak3": 0.665,
+        "S7_e6low05": 0.665,
+        "S8_compound": 0.665
+      }
+    },
+    "TruthfulQA": {
+      "accuracies": {
+        "Baseline": 0.265,
+        "Champion": 0.3,
+        "S1_slope0.05_e53": 0.3,
+        "S6_streak4": 0.3,
+        "S6_streak3": 0.3,
+        "S7_e6low05": 0.3,
+        "S8_compound": 0.3
+      }
+    },
+    "MMLU-HS-Math": {
+      "accuracies": {
+        "Baseline": 0.405,
+        "Champion": 0.4,
+        "S1_slope0.05_e53": 0.4,
+        "S6_streak4": 0.4,
+        "S6_streak3": 0.4,
+        "S7_e6low05": 0.4,
+        "S8_compound": 0.4
+      }
+    },
+    "MMLU-Col-Math": {
+      "accuracies": {
+        "Baseline": 0.34,
+        "Champion": 0.37,
+        "S1_slope0.05_e53": 0.37,
+        "S6_streak4": 0.37,
+        "S6_streak3": 0.37,
+        "S7_e6low05": 0.37,
+        "S8_compound": 0.37
+      }
+    }
+  },
+  "streak_skip_rates": {
+    "BoolQ": 0.0,
+    "ARC-C": 0.0,
+    "ARC-Easy": 0.0,
+    "CSQA": 0.0,
+    "TruthfulQA": 0.0,
+    "MMLU-HS-Math": 0.0,
+    "MMLU-Col-Math": 0.0
+  }
+}

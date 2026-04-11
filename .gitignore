@@ -6,3 +6,7 @@ model_qwen/
 .ipynb_checkpoints/
 .msc
 .mv
+
+# Python bytecode
+__pycache__/
+*.py[cod]

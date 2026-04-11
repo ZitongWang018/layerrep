@@ -1,0 +1,274 @@
+Loading model …
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<01:07,  5.87it/s]Loading weights:   4%|▍         | 15/399 [00:00<00:09, 39.30it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:06, 60.29it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:05, 70.24it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:04, 77.69it/s]Loading weights:  15%|█▌        | 61/399 [00:00<00:04, 81.02it/s]Loading weights:  18%|█▊        | 72/399 [00:01<00:03, 85.50it/s]Loading weights:  21%|██        | 83/399 [00:01<00:03, 88.68it/s]Loading weights:  24%|██▎       | 94/399 [00:01<00:03, 91.38it/s]Loading weights:  26%|██▋       | 105/399 [00:01<00:03, 92.53it/s]Loading weights:  29%|██▉       | 116/399 [00:01<00:03, 94.07it/s]Loading weights:  32%|███▏      | 127/399 [00:01<00:02, 95.34it/s]Loading weights:  35%|███▍      | 138/399 [00:01<00:02, 94.45it/s]Loading weights:  37%|███▋      | 149/399 [00:01<00:02, 94.24it/s]Loading weights:  40%|████      | 160/399 [00:01<00:02, 93.98it/s]Loading weights:  43%|████▎     | 171/399 [00:02<00:02, 94.78it/s]Loading weights:  46%|████▌     | 182/399 [00:02<00:02, 95.69it/s]Loading weights:  48%|████▊     | 193/399 [00:02<00:02, 96.74it/s]Loading weights:  51%|█████     | 204/399 [00:02<00:01, 97.73it/s]Loading weights:  54%|█████▍    | 215/399 [00:02<00:01, 100.82it/s]Loading weights:  57%|█████▋    | 226/399 [00:02<00:01, 100.30it/s]Loading weights:  59%|█████▉    | 237/399 [00:02<00:01, 100.77it/s]Loading weights:  62%|██████▏   | 248/399 [00:02<00:01, 100.50it/s]Loading weights:  65%|██████▍   | 259/399 [00:02<00:01, 99.16it/s] Loading weights:  68%|██████▊   | 270/399 [00:03<00:01, 97.39it/s]Loading weights:  70%|███████   | 281/399 [00:03<00:01, 98.48it/s]Loading weights:  74%|███████▍  | 297/399 [00:03<00:00, 115.18it/s]Loading weights:  78%|███████▊  | 312/399 [00:03<00:00, 119.59it/s]Loading weights:  81%|████████▏ | 325/399 [00:03<00:00, 113.62it/s]Loading weights:  85%|████████▌ | 340/399 [00:03<00:00, 119.20it/s]Loading weights:  89%|████████▉ | 356/399 [00:03<00:00, 125.28it/s]Loading weights:  92%|█████████▏| 369/399 [00:03<00:00, 112.38it/s]Loading weights:  96%|█████████▌| 384/399 [00:04<00:00, 120.30it/s]Loading weights:  99%|█████████▉| 397/399 [00:04<00:00, 118.85it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 96.21it/s] 
+
+=================================================================
+Phase 1: N=200 Screening
+=================================================================
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:25 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'college_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/college_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:52:42 2026).
+  Loaded BoolQ: 200 examples
+  Loaded ARC-C: 200 examples
+  Loaded ARC-Easy: 200 examples
+  Loaded CSQA: 200 examples
+  Loaded TruthfulQA: 200 examples
+  Loaded MMLU-HS-Math: 200 examples
+  Loaded MMLU-Col-Math: 100 examples
+
+[Phase1] BoolQ (N=200)
+  [50/200] Baseline=0.220(+0.000) Champion=0.220(+0.000) 1_slope0.05_e53=0.220(+0.000) S9_drop0=0.220(+0.000) S9_drop05=0.220(+0.000) S10_e4low45=0.220(+0.000) S10_e4low50=0.220(+0.000) S11_vshape=0.220(+0.000) S12_comp=0.220(+0.000)
+  [100/200] Baseline=0.300(+0.000) Champion=0.300(+0.000) 1_slope0.05_e53=0.300(+0.000) S9_drop0=0.300(+0.000) S9_drop05=0.300(+0.000) S10_e4low45=0.300(+0.000) S10_e4low50=0.300(+0.000) S11_vshape=0.300(+0.000) S12_comp=0.300(+0.000)
+  [150/200] Baseline=0.353(+0.000) Champion=0.353(+0.000) 1_slope0.05_e53=0.353(+0.000) S9_drop0=0.353(+0.000) S9_drop05=0.353(+0.000) S10_e4low45=0.353(+0.000) S10_e4low50=0.353(+0.000) S11_vshape=0.353(+0.000) S12_comp=0.353(+0.000)
+  [200/200] Baseline=0.365(+0.000) Champion=0.365(+0.000) 1_slope0.05_e53=0.365(+0.000) S9_drop0=0.365(+0.000) S9_drop05=0.365(+0.000) S10_e4low45=0.365(+0.000) S10_e4low50=0.365(+0.000) S11_vshape=0.365(+0.000) S12_comp=0.365(+0.000)
+  Final | Baseline=0.365 Champion=0.365 1_slope0.05_e53=0.365 S9_drop0=0.365 S9_drop05=0.365 S10_e4low45=0.365 S10_e4low50=0.365 S11_vshape=0.365 S12_comp=0.365
+
+[Phase1] ARC-C (N=200)
+  [50/200] Baseline=0.540(+0.000) Champion=0.520(-0.020) 1_slope0.05_e53=0.520(-0.020) S9_drop0=0.520(-0.020) S9_drop05=0.520(-0.020) S10_e4low45=0.520(-0.020) S10_e4low50=0.520(-0.020) S11_vshape=0.520(-0.020) S12_comp=0.520(-0.020)
+  [100/200] Baseline=0.470(+0.000) Champion=0.500(+0.030) 1_slope0.05_e53=0.500(+0.030) S9_drop0=0.500(+0.030) S9_drop05=0.500(+0.030) S10_e4low45=0.500(+0.030) S10_e4low50=0.500(+0.030) S11_vshape=0.490(+0.020) S12_comp=0.500(+0.030)
+  [150/200] Baseline=0.447(+0.000) Champion=0.480(+0.033) 1_slope0.05_e53=0.480(+0.033) S9_drop0=0.480(+0.033) S9_drop05=0.480(+0.033) S10_e4low45=0.480(+0.033) S10_e4low50=0.480(+0.033) S11_vshape=0.473(+0.027) S12_comp=0.480(+0.033)
+  [200/200] Baseline=0.440(+0.000) Champion=0.460(+0.020) 1_slope0.05_e53=0.460(+0.020) S9_drop0=0.460(+0.020) S9_drop05=0.460(+0.020) S10_e4low45=0.460(+0.020) S10_e4low50=0.460(+0.020) S11_vshape=0.465(+0.025) S12_comp=0.460(+0.020)
+  Final | Baseline=0.440 Champion=0.460 1_slope0.05_e53=0.460 S9_drop0=0.460 S9_drop05=0.460 S10_e4low45=0.460 S10_e4low50=0.460 S11_vshape=0.465 S12_comp=0.460
+
+[Phase1] ARC-Easy (N=200)
+  [50/200] Baseline=0.480(+0.000) Champion=0.440(-0.040) 1_slope0.05_e53=0.440(-0.040) S9_drop0=0.440(-0.040) S9_drop05=0.440(-0.040) S10_e4low45=0.440(-0.040) S10_e4low50=0.440(-0.040) S11_vshape=0.480(+0.000) S12_comp=0.440(-0.040)
+Loading model …
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<02:14,  2.95it/s]Loading weights:   4%|▍         | 15/399 [00:00<00:09, 42.07it/s]Loading weights:   7%|▋         | 26/399 [00:00<00:06, 61.64it/s]Loading weights:   9%|▉         | 37/399 [00:00<00:04, 74.72it/s]Loading weights:  12%|█▏        | 48/399 [00:00<00:04, 83.24it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:03, 88.95it/s]Loading weights:  18%|█▊        | 70/399 [00:00<00:03, 91.73it/s]Loading weights:  20%|██        | 81/399 [00:01<00:03, 93.38it/s]Loading weights:  23%|██▎       | 92/399 [00:01<00:03, 93.64it/s]Loading weights:  26%|██▌       | 103/399 [00:01<00:03, 95.87it/s]Loading weights:  29%|██▊       | 114/399 [00:01<00:03, 94.44it/s]Loading weights:  31%|███▏      | 125/399 [00:01<00:02, 94.04it/s]Loading weights:  34%|███▍      | 136/399 [00:01<00:02, 95.22it/s]Loading weights:  37%|███▋      | 147/399 [00:01<00:02, 94.12it/s]Loading weights:  40%|███▉      | 158/399 [00:01<00:02, 94.38it/s]Loading weights:  42%|████▏     | 169/399 [00:02<00:02, 97.79it/s]Loading weights:  45%|████▌     | 180/399 [00:02<00:02, 100.37it/s]Loading weights:  48%|████▊     | 191/399 [00:02<00:02, 102.39it/s]Loading weights:  51%|█████     | 202/399 [00:02<00:01, 102.66it/s]Loading weights:  53%|█████▎    | 213/399 [00:02<00:01, 104.20it/s]Loading weights:  56%|█████▌    | 224/399 [00:02<00:01, 105.35it/s]Loading weights:  59%|█████▉    | 235/399 [00:02<00:01, 106.64it/s]Loading weights:  62%|██████▏   | 247/399 [00:02<00:01, 102.48it/s]Loading weights:  65%|██████▍   | 258/399 [00:02<00:01, 104.53it/s]Loading weights:  67%|██████▋   | 269/399 [00:02<00:01, 103.25it/s]Loading weights:  70%|███████   | 280/399 [00:03<00:01, 104.74it/s]Loading weights:  73%|███████▎  | 292/399 [00:03<00:01, 102.55it/s]Loading weights:  76%|███████▌  | 303/399 [00:03<00:00, 103.55it/s]Loading weights:  79%|███████▊  | 314/399 [00:03<00:00, 103.99it/s]Loading weights:  81%|████████▏ | 325/399 [00:03<00:00, 104.66it/s]Loading weights:  84%|████████▍ | 336/399 [00:03<00:00, 104.85it/s]Loading weights:  87%|████████▋ | 347/399 [00:03<00:00, 103.97it/s]Loading weights:  90%|████████▉ | 358/399 [00:03<00:00, 103.05it/s]Loading weights:  93%|█████████▎| 372/399 [00:03<00:00, 111.07it/s]Loading weights:  97%|█████████▋| 387/399 [00:04<00:00, 121.37it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 96.49it/s] 
+
+=================================================================
+Phase 1: N=200 Screening
+=================================================================
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:25 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'college_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/college_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:52:42 2026).
+  Loaded BoolQ: 200 examples
+  Loaded ARC-C: 200 examples
+  Loaded ARC-Easy: 200 examples
+  Loaded CSQA: 200 examples
+  Loaded TruthfulQA: 200 examples
+  Loaded MMLU-HS-Math: 200 examples
+  Loaded MMLU-Col-Math: 100 examples
+
+[Phase1] BoolQ (N=200)
+  [50/200] Baseline=0.860(+0.000) Champion=0.880(+0.020) 1_slope0.05_e53=0.880(+0.020) S9_drop0=0.880(+0.020) S9_drop05=0.880(+0.020) S10_e4low45=0.880(+0.020) S10_e4low50=0.880(+0.020) S11_vshape=0.880(+0.020) S12_comp=0.880(+0.020)
+  [100/200] Baseline=0.820(+0.000) Champion=0.870(+0.050) 1_slope0.05_e53=0.870(+0.050) S9_drop0=0.870(+0.050) S9_drop05=0.870(+0.050) S10_e4low45=0.870(+0.050) S10_e4low50=0.870(+0.050) S11_vshape=0.840(+0.020) S12_comp=0.870(+0.050)
+  [150/200] Baseline=0.847(+0.000) Champion=0.887(+0.040) 1_slope0.05_e53=0.887(+0.040) S9_drop0=0.887(+0.040) S9_drop05=0.887(+0.040) S10_e4low45=0.887(+0.040) S10_e4low50=0.887(+0.040) S11_vshape=0.860(+0.013) S12_comp=0.887(+0.040)
+  [200/200] Baseline=0.855(+0.000) Champion=0.890(+0.035) 1_slope0.05_e53=0.890(+0.035) S9_drop0=0.890(+0.035) S9_drop05=0.890(+0.035) S10_e4low45=0.890(+0.035) S10_e4low50=0.890(+0.035) S11_vshape=0.865(+0.010) S12_comp=0.890(+0.035)
+  Final | Baseline=0.855 Champion=0.890 1_slope0.05_e53=0.890 S9_drop0=0.890 S9_drop05=0.890 S10_e4low45=0.890 S10_e4low50=0.890 S11_vshape=0.865 S12_comp=0.890
+
+[Phase1] ARC-C (N=200)
+  [50/200] Baseline=0.540(+0.000) Champion=0.580(+0.040) 1_slope0.05_e53=0.580(+0.040) S9_drop0=0.580(+0.040) S9_drop05=0.580(+0.040) S10_e4low45=0.580(+0.040) S10_e4low50=0.580(+0.040) S11_vshape=0.580(+0.040) S12_comp=0.580(+0.040)
+  [100/200] Baseline=0.540(+0.000) Champion=0.580(+0.040) 1_slope0.05_e53=0.580(+0.040) S9_drop0=0.580(+0.040) S9_drop05=0.580(+0.040) S10_e4low45=0.580(+0.040) S10_e4low50=0.580(+0.040) S11_vshape=0.580(+0.040) S12_comp=0.580(+0.040)
+  [150/200] Baseline=0.533(+0.000) Champion=0.593(+0.060) 1_slope0.05_e53=0.593(+0.060) S9_drop0=0.593(+0.060) S9_drop05=0.593(+0.060) S10_e4low45=0.593(+0.060) S10_e4low50=0.593(+0.060) S11_vshape=0.587(+0.053) S12_comp=0.593(+0.060)
+  [200/200] Baseline=0.520(+0.000) Champion=0.570(+0.050) 1_slope0.05_e53=0.570(+0.050) S9_drop0=0.570(+0.050) S9_drop05=0.570(+0.050) S10_e4low45=0.570(+0.050) S10_e4low50=0.570(+0.050) S11_vshape=0.570(+0.050) S12_comp=0.570(+0.050)
+  Final | Baseline=0.520 Champion=0.570 1_slope0.05_e53=0.570 S9_drop0=0.570 S9_drop05=0.570 S10_e4low45=0.570 S10_e4low50=0.570 S11_vshape=0.570 S12_comp=0.570
+
+[Phase1] ARC-Easy (N=200)
+  [50/200] Baseline=0.800(+0.000) Champion=0.740(-0.060) 1_slope0.05_e53=0.740(-0.060) S9_drop0=0.740(-0.060) S9_drop05=0.740(-0.060) S10_e4low45=0.740(-0.060) S10_e4low50=0.740(-0.060) S11_vshape=0.780(-0.020) S12_comp=0.740(-0.060)
+  [100/200] Baseline=0.830(+0.000) Champion=0.810(-0.020) 1_slope0.05_e53=0.810(-0.020) S9_drop0=0.810(-0.020) S9_drop05=0.810(-0.020) S10_e4low45=0.810(-0.020) S10_e4low50=0.810(-0.020) S11_vshape=0.830(+0.000) S12_comp=0.810(-0.020)
+  [150/200] Baseline=0.807(+0.000) Champion=0.807(+0.000) 1_slope0.05_e53=0.807(+0.000) S9_drop0=0.807(+0.000) S9_drop05=0.807(+0.000) S10_e4low45=0.807(+0.000) S10_e4low50=0.807(+0.000) S11_vshape=0.820(+0.013) S12_comp=0.807(+0.000)
+  [200/200] Baseline=0.810(+0.000) Champion=0.810(+0.000) 1_slope0.05_e53=0.810(+0.000) S9_drop0=0.810(+0.000) S9_drop05=0.810(+0.000) S10_e4low45=0.810(+0.000) S10_e4low50=0.810(+0.000) S11_vshape=0.820(+0.010) S12_comp=0.810(+0.000)
+  Final | Baseline=0.810 Champion=0.810 1_slope0.05_e53=0.810 S9_drop0=0.810 S9_drop05=0.810 S10_e4low45=0.810 S10_e4low50=0.810 S11_vshape=0.820 S12_comp=0.810
+
+[Phase1] CSQA (N=200)
+  [50/200] Baseline=0.620(+0.000) Champion=0.660(+0.040) 1_slope0.05_e53=0.660(+0.040) S9_drop0=0.660(+0.040) S9_drop05=0.660(+0.040) S10_e4low45=0.660(+0.040) S10_e4low50=0.660(+0.040) S11_vshape=0.640(+0.020) S12_comp=0.660(+0.040)
+  [100/200] Baseline=0.650(+0.000) Champion=0.670(+0.020) 1_slope0.05_e53=0.670(+0.020) S9_drop0=0.670(+0.020) S9_drop05=0.670(+0.020) S10_e4low45=0.670(+0.020) S10_e4low50=0.670(+0.020) S11_vshape=0.660(+0.010) S12_comp=0.670(+0.020)
+  [150/200] Baseline=0.647(+0.000) Champion=0.660(+0.013) 1_slope0.05_e53=0.660(+0.013) S9_drop0=0.660(+0.013) S9_drop05=0.660(+0.013) S10_e4low45=0.660(+0.013) S10_e4low50=0.660(+0.013) S11_vshape=0.647(+0.000) S12_comp=0.660(+0.013)
+  [200/200] Baseline=0.650(+0.000) Champion=0.655(+0.005) 1_slope0.05_e53=0.655(+0.005) S9_drop0=0.655(+0.005) S9_drop05=0.655(+0.005) S10_e4low45=0.655(+0.005) S10_e4low50=0.655(+0.005) S11_vshape=0.645(-0.005) S12_comp=0.655(+0.005)
+  Final | Baseline=0.650 Champion=0.655 1_slope0.05_e53=0.655 S9_drop0=0.655 S9_drop05=0.655 S10_e4low45=0.655 S10_e4low50=0.655 S11_vshape=0.645 S12_comp=0.655
+
+[Phase1] TruthfulQA (N=200)
+  [50/200] Baseline=0.300(+0.000) Champion=0.300(+0.000) 1_slope0.05_e53=0.300(+0.000) S9_drop0=0.300(+0.000) S9_drop05=0.300(+0.000) S10_e4low45=0.300(+0.000) S10_e4low50=0.300(+0.000) S11_vshape=0.300(+0.000) S12_comp=0.300(+0.000)
+  [100/200] Baseline=0.250(+0.000) Champion=0.270(+0.020) 1_slope0.05_e53=0.270(+0.020) S9_drop0=0.270(+0.020) S9_drop05=0.270(+0.020) S10_e4low45=0.270(+0.020) S10_e4low50=0.270(+0.020) S11_vshape=0.250(+0.000) S12_comp=0.270(+0.020)
+  [150/200] Baseline=0.273(+0.000) Champion=0.307(+0.033) 1_slope0.05_e53=0.307(+0.033) S9_drop0=0.307(+0.033) S9_drop05=0.307(+0.033) S10_e4low45=0.307(+0.033) S10_e4low50=0.307(+0.033) S11_vshape=0.280(+0.007) S12_comp=0.307(+0.033)
+  [200/200] Baseline=0.265(+0.000) Champion=0.300(+0.035) 1_slope0.05_e53=0.300(+0.035) S9_drop0=0.300(+0.035) S9_drop05=0.300(+0.035) S10_e4low45=0.300(+0.035) S10_e4low50=0.300(+0.035) S11_vshape=0.270(+0.005) S12_comp=0.300(+0.035)
+  Final | Baseline=0.265 Champion=0.300 1_slope0.05_e53=0.300 S9_drop0=0.300 S9_drop05=0.300 S10_e4low45=0.300 S10_e4low50=0.300 S11_vshape=0.270 S12_comp=0.300
+
+[Phase1] MMLU-HS-Math (N=200)
+  [50/200] Baseline=0.400(+0.000) Champion=0.380(-0.020) 1_slope0.05_e53=0.380(-0.020) S9_drop0=0.380(-0.020) S9_drop05=0.380(-0.020) S10_e4low45=0.380(-0.020) S10_e4low50=0.380(-0.020) S11_vshape=0.400(+0.000) S12_comp=0.380(-0.020)
+  [100/200] Baseline=0.380(+0.000) Champion=0.360(-0.020) 1_slope0.05_e53=0.360(-0.020) S9_drop0=0.360(-0.020) S9_drop05=0.360(-0.020) S10_e4low45=0.360(-0.020) S10_e4low50=0.360(-0.020) S11_vshape=0.380(+0.000) S12_comp=0.360(-0.020)
+  [150/200] Baseline=0.400(+0.000) Champion=0.380(-0.020) 1_slope0.05_e53=0.380(-0.020) S9_drop0=0.380(-0.020) S9_drop05=0.380(-0.020) S10_e4low45=0.380(-0.020) S10_e4low50=0.380(-0.020) S11_vshape=0.400(+0.000) S12_comp=0.380(-0.020)
+  [200/200] Baseline=0.405(+0.000) Champion=0.400(-0.005) 1_slope0.05_e53=0.400(-0.005) S9_drop0=0.400(-0.005) S9_drop05=0.400(-0.005) S10_e4low45=0.400(-0.005) S10_e4low50=0.400(-0.005) S11_vshape=0.405(+0.000) S12_comp=0.400(-0.005)
+  Final | Baseline=0.405 Champion=0.400 1_slope0.05_e53=0.400 S9_drop0=0.400 S9_drop05=0.400 S10_e4low45=0.400 S10_e4low50=0.400 S11_vshape=0.405 S12_comp=0.400
+
+[Phase1] MMLU-Col-Math (N=100)
+  [50/100] Baseline=0.380(+0.000) Champion=0.480(+0.100) 1_slope0.05_e53=0.480(+0.100) S9_drop0=0.480(+0.100) S9_drop05=0.480(+0.100) S10_e4low45=0.480(+0.100) S10_e4low50=0.480(+0.100) S11_vshape=0.380(+0.000) S12_comp=0.480(+0.100)
+  [100/100] Baseline=0.340(+0.000) Champion=0.370(+0.030) 1_slope0.05_e53=0.370(+0.030) S9_drop0=0.370(+0.030) S9_drop05=0.370(+0.030) S10_e4low45=0.370(+0.030) S10_e4low50=0.370(+0.030) S11_vshape=0.340(+0.000) S12_comp=0.370(+0.030)
+  Final | Baseline=0.340 Champion=0.370 1_slope0.05_e53=0.370 S9_drop0=0.370 S9_drop05=0.370 S10_e4low45=0.370 S10_e4low50=0.370 S11_vshape=0.340 S12_comp=0.370
+
+Phase 1 done in 25.7 min
+
+[Phase1 Summary]
+Strategy                              BoolQ        ARC-C     ARC-Easy         CSQA   TruthfulQA MMLU-HS-Math MMLU-Col-Mat       Avg
+-----------------------------------------------------------------------------------------------------------------------------------
+Baseline                        0.855(+0.00  0.520(+0.00  0.810(+0.00  0.650(+0.00  0.265(+0.00  0.405(+0.00  0.340(+0.00     0.549
+Champion                        0.890(+0.03  0.570(+0.05  0.810(+0.00  0.655(+0.00  0.300(+0.03  0.400(-0.00  0.370(+0.03     0.571
+S1_slope0.05_e53                0.890(+0.03  0.570(+0.05  0.810(+0.00  0.655(+0.00  0.300(+0.03  0.400(-0.00  0.370(+0.03     0.571
+S9_drop0                        0.890(+0.03  0.570(+0.05  0.810(+0.00  0.655(+0.00  0.300(+0.03  0.400(-0.00  0.370(+0.03     0.571
+S9_drop05                       0.890(+0.03  0.570(+0.05  0.810(+0.00  0.655(+0.00  0.300(+0.03  0.400(-0.00  0.370(+0.03     0.571
+S10_e4low45                     0.890(+0.03  0.570(+0.05  0.810(+0.00  0.655(+0.00  0.300(+0.03  0.400(-0.00  0.370(+0.03     0.571
+S10_e4low50                     0.890(+0.03  0.570(+0.05  0.810(+0.00  0.655(+0.00  0.300(+0.03  0.400(-0.00  0.370(+0.03     0.571
+S11_vshape                      0.865(+0.01  0.570(+0.05  0.820(+0.01  0.645(-0.00  0.270(+0.00  0.405(+0.00  0.340(+0.00     0.559
+S12_comp                        0.890(+0.03  0.570(+0.05  0.810(+0.00  0.655(+0.00  0.300(+0.03  0.400(-0.00  0.370(+0.03     0.571
+  Saved: /root/autodl-tmp/loop_layer/experiments/figures/r28_phase1_results.png
+  Saved: /root/autodl-tmp/loop_layer/experiments/figures/r28_phase1_signal_dist.png
+  Saved: /root/autodl-tmp/loop_layer/experiments/figures/r28_phase1_entropy_scatter.png
+
+[Signal Statistics per Benchmark (Phase1)]
+Benchmark          ent@4   ent@8  ent_drop  slope_46  slope_68
+--------------------------------------------------------------
+BoolQ              9.278   8.542     0.736     0.277    -0.645
+ARC-C              9.124   7.854     1.271     0.055    -0.690
+ARC-Easy           9.118   7.812     1.306     0.059    -0.712
+CSQA               9.074   8.113     0.961     0.115    -0.595
+TruthfulQA         9.010   7.931     1.079     0.157    -0.696
+MMLU-HS-Math       9.323   8.592     0.731     0.284    -0.650
+MMLU-Col-Math      9.403   8.533     0.870     0.201    -0.636
+
+=================================================================
+Phase 2: N=500 | strategies: ['Baseline', 'Champion', 'S1_slope0.05_e53', 'S9_drop0', 'S9_drop05', 'S10_e4low45', 'S10_e4low50', 'S11_vshape', 'S12_comp']
+=================================================================
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:25 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'college_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/college_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:52:42 2026).
+  Loaded BoolQ: 500 examples
+  Loaded ARC-C: 500 examples
+  Loaded ARC-Easy: 500 examples
+  Loaded CSQA: 500 examples
+  Loaded TruthfulQA: 500 examples
+  Loaded MMLU-HS-Math: 270 examples
+  Loaded MMLU-Col-Math: 100 examples
+
+[Phase2] BoolQ (N=500)
+  [50/500] Baseline=0.860(+0.000) Champion=0.880(+0.020) 1_slope0.05_e53=0.880(+0.020) S9_drop0=0.880(+0.020) S9_drop05=0.880(+0.020) S10_e4low45=0.880(+0.020) S10_e4low50=0.880(+0.020) S11_vshape=0.880(+0.020) S12_comp=0.880(+0.020)
+  [100/500] Baseline=0.820(+0.000) Champion=0.870(+0.050) 1_slope0.05_e53=0.870(+0.050) S9_drop0=0.870(+0.050) S9_drop05=0.870(+0.050) S10_e4low45=0.870(+0.050) S10_e4low50=0.870(+0.050) S11_vshape=0.840(+0.020) S12_comp=0.870(+0.050)
+  [150/500] Baseline=0.847(+0.000) Champion=0.887(+0.040) 1_slope0.05_e53=0.887(+0.040) S9_drop0=0.887(+0.040) S9_drop05=0.887(+0.040) S10_e4low45=0.887(+0.040) S10_e4low50=0.887(+0.040) S11_vshape=0.860(+0.013) S12_comp=0.887(+0.040)
+  [200/500] Baseline=0.855(+0.000) Champion=0.890(+0.035) 1_slope0.05_e53=0.890(+0.035) S9_drop0=0.890(+0.035) S9_drop05=0.890(+0.035) S10_e4low45=0.890(+0.035) S10_e4low50=0.890(+0.035) S11_vshape=0.865(+0.010) S12_comp=0.890(+0.035)
+  [250/500] Baseline=0.856(+0.000) Champion=0.884(+0.028) 1_slope0.05_e53=0.884(+0.028) S9_drop0=0.884(+0.028) S9_drop05=0.884(+0.028) S10_e4low45=0.884(+0.028) S10_e4low50=0.884(+0.028) S11_vshape=0.864(+0.008) S12_comp=0.884(+0.028)
+  [300/500] Baseline=0.867(+0.000) Champion=0.887(+0.020) 1_slope0.05_e53=0.887(+0.020) S9_drop0=0.887(+0.020) S9_drop05=0.887(+0.020) S10_e4low45=0.887(+0.020) S10_e4low50=0.887(+0.020) S11_vshape=0.873(+0.007) S12_comp=0.887(+0.020)
+  [350/500] Baseline=0.871(+0.000) Champion=0.886(+0.014) 1_slope0.05_e53=0.886(+0.014) S9_drop0=0.886(+0.014) S9_drop05=0.886(+0.014) S10_e4low45=0.886(+0.014) S10_e4low50=0.886(+0.014) S11_vshape=0.877(+0.006) S12_comp=0.886(+0.014)
+  [400/500] Baseline=0.865(+0.000) Champion=0.880(+0.015) 1_slope0.05_e53=0.880(+0.015) S9_drop0=0.880(+0.015) S9_drop05=0.880(+0.015) S10_e4low45=0.880(+0.015) S10_e4low50=0.880(+0.015) S11_vshape=0.870(+0.005) S12_comp=0.880(+0.015)
+  [450/500] Baseline=0.860(+0.000) Champion=0.880(+0.020) 1_slope0.05_e53=0.880(+0.020) S9_drop0=0.880(+0.020) S9_drop05=0.880(+0.020) S10_e4low45=0.880(+0.020) S10_e4low50=0.880(+0.020) S11_vshape=0.864(+0.004) S12_comp=0.880(+0.020)
+  [500/500] Baseline=0.862(+0.000) Champion=0.880(+0.018) 1_slope0.05_e53=0.880(+0.018) S9_drop0=0.880(+0.018) S9_drop05=0.880(+0.018) S10_e4low45=0.880(+0.018) S10_e4low50=0.880(+0.018) S11_vshape=0.866(+0.004) S12_comp=0.880(+0.018)
+  Final | Baseline=0.862 Champion=0.880 1_slope0.05_e53=0.880 S9_drop0=0.880 S9_drop05=0.880 S10_e4low45=0.880 S10_e4low50=0.880 S11_vshape=0.866 S12_comp=0.880
+
+[Phase2] ARC-C (N=500)
+  [50/500] Baseline=0.540(+0.000) Champion=0.580(+0.040) 1_slope0.05_e53=0.580(+0.040) S9_drop0=0.580(+0.040) S9_drop05=0.580(+0.040) S10_e4low45=0.580(+0.040) S10_e4low50=0.580(+0.040) S11_vshape=0.580(+0.040) S12_comp=0.580(+0.040)
+  [100/500] Baseline=0.540(+0.000) Champion=0.580(+0.040) 1_slope0.05_e53=0.580(+0.040) S9_drop0=0.580(+0.040) S9_drop05=0.580(+0.040) S10_e4low45=0.580(+0.040) S10_e4low50=0.580(+0.040) S11_vshape=0.580(+0.040) S12_comp=0.580(+0.040)
+  [150/500] Baseline=0.533(+0.000) Champion=0.593(+0.060) 1_slope0.05_e53=0.593(+0.060) S9_drop0=0.593(+0.060) S9_drop05=0.593(+0.060) S10_e4low45=0.593(+0.060) S10_e4low50=0.593(+0.060) S11_vshape=0.587(+0.053) S12_comp=0.593(+0.060)
+  [200/500] Baseline=0.520(+0.000) Champion=0.570(+0.050) 1_slope0.05_e53=0.570(+0.050) S9_drop0=0.570(+0.050) S9_drop05=0.570(+0.050) S10_e4low45=0.570(+0.050) S10_e4low50=0.570(+0.050) S11_vshape=0.570(+0.050) S12_comp=0.570(+0.050)
+  [250/500] Baseline=0.516(+0.000) Champion=0.572(+0.056) 1_slope0.05_e53=0.572(+0.056) S9_drop0=0.572(+0.056) S9_drop05=0.572(+0.056) S10_e4low45=0.572(+0.056) S10_e4low50=0.572(+0.056) S11_vshape=0.568(+0.052) S12_comp=0.572(+0.056)
+  [300/500] Baseline=0.520(+0.000) Champion=0.577(+0.057) 1_slope0.05_e53=0.577(+0.057) S9_drop0=0.577(+0.057) S9_drop05=0.577(+0.057) S10_e4low45=0.577(+0.057) S10_e4low50=0.577(+0.057) S11_vshape=0.570(+0.050) S12_comp=0.577(+0.057)
+  [350/500] Baseline=0.520(+0.000) Champion=0.577(+0.057) 1_slope0.05_e53=0.577(+0.057) S9_drop0=0.577(+0.057) S9_drop05=0.577(+0.057) S10_e4low45=0.577(+0.057) S10_e4low50=0.577(+0.057) S11_vshape=0.574(+0.054) S12_comp=0.577(+0.057)
+  [400/500] Baseline=0.525(+0.000) Champion=0.578(+0.052) 1_slope0.05_e53=0.578(+0.052) S9_drop0=0.578(+0.052) S9_drop05=0.578(+0.052) S10_e4low45=0.578(+0.052) S10_e4low50=0.578(+0.052) S11_vshape=0.575(+0.050) S12_comp=0.578(+0.052)
+  [450/500] Baseline=0.524(+0.000) Champion=0.571(+0.047) 1_slope0.05_e53=0.571(+0.047) S9_drop0=0.571(+0.047) S9_drop05=0.571(+0.047) S10_e4low45=0.571(+0.047) S10_e4low50=0.571(+0.047) S11_vshape=0.569(+0.044) S12_comp=0.571(+0.047)
+  [500/500] Baseline=0.532(+0.000) Champion=0.574(+0.042) 1_slope0.05_e53=0.574(+0.042) S9_drop0=0.574(+0.042) S9_drop05=0.574(+0.042) S10_e4low45=0.574(+0.042) S10_e4low50=0.574(+0.042) S11_vshape=0.572(+0.040) S12_comp=0.574(+0.042)
+  Final | Baseline=0.532 Champion=0.574 1_slope0.05_e53=0.574 S9_drop0=0.574 S9_drop05=0.574 S10_e4low45=0.574 S10_e4low50=0.574 S11_vshape=0.572 S12_comp=0.574
+
+[Phase2] ARC-Easy (N=500)
+  [50/500] Baseline=0.800(+0.000) Champion=0.740(-0.060) 1_slope0.05_e53=0.740(-0.060) S9_drop0=0.740(-0.060) S9_drop05=0.740(-0.060) S10_e4low45=0.740(-0.060) S10_e4low50=0.740(-0.060) S11_vshape=0.780(-0.020) S12_comp=0.740(-0.060)
+  [100/500] Baseline=0.830(+0.000) Champion=0.810(-0.020) 1_slope0.05_e53=0.810(-0.020) S9_drop0=0.810(-0.020) S9_drop05=0.810(-0.020) S10_e4low45=0.810(-0.020) S10_e4low50=0.810(-0.020) S11_vshape=0.830(+0.000) S12_comp=0.810(-0.020)
+  [150/500] Baseline=0.807(+0.000) Champion=0.807(+0.000) 1_slope0.05_e53=0.807(+0.000) S9_drop0=0.807(+0.000) S9_drop05=0.807(+0.000) S10_e4low45=0.807(+0.000) S10_e4low50=0.807(+0.000) S11_vshape=0.820(+0.013) S12_comp=0.807(+0.000)
+  [200/500] Baseline=0.810(+0.000) Champion=0.810(+0.000) 1_slope0.05_e53=0.810(+0.000) S9_drop0=0.810(+0.000) S9_drop05=0.810(+0.000) S10_e4low45=0.810(+0.000) S10_e4low50=0.810(+0.000) S11_vshape=0.820(+0.010) S12_comp=0.810(+0.000)
+  [250/500] Baseline=0.828(+0.000) Champion=0.832(+0.004) 1_slope0.05_e53=0.832(+0.004) S9_drop0=0.832(+0.004) S9_drop05=0.832(+0.004) S10_e4low45=0.832(+0.004) S10_e4low50=0.832(+0.004) S11_vshape=0.840(+0.012) S12_comp=0.832(+0.004)
+  [300/500] Baseline=0.827(+0.000) Champion=0.823(-0.003) 1_slope0.05_e53=0.823(-0.003) S9_drop0=0.823(-0.003) S9_drop05=0.823(-0.003) S10_e4low45=0.823(-0.003) S10_e4low50=0.823(-0.003) S11_vshape=0.837(+0.010) S12_comp=0.823(-0.003)
+  [350/500] Baseline=0.837(+0.000) Champion=0.831(-0.006) 1_slope0.05_e53=0.831(-0.006) S9_drop0=0.831(-0.006) S9_drop05=0.831(-0.006) S10_e4low45=0.831(-0.006) S10_e4low50=0.831(-0.006) S11_vshape=0.843(+0.006) S12_comp=0.831(-0.006)
+  [400/500] Baseline=0.843(+0.000) Champion=0.843(+0.000) 1_slope0.05_e53=0.843(+0.000) S9_drop0=0.843(+0.000) S9_drop05=0.843(+0.000) S10_e4low45=0.843(+0.000) S10_e4low50=0.843(+0.000) S11_vshape=0.850(+0.007) S12_comp=0.843(+0.000)
+  [450/500] Baseline=0.840(+0.000) Champion=0.840(+0.000) 1_slope0.05_e53=0.840(+0.000) S9_drop0=0.840(+0.000) S9_drop05=0.840(+0.000) S10_e4low45=0.840(+0.000) S10_e4low50=0.840(+0.000) S11_vshape=0.847(+0.007) S12_comp=0.840(+0.000)
+  [500/500] Baseline=0.840(+0.000) Champion=0.840(+0.000) 1_slope0.05_e53=0.840(+0.000) S9_drop0=0.840(+0.000) S9_drop05=0.840(+0.000) S10_e4low45=0.840(+0.000) S10_e4low50=0.840(+0.000) S11_vshape=0.844(+0.004) S12_comp=0.840(+0.000)
+  Final | Baseline=0.840 Champion=0.840 1_slope0.05_e53=0.840 S9_drop0=0.840 S9_drop05=0.840 S10_e4low45=0.840 S10_e4low50=0.840 S11_vshape=0.844 S12_comp=0.840
+
+[Phase2] CSQA (N=500)
+  [50/500] Baseline=0.620(+0.000) Champion=0.660(+0.040) 1_slope0.05_e53=0.660(+0.040) S9_drop0=0.660(+0.040) S9_drop05=0.660(+0.040) S10_e4low45=0.660(+0.040) S10_e4low50=0.660(+0.040) S11_vshape=0.640(+0.020) S12_comp=0.660(+0.040)
+  [100/500] Baseline=0.650(+0.000) Champion=0.670(+0.020) 1_slope0.05_e53=0.670(+0.020) S9_drop0=0.670(+0.020) S9_drop05=0.670(+0.020) S10_e4low45=0.670(+0.020) S10_e4low50=0.670(+0.020) S11_vshape=0.660(+0.010) S12_comp=0.670(+0.020)
+  [150/500] Baseline=0.647(+0.000) Champion=0.660(+0.013) 1_slope0.05_e53=0.660(+0.013) S9_drop0=0.660(+0.013) S9_drop05=0.660(+0.013) S10_e4low45=0.660(+0.013) S10_e4low50=0.660(+0.013) S11_vshape=0.647(+0.000) S12_comp=0.660(+0.013)
+  [200/500] Baseline=0.650(+0.000) Champion=0.655(+0.005) 1_slope0.05_e53=0.655(+0.005) S9_drop0=0.655(+0.005) S9_drop05=0.655(+0.005) S10_e4low45=0.655(+0.005) S10_e4low50=0.655(+0.005) S11_vshape=0.645(-0.005) S12_comp=0.655(+0.005)
+  [250/500] Baseline=0.660(+0.000) Champion=0.664(+0.004) 1_slope0.05_e53=0.664(+0.004) S9_drop0=0.664(+0.004) S9_drop05=0.664(+0.004) S10_e4low45=0.664(+0.004) S10_e4low50=0.664(+0.004) S11_vshape=0.652(-0.008) S12_comp=0.664(+0.004)
+  [300/500] Baseline=0.673(+0.000) Champion=0.670(-0.003) 1_slope0.05_e53=0.670(-0.003) S9_drop0=0.670(-0.003) S9_drop05=0.670(-0.003) S10_e4low45=0.670(-0.003) S10_e4low50=0.670(-0.003) S11_vshape=0.667(-0.007) S12_comp=0.670(-0.003)
+  [350/500] Baseline=0.671(+0.000) Champion=0.671(+0.000) 1_slope0.05_e53=0.671(+0.000) S9_drop0=0.671(+0.000) S9_drop05=0.671(+0.000) S10_e4low45=0.671(+0.000) S10_e4low50=0.671(+0.000) S11_vshape=0.669(-0.003) S12_comp=0.671(+0.000)
+  [400/500] Baseline=0.670(+0.000) Champion=0.672(+0.002) 1_slope0.05_e53=0.672(+0.002) S9_drop0=0.672(+0.002) S9_drop05=0.672(+0.002) S10_e4low45=0.672(+0.002) S10_e4low50=0.672(+0.002) S11_vshape=0.670(+0.000) S12_comp=0.672(+0.002)
+  [450/500] Baseline=0.664(+0.000) Champion=0.678(+0.013) 1_slope0.05_e53=0.678(+0.013) S9_drop0=0.678(+0.013) S9_drop05=0.678(+0.013) S10_e4low45=0.678(+0.013) S10_e4low50=0.678(+0.013) S11_vshape=0.667(+0.002) S12_comp=0.678(+0.013)
+  [500/500] Baseline=0.670(+0.000) Champion=0.684(+0.014) 1_slope0.05_e53=0.684(+0.014) S9_drop0=0.684(+0.014) S9_drop05=0.684(+0.014) S10_e4low45=0.684(+0.014) S10_e4low50=0.684(+0.014) S11_vshape=0.674(+0.004) S12_comp=0.684(+0.014)
+  Final | Baseline=0.670 Champion=0.684 1_slope0.05_e53=0.684 S9_drop0=0.684 S9_drop05=0.684 S10_e4low45=0.684 S10_e4low50=0.684 S11_vshape=0.674 S12_comp=0.684
+
+[Phase2] TruthfulQA (N=500)
+  [50/500] Baseline=0.300(+0.000) Champion=0.300(+0.000) 1_slope0.05_e53=0.300(+0.000) S9_drop0=0.300(+0.000) S9_drop05=0.300(+0.000) S10_e4low45=0.300(+0.000) S10_e4low50=0.300(+0.000) S11_vshape=0.300(+0.000) S12_comp=0.300(+0.000)
+  [100/500] Baseline=0.250(+0.000) Champion=0.270(+0.020) 1_slope0.05_e53=0.270(+0.020) S9_drop0=0.270(+0.020) S9_drop05=0.270(+0.020) S10_e4low45=0.270(+0.020) S10_e4low50=0.270(+0.020) S11_vshape=0.250(+0.000) S12_comp=0.270(+0.020)
+  [150/500] Baseline=0.273(+0.000) Champion=0.307(+0.033) 1_slope0.05_e53=0.307(+0.033) S9_drop0=0.307(+0.033) S9_drop05=0.307(+0.033) S10_e4low45=0.307(+0.033) S10_e4low50=0.307(+0.033) S11_vshape=0.280(+0.007) S12_comp=0.307(+0.033)
+  [200/500] Baseline=0.265(+0.000) Champion=0.300(+0.035) 1_slope0.05_e53=0.300(+0.035) S9_drop0=0.300(+0.035) S9_drop05=0.300(+0.035) S10_e4low45=0.300(+0.035) S10_e4low50=0.300(+0.035) S11_vshape=0.270(+0.005) S12_comp=0.300(+0.035)
+  [250/500] Baseline=0.284(+0.000) Champion=0.304(+0.020) 1_slope0.05_e53=0.304(+0.020) S9_drop0=0.304(+0.020) S9_drop05=0.304(+0.020) S10_e4low45=0.304(+0.020) S10_e4low50=0.304(+0.020) S11_vshape=0.288(+0.004) S12_comp=0.304(+0.020)
+  [300/500] Baseline=0.283(+0.000) Champion=0.293(+0.010) 1_slope0.05_e53=0.293(+0.010) S9_drop0=0.293(+0.010) S9_drop05=0.293(+0.010) S10_e4low45=0.293(+0.010) S10_e4low50=0.293(+0.010) S11_vshape=0.280(-0.003) S12_comp=0.293(+0.010)
+  [350/500] Baseline=0.283(+0.000) Champion=0.297(+0.014) 1_slope0.05_e53=0.297(+0.014) S9_drop0=0.297(+0.014) S9_drop05=0.297(+0.014) S10_e4low45=0.297(+0.014) S10_e4low50=0.297(+0.014) S11_vshape=0.280(-0.003) S12_comp=0.297(+0.014)
+  [400/500] Baseline=0.290(+0.000) Champion=0.305(+0.015) 1_slope0.05_e53=0.305(+0.015) S9_drop0=0.305(+0.015) S9_drop05=0.305(+0.015) S10_e4low45=0.305(+0.015) S10_e4low50=0.305(+0.015) S11_vshape=0.287(-0.003) S12_comp=0.305(+0.015)
+  [450/500] Baseline=0.284(+0.000) Champion=0.300(+0.016) 1_slope0.05_e53=0.300(+0.016) S9_drop0=0.300(+0.016) S9_drop05=0.300(+0.016) S10_e4low45=0.300(+0.016) S10_e4low50=0.300(+0.016) S11_vshape=0.282(-0.002) S12_comp=0.300(+0.016)
+  [500/500] Baseline=0.280(+0.000) Champion=0.298(+0.018) 1_slope0.05_e53=0.298(+0.018) S9_drop0=0.298(+0.018) S9_drop05=0.298(+0.018) S10_e4low45=0.298(+0.018) S10_e4low50=0.298(+0.018) S11_vshape=0.284(+0.004) S12_comp=0.298(+0.018)
+  Final | Baseline=0.280 Champion=0.298 1_slope0.05_e53=0.298 S9_drop0=0.298 S9_drop05=0.298 S10_e4low45=0.298 S10_e4low50=0.298 S11_vshape=0.284 S12_comp=0.298
+
+[Phase2] MMLU-HS-Math (N=270)
+  [50/270] Baseline=0.400(+0.000) Champion=0.380(-0.020) 1_slope0.05_e53=0.380(-0.020) S9_drop0=0.380(-0.020) S9_drop05=0.380(-0.020) S10_e4low45=0.380(-0.020) S10_e4low50=0.380(-0.020) S11_vshape=0.400(+0.000) S12_comp=0.380(-0.020)
+  [100/270] Baseline=0.380(+0.000) Champion=0.360(-0.020) 1_slope0.05_e53=0.360(-0.020) S9_drop0=0.360(-0.020) S9_drop05=0.360(-0.020) S10_e4low45=0.360(-0.020) S10_e4low50=0.360(-0.020) S11_vshape=0.380(+0.000) S12_comp=0.360(-0.020)
+  [150/270] Baseline=0.400(+0.000) Champion=0.380(-0.020) 1_slope0.05_e53=0.380(-0.020) S9_drop0=0.380(-0.020) S9_drop05=0.380(-0.020) S10_e4low45=0.380(-0.020) S10_e4low50=0.380(-0.020) S11_vshape=0.400(+0.000) S12_comp=0.380(-0.020)
+  [200/270] Baseline=0.405(+0.000) Champion=0.400(-0.005) 1_slope0.05_e53=0.400(-0.005) S9_drop0=0.400(-0.005) S9_drop05=0.400(-0.005) S10_e4low45=0.400(-0.005) S10_e4low50=0.400(-0.005) S11_vshape=0.405(+0.000) S12_comp=0.400(-0.005)
+  [250/270] Baseline=0.400(+0.000) Champion=0.388(-0.012) 1_slope0.05_e53=0.388(-0.012) S9_drop0=0.388(-0.012) S9_drop05=0.388(-0.012) S10_e4low45=0.388(-0.012) S10_e4low50=0.388(-0.012) S11_vshape=0.400(+0.000) S12_comp=0.388(-0.012)
+  [270/270] Baseline=0.407(+0.000) Champion=0.396(-0.011) 1_slope0.05_e53=0.396(-0.011) S9_drop0=0.396(-0.011) S9_drop05=0.396(-0.011) S10_e4low45=0.396(-0.011) S10_e4low50=0.396(-0.011) S11_vshape=0.407(+0.000) S12_comp=0.396(-0.011)
+  Final | Baseline=0.407 Champion=0.396 1_slope0.05_e53=0.396 S9_drop0=0.396 S9_drop05=0.396 S10_e4low45=0.396 S10_e4low50=0.396 S11_vshape=0.407 S12_comp=0.396
+
+[Phase2] MMLU-Col-Math (N=100)
+  [50/100] Baseline=0.380(+0.000) Champion=0.480(+0.100) 1_slope0.05_e53=0.480(+0.100) S9_drop0=0.480(+0.100) S9_drop05=0.480(+0.100) S10_e4low45=0.480(+0.100) S10_e4low50=0.480(+0.100) S11_vshape=0.380(+0.000) S12_comp=0.480(+0.100)
+  [100/100] Baseline=0.340(+0.000) Champion=0.370(+0.030) 1_slope0.05_e53=0.370(+0.030) S9_drop0=0.370(+0.030) S9_drop05=0.370(+0.030) S10_e4low45=0.370(+0.030) S10_e4low50=0.370(+0.030) S11_vshape=0.340(+0.000) S12_comp=0.370(+0.030)
+  Final | Baseline=0.340 Champion=0.370 1_slope0.05_e53=0.370 S9_drop0=0.370 S9_drop05=0.370 S10_e4low45=0.370 S10_e4low50=0.370 S11_vshape=0.340 S12_comp=0.370
+
+Phase 2 done in 56.5 min
+
+[Phase2 Summary]
+Strategy                              BoolQ        ARC-C     ARC-Easy         CSQA   TruthfulQA MMLU-HS-Math MMLU-Col-Mat       Avg
+-----------------------------------------------------------------------------------------------------------------------------------
+Baseline                        0.862(+0.00  0.532(+0.00  0.840(+0.00  0.670(+0.00  0.280(+0.00  0.407(+0.00  0.340(+0.00     0.562
+Champion                        0.880(+0.01  0.574(+0.04  0.840(+0.00  0.684(+0.01  0.298(+0.01  0.396(-0.01  0.370(+0.03     0.577
+S1_slope0.05_e53                0.880(+0.01  0.574(+0.04  0.840(+0.00  0.684(+0.01  0.298(+0.01  0.396(-0.01  0.370(+0.03     0.577
+S9_drop0                        0.880(+0.01  0.574(+0.04  0.840(+0.00  0.684(+0.01  0.298(+0.01  0.396(-0.01  0.370(+0.03     0.577
+S9_drop05                       0.880(+0.01  0.574(+0.04  0.840(+0.00  0.684(+0.01  0.298(+0.01  0.396(-0.01  0.370(+0.03     0.577
+S10_e4low45                     0.880(+0.01  0.574(+0.04  0.840(+0.00  0.684(+0.01  0.298(+0.01  0.396(-0.01  0.370(+0.03     0.577
+S10_e4low50                     0.880(+0.01  0.574(+0.04  0.840(+0.00  0.684(+0.01  0.298(+0.01  0.396(-0.01  0.370(+0.03     0.577
+S11_vshape                      0.866(+0.00  0.572(+0.04  0.844(+0.00  0.674(+0.00  0.284(+0.00  0.407(+0.00  0.340(+0.00     0.570
+S12_comp                        0.880(+0.01  0.574(+0.04  0.840(+0.00  0.684(+0.01  0.298(+0.01  0.396(-0.01  0.370(+0.03     0.577
+
+  Best strategy: Champion (avg=0.5775)
+  Saved: /root/autodl-tmp/loop_layer/experiments/figures/r28_phase2_results.png
+  Saved: /root/autodl-tmp/loop_layer/experiments/figures/r28_phase2_signal_dist.png
+  Saved: /root/autodl-tmp/loop_layer/experiments/figures/r28_phase2_entropy_scatter.png
+
+Total: 82.2 min
+Results saved to /root/autodl-tmp/loop_layer/experiments/results/round28_results.json

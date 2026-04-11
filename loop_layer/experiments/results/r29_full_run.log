@@ -1,0 +1,99 @@
+=== R29 Phase 0 (n_per_bench=12) ===
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:25 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+`torch_dtype` is deprecated! Use `dtype` instead!
+{
+  "phase": "R29_phase0",
+  "started_utc": "2026-04-09T16:03:39.842050+00:00",
+  "n_per_bench": 12,
+  "benches": [
+    "BoolQ",
+    "ARC-C",
+    "ARC-Easy",
+    "CSQA",
+    "TruthfulQA"
+  ],
+  "model": "/root/autodl-tmp/model_qwen"
+}
+  Loaded BoolQ: 12 examples
+  Loaded ARC-C: 12 examples
+  Loaded ARC-Easy: 12 examples
+  Loaded CSQA: 12 examples
+  Loaded TruthfulQA: 12 examples
+Loading model (eager attention for weights) …
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<01:04,  6.15it/s]Loading weights:   4%|▍         | 15/399 [00:00<00:09, 42.08it/s]Loading weights:   7%|▋         | 26/399 [00:00<00:06, 59.56it/s]Loading weights:   9%|▉         | 37/399 [00:00<00:05, 70.66it/s]Loading weights:  12%|█▏        | 47/399 [00:00<00:04, 77.25it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:04, 83.85it/s]Loading weights:  18%|█▊        | 70/399 [00:01<00:03, 88.66it/s]Loading weights:  20%|██        | 80/399 [00:01<00:03, 90.67it/s]Loading weights:  23%|██▎       | 90/399 [00:01<00:03, 86.43it/s]Loading weights:  25%|██▍       | 99/399 [00:01<00:03, 84.97it/s]Loading weights:  27%|██▋       | 108/399 [00:01<00:03, 79.45it/s]Loading weights:  29%|██▉       | 117/399 [00:01<00:03, 76.66it/s]Loading weights:  32%|███▏      | 127/399 [00:01<00:03, 77.51it/s]Loading weights:  35%|███▍      | 138/399 [00:01<00:03, 84.70it/s]Loading weights:  37%|███▋      | 149/399 [00:01<00:02, 85.69it/s]Loading weights:  40%|████      | 160/399 [00:02<00:02, 88.84it/s]Loading weights:  43%|████▎     | 171/399 [00:02<00:02, 94.26it/s]Loading weights:  46%|████▌     | 182/399 [00:02<00:02, 98.42it/s]Loading weights:  48%|████▊     | 193/399 [00:02<00:02, 98.08it/s]Loading weights:  51%|█████     | 204/399 [00:02<00:02, 96.94it/s]Loading weights:  54%|█████▍    | 215/399 [00:02<00:01, 93.63it/s]Loading weights:  57%|█████▋    | 226/399 [00:02<00:01, 92.24it/s]Loading weights:  59%|█████▉    | 237/399 [00:02<00:01, 92.25it/s]Loading weights:  62%|██████▏   | 248/399 [00:03<00:01, 90.65it/s]Loading weights:  65%|██████▍   | 259/399 [00:03<00:01, 92.26it/s]Loading weights:  68%|██████▊   | 270/399 [00:03<00:01, 88.42it/s]Loading weights:  70%|███████   | 281/399 [00:03<00:01, 86.99it/s]Loading weights:  73%|███████▎  | 291/399 [00:03<00:01, 89.09it/s]Loading weights:  76%|███████▌  | 302/399 [00:03<00:01, 89.40it/s]Loading weights:  78%|███████▊  | 313/399 [00:03<00:00, 90.72it/s]Loading weights:  81%|████████  | 324/399 [00:03<00:00, 93.41it/s]Loading weights:  84%|████████▍ | 335/399 [00:03<00:00, 94.11it/s]Loading weights:  87%|████████▋ | 346/399 [00:04<00:00, 92.90it/s]Loading weights:  89%|████████▉ | 356/399 [00:04<00:00, 92.76it/s]Loading weights:  92%|█████████▏| 367/399 [00:04<00:00, 93.47it/s]Loading weights:  95%|█████████▍| 379/399 [00:04<00:00, 92.21it/s]Loading weights:  98%|█████████▊| 390/399 [00:04<00:00, 94.18it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 86.47it/s]
+  BoolQ: 10/12 samples, elapsed 5s
+  ARC-C: 10/12 samples, elapsed 10s
+  ARC-Easy: 10/12 samples, elapsed 16s
+  CSQA: 10/12 samples, elapsed 22s
+  TruthfulQA: 10/12 samples, elapsed 29s
+Wrote /root/autodl-tmp/loop_layer/experiments/results/round29_phase0_profiles.json
+Wrote /root/autodl-tmp/loop_layer/experiments/results/round29_phase0_correlation.json
+Saved /root/autodl-tmp/loop_layer/experiments/figures/r29_phase0_mean_profiles.png
+Saved /root/autodl-tmp/loop_layer/experiments/figures/r29_phase0_correlation_heatmap.png
+Figures under /root/autodl-tmp/loop_layer/experiments/figures
+=== R29 Phase 1 (n_per_bench=12) ===
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:25 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+`torch_dtype` is deprecated! Use `dtype` instead!
+{
+  "phase": "R29_phase1",
+  "started_utc": "2026-04-09T16:04:23.664669+00:00",
+  "n_per_bench": 12,
+  "benches": [
+    "BoolQ",
+    "ARC-C",
+    "ARC-Easy",
+    "CSQA",
+    "TruthfulQA"
+  ],
+  "strategies": [
+    "Baseline",
+    "Champion",
+    "PA1_layer_sim",
+    "PA1_attn_entropy",
+    "PA1_ffn_gate_norm",
+    "PA1_head_specialization",
+    "PA1_logit_lens_KL",
+    "PA1_attention_locality",
+    "PA1_residual_write_norm",
+    "PA1_participation_ratio",
+    "PA1_prediction_flip_rate",
+    "PA1_attn_sink_ratio",
+    "B1_6sig",
+    "B3_consensus"
+  ],
+  "model": "/root/autodl-tmp/model_qwen"
+}
+  Loaded BoolQ: 12 examples
+  Loaded ARC-C: 12 examples
+  Loaded ARC-Easy: 12 examples
+  Loaded CSQA: 12 examples
+  Loaded TruthfulQA: 12 examples
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:02,  6.40it/s]Loading weights:   1%|          | 2/399 [00:00<01:47,  3.68it/s]Loading weights:   3%|▎         | 10/399 [00:00<00:18, 21.44it/s]Loading weights:   4%|▍         | 17/399 [00:00<00:12, 31.82it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:07, 47.59it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:06, 58.93it/s]Loading weights:  12%|█▏        | 49/399 [00:01<00:05, 69.15it/s]Loading weights:  15%|█▌        | 60/399 [00:01<00:04, 75.67it/s]Loading weights:  17%|█▋        | 69/399 [00:01<00:04, 77.55it/s]Loading weights:  20%|██        | 81/399 [00:01<00:03, 85.56it/s]Loading weights:  23%|██▎       | 92/399 [00:01<00:03, 83.16it/s]Loading weights:  26%|██▌       | 103/399 [00:01<00:03, 83.92it/s]Loading weights:  29%|██▊       | 114/399 [00:01<00:03, 83.29it/s]Loading weights:  31%|███       | 123/399 [00:01<00:03, 84.66it/s]Loading weights:  33%|███▎      | 132/399 [00:02<00:03, 80.90it/s]Loading weights:  35%|███▌      | 141/399 [00:02<00:03, 78.77it/s]Loading weights:  37%|███▋      | 149/399 [00:02<00:03, 72.10it/s]Loading weights:  40%|███▉      | 159/399 [00:02<00:03, 78.90it/s]Loading weights:  43%|████▎     | 170/399 [00:02<00:02, 79.21it/s]Loading weights:  45%|████▌     | 180/399 [00:02<00:02, 82.07it/s]Loading weights:  48%|████▊     | 191/399 [00:02<00:02, 85.59it/s]Loading weights:  50%|█████     | 201/399 [00:02<00:02, 83.49it/s]Loading weights:  53%|█████▎    | 213/399 [00:03<00:02, 88.85it/s]Loading weights:  56%|█████▌    | 224/399 [00:03<00:01, 88.59it/s]Loading weights:  59%|█████▉    | 235/399 [00:03<00:01, 86.87it/s]Loading weights:  61%|██████    | 244/399 [00:03<00:01, 86.10it/s]Loading weights:  63%|██████▎   | 253/399 [00:03<00:01, 83.13it/s]Loading weights:  66%|██████▌   | 262/399 [00:03<00:01, 78.84it/s]Loading weights:  68%|██████▊   | 270/399 [00:03<00:01, 73.84it/s]Loading weights:  70%|███████   | 280/399 [00:03<00:01, 79.83it/s]Loading weights:  73%|███████▎  | 291/399 [00:04<00:01, 84.32it/s]Loading weights:  75%|███████▌  | 301/399 [00:04<00:01, 78.48it/s]Loading weights:  78%|███████▊  | 312/399 [00:04<00:01, 85.94it/s]Loading weights:  80%|████████  | 321/399 [00:04<00:00, 83.90it/s]Loading weights:  83%|████████▎ | 330/399 [00:04<00:00, 76.59it/s]Loading weights:  85%|████████▍ | 338/399 [00:04<00:00, 75.62it/s]Loading weights:  87%|████████▋ | 346/399 [00:04<00:00, 76.21it/s]Loading weights:  89%|████████▉ | 357/399 [00:04<00:00, 78.05it/s]Loading weights:  92%|█████████▏| 367/399 [00:04<00:00, 83.65it/s]Loading weights:  94%|█████████▍| 377/399 [00:05<00:00, 81.81it/s]Loading weights:  97%|█████████▋| 386/399 [00:05<00:00, 83.35it/s]Loading weights:  99%|█████████▉| 395/399 [00:05<00:00, 79.83it/s]Loading weights: 100%|██████████| 399/399 [00:05<00:00, 74.85it/s]
+  BoolQ 8/12 elapsed 12s
+  ARC-C 8/12 elapsed 34s
+  ARC-Easy 8/12 elapsed 58s
+  CSQA 8/12 elapsed 86s
+  TruthfulQA 8/12 elapsed 118s
+Wrote /root/autodl-tmp/loop_layer/experiments/results/round29_phase1_results.json
+Saved /root/autodl-tmp/loop_layer/experiments/figures/r29_phase1_accuracy_delta.png
+Saved /root/autodl-tmp/loop_layer/experiments/figures/r29_phase1_boundaries_B1_6sig.png
+Figures under /root/autodl-tmp/loop_layer/experiments/figures
+Done. Results: experiments/results/round29_phase*.json

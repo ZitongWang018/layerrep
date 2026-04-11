@@ -1,0 +1,76 @@
+{
+  "phase": 1,
+  "N": 200,
+  "results": {
+    "BoolQ": {
+      "accuracies": {
+        "Baseline": 0.77,
+        "Champion": 0.725,
+        "EncBias-Filter": 0.77,
+        "S1_slope0.05_e53": 0.725,
+        "S3_conf07_flat003": 0.725,
+        "S3_conf08_flat003": 0.725,
+        "S3_conf07_flat005": 0.725,
+        "S4_norm12": 0.725,
+        "S4_norm15": 0.725,
+        "S5_compound": 0.725
+      }
+    },
+    "ARC-C": {
+      "accuracies": {
+        "Baseline": 0.31,
+        "Champion": 0.275,
+        "EncBias-Filter": 0.31,
+        "S1_slope0.05_e53": 0.275,
+        "S3_conf07_flat003": 0.275,
+        "S3_conf08_flat003": 0.275,
+        "S3_conf07_flat005": 0.275,
+        "S4_norm12": 0.275,
+        "S4_norm15": 0.275,
+        "S5_compound": 0.275
+      }
+    },
+    "ARC-Easy": {
+      "accuracies": {
+        "Baseline": 0.315,
+        "Champion": 0.305,
+        "EncBias-Filter": 0.315,
+        "S1_slope0.05_e53": 0.305,
+        "S3_conf07_flat003": 0.305,
+        "S3_conf08_flat003": 0.305,
+        "S3_conf07_flat005": 0.305,
+        "S4_norm12": 0.305,
+        "S4_norm15": 0.305,
+        "S5_compound": 0.305
+      }
+    },
+    "CSQA": {
+      "accuracies": {
+        "Baseline": 0.3,
+        "Champion": 0.335,
+        "EncBias-Filter": 0.3,
+        "S1_slope0.05_e53": 0.335,
+        "S3_conf07_flat003": 0.335,
+        "S3_conf08_flat003": 0.335,
+        "S3_conf07_flat005": 0.335,
+        "S4_norm12": 0.335,
+        "S4_norm15": 0.335,
+        "S5_compound": 0.335
+      }
+    },
+    "TruthfulQA": {
+      "accuracies": {
+        "Baseline": 0.48,
+        "Champion": 0.52,
+        "EncBias-Filter": 0.48,
+        "S1_slope0.05_e53": 0.52,
+        "S3_conf07_flat003": 0.52,
+        "S3_conf08_flat003": 0.52,
+        "S3_conf07_flat005": 0.52,
+        "S4_norm12": 0.52,
+        "S4_norm15": 0.52,
+        "S5_compound": 0.52
+      }
+    }
+  }
+}

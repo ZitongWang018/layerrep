@@ -1,0 +1,139 @@
+{
+  "experiment_R2": {
+    "optimal_boolq": {
+      "t_start": 10,
+      "t_end": 21,
+      "n_t": 12,
+      "boolq": {
+        "accs_by_alpha": {
+          "0.3": 0.86,
+          "0.5": 0.86,
+          "0.7": 0.87,
+          "0.9": 0.86,
+          "1.0": 0.86
+        },
+        "best_alpha": 0.7,
+        "best_acc": 0.87,
+        "orig_acc": 0.86,
+        "best_delta": 0.010000000000000009
+      },
+      "arc": {
+        "accs_by_alpha": {
+          "0.3": 0.53,
+          "0.5": 0.56,
+          "0.7": 0.52,
+          "0.9": 0.53,
+          "1.0": 0.55
+        },
+        "best_alpha": 0.5,
+        "best_acc": 0.56,
+        "orig_acc": 0.55,
+        "best_delta": 0.010000000000000009
+      }
+    },
+    "valley": {
+      "t_start": 10,
+      "t_end": 24,
+      "n_t": 15,
+      "boolq": {
+        "accs_by_alpha": {
+          "0.3": 0.82,
+          "0.5": 0.85,
+          "0.7": 0.82,
+          "0.9": 0.79,
+          "1.0": 0.78
+        },
+        "best_alpha": 0.5,
+        "best_acc": 0.85,
+        "orig_acc": 0.78,
+        "best_delta": 0.06999999999999995
+      },
+      "arc": {
+        "accs_by_alpha": {
+          "0.3": 0.54,
+          "0.5": 0.53,
+          "0.7": 0.5,
+          "0.9": 0.5,
+          "1.0": 0.48
+        },
+        "best_alpha": 0.3,
+        "best_acc": 0.54,
+        "orig_acc": 0.48,
+        "best_delta": 0.06000000000000005
+      }
+    },
+    "optimal_arc": {
+      "t_start": 12,
+      "t_end": 20,
+      "n_t": 9,
+      "boolq": {
+        "accs_by_alpha": {
+          "0.3": 0.82,
+          "0.5": 0.85,
+          "0.7": 0.84,
+          "0.9": 0.83,
+          "1.0": 0.83
+        },
+        "best_alpha": 0.5,
+        "best_acc": 0.85,
+        "orig_acc": 0.83,
+        "best_delta": 0.020000000000000018
+      },
+      "arc": {
+        "accs_by_alpha": {
+          "0.3": 0.57,
+          "0.5": 0.56,
+          "0.7": 0.54,
+          "0.9": 0.57,
+          "1.0": 0.58
+        },
+        "best_alpha": 1.0,
+        "best_acc": 0.58,
+        "orig_acc": 0.58,
+        "best_delta": 0.0
+      }
+    }
+  },
+  "experiment_C2": {
+    "boolq": {
+      "n_correct": 82,
+      "n_wrong": 18,
+      "mean_margin_benefit_correct": -1.913109739379185,
+      "mean_margin_benefit_wrong": 1.510416669978036
+    },
+    "arc": {
+      "n_correct": 54,
+      "n_wrong": 46,
+      "mean_margin_benefit_correct": -0.9021911101679705,
+      "mean_margin_benefit_wrong": 0.6181862706257197
+    }
+  },
+  "config": {
+    "alphas": [
+      0.3,
+      0.5,
+      0.7,
+      0.9,
+      1.0
+    ],
+    "configs": [
+      [
+        "optimal_boolq",
+        10,
+        21
+      ],
+      [
+        "valley",
+        10,
+        24
+      ],
+      [
+        "optimal_arc",
+        12,
+        20
+      ]
+    ],
+    "N_EVAL": 100
+  },
+  "total_time_seconds": 343.3
+}

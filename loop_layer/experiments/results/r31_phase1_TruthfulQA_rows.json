@@ -1,0 +1,841 @@
+{
+  "benchmark": "TruthfulQA",
+  "rows": [
+    {
+      "idx": 0,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 1,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 2,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 2,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 3,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 0,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 17,
+        "t_stop": 20,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 17,
+        "t_stop": 22,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 4,
+      "label": 0,
+      "pred_baseline": 0,
+      "pred_champion": 0,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 17,
+        "t_stop": 20,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 17,
+        "t_stop": 20,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 5,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 0,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 6,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 2,
+      "pred_adaptive_p1": 2,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 7,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 5,
+      "pred_adaptive_p2": 5,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 24,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 8,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 9,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 17,
+        "t_stop": 21,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 17,
+        "t_stop": 21,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 10,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 1,
+      "pred_macro": 2,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 11,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 17,
+        "t_stop": 22,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 17,
+        "t_stop": 22,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 12,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 6,
+      "pred_adaptive_p1": 6,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 13,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 24,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 14,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 3,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 15,
+      "label": 0,
+      "pred_baseline": 0,
+      "pred_champion": 0,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 7,
+      "pred_adaptive_p1": 7,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 16,
+      "label": 0,
+      "pred_baseline": 3,
+      "pred_champion": 3,
+      "pred_macro": 5,
+      "pred_adaptive_p2": 3,
+      "pred_adaptive_p1": 3,
+      "route_p2": {
+        "t_start": 18,
+        "t_stop": 21,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 18,
+        "t_stop": 21,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 17,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 2,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 2,
+      "pred_adaptive_p1": 2,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 18,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 19,
+      "label": 0,
+      "pred_baseline": 0,
+      "pred_champion": 0,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 20,
+      "label": 0,
+      "pred_baseline": 0,
+      "pred_champion": 0,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 21,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 2,
+      "pred_macro": 2,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 22,
+      "label": 0,
+      "pred_baseline": 4,
+      "pred_champion": 4,
+      "pred_macro": 4,
+      "pred_adaptive_p2": 4,
+      "pred_adaptive_p1": 4,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 23,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 1,
+      "pred_macro": 2,
+      "pred_adaptive_p2": 2,
+      "pred_adaptive_p1": 2,
+      "route_p2": {
+        "t_start": 17,
+        "t_stop": 20,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 17,
+        "t_stop": 20,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 24,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 3,
+      "pred_adaptive_p1": 3,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 25,
+      "label": 0,
+      "pred_baseline": 0,
+      "pred_champion": 0,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 5,
+      "pred_adaptive_p1": 5,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 26,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 5,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 16,
+        "t_stop": 19,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 16,
+        "t_stop": 19,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 27,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 28,
+      "label": 0,
+      "pred_baseline": 7,
+      "pred_champion": 7,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 2,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 24,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 29,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 30,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 2,
+      "pred_macro": 2,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 31,
+      "label": 0,
+      "pred_baseline": 5,
+      "pred_champion": 5,
+      "pred_macro": 5,
+      "pred_adaptive_p2": 4,
+      "pred_adaptive_p1": 4,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 32,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 2,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 33,
+      "label": 0,
+      "pred_baseline": 0,
+      "pred_champion": 0,
+      "pred_macro": 2,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 17,
+        "t_stop": 21,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 17,
+        "t_stop": 21,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 34,
+      "label": 0,
+      "pred_baseline": 0,
+      "pred_champion": 0,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 35,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 2,
+      "pred_macro": 0,
+      "pred_adaptive_p2": 4,
+      "pred_adaptive_p1": 4,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 36,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 2,
+      "pred_macro": 2,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 23,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 37,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 2,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 24,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 38,
+      "label": 0,
+      "pred_baseline": 3,
+      "pred_champion": 1,
+      "pred_macro": 3,
+      "pred_adaptive_p2": 0,
+      "pred_adaptive_p1": 0,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 39,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 17,
+        "t_stop": 24,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 17,
+        "t_stop": 22,
+        "route_type": "late"
+      }
+    },
+    {
+      "idx": 40,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 2,
+      "pred_adaptive_p1": 2,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 21,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 19,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 41,
+      "label": 0,
+      "pred_baseline": 2,
+      "pred_champion": 3,
+      "pred_macro": 3,
+      "pred_adaptive_p2": 4,
+      "pred_adaptive_p1": 4,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 22,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 42,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 2,
+        "t_stop": 24,
+        "route_type": "early"
+      },
+      "route_p1": {
+        "t_start": 2,
+        "t_stop": 24,
+        "route_type": "early"
+      }
+    },
+    {
+      "idx": 43,
+      "label": 0,
+      "pred_baseline": 1,
+      "pred_champion": 1,
+      "pred_macro": 1,
+      "pred_adaptive_p2": 1,
+      "pred_adaptive_p1": 1,
+      "route_p2": {
+        "t_start": 16,
+        "t_stop": 19,
+        "route_type": "late"
+      },
+      "route_p1": {
+        "t_start": 16,
+        "t_stop": 19,
+        "route_type": "late"
+      }
+    }
+  ]
+}

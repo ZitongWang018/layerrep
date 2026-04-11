@@ -1,0 +1,58 @@
+{
+  "samples_per_bench": 44,
+  "per_benchmark": {
+    "Baseline": {
+      "ARC-C": 0.431818,
+      "TruthfulQA": 0.159091,
+      "CSQA": 0.636364,
+      "MMLU-HS-Math": 0.363636
+    },
+    "Champion": {
+      "ARC-C": 0.545455,
+      "TruthfulQA": 0.204545,
+      "CSQA": 0.590909,
+      "MMLU-HS-Math": 0.409091
+    },
+    "MacroTop1": {
+      "ARC-C": 0.409091,
+      "TruthfulQA": 0.227273,
+      "CSQA": 0.568182,
+      "MMLU-HS-Math": 0.454545
+    },
+    "AdaptiveH3only": {
+      "ARC-C": 0.204545,
+      "TruthfulQA": 0.340909,
+      "CSQA": 0.113636,
+      "MMLU-HS-Math": 0.181818
+    },
+    "AdaptiveH2only": {
+      "ARC-C": 0.318182,
+      "TruthfulQA": 0.25,
+      "CSQA": 0.25,
+      "MMLU-HS-Math": 0.340909
+    },
+    "AdaptiveH2H3": {
+      "ARC-C": 0.272727,
+      "TruthfulQA": 0.272727,
+      "CSQA": 0.227273,
+      "MMLU-HS-Math": 0.272727
+    },
+    "AdaptiveH2H3Dual": {
+      "ARC-C": 0.272727,
+      "TruthfulQA": 0.272727,
+      "CSQA": 0.227273,
+      "MMLU-HS-Math": 0.272727
+    }
+  },
+  "macro_avg": {
+    "Baseline": 0.397727,
+    "Champion": 0.4375,
+    "MacroTop1": 0.414773,
+    "AdaptiveH3only": 0.210227,
+    "AdaptiveH2only": 0.289773,
+    "AdaptiveH2H3": 0.261363,
+    "AdaptiveH2H3Dual": 0.261363
+  },
+  "model_path": "/root/autodl-tmp/model_qwen",
+  "wall_time_seconds": 398.33
+}

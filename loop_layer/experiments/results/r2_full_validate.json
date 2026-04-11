@@ -1,0 +1,106 @@
+{
+  "results": {
+    "orig_opt": {
+      "t_start": 10,
+      "t_end": 21,
+      "alpha": 1.0,
+      "n_t": 12,
+      "boolq": {
+        "acc": 0.87,
+        "baseline": 0.862,
+        "delta_vs_baseline": 0.008000000000000007
+      },
+      "arc": {
+        "acc": 0.52,
+        "baseline": 0.532,
+        "delta_vs_baseline": -0.01200000000000001
+      }
+    },
+    "r2_07_opt": {
+      "t_start": 10,
+      "t_end": 21,
+      "alpha": 0.7,
+      "n_t": 12,
+      "boolq": {
+        "acc": 0.878,
+        "baseline": 0.862,
+        "delta_vs_baseline": 0.016000000000000014
+      },
+      "arc": {
+        "acc": 0.548,
+        "baseline": 0.532,
+        "delta_vs_baseline": 0.016000000000000014
+      }
+    },
+    "r2_05_opt": {
+      "t_start": 10,
+      "t_end": 21,
+      "alpha": 0.5,
+      "n_t": 12,
+      "boolq": {
+        "acc": 0.88,
+        "baseline": 0.862,
+        "delta_vs_baseline": 0.018000000000000016
+      },
+      "arc": {
+        "acc": 0.574,
+        "baseline": 0.532,
+        "delta_vs_baseline": 0.041999999999999926
+      }
+    },
+    "r2_05_valley": {
+      "t_start": 10,
+      "t_end": 24,
+      "alpha": 0.5,
+      "n_t": 15,
+      "boolq": {
+        "acc": 0.862,
+        "baseline": 0.862,
+        "delta_vs_baseline": 0.0
+      },
+      "arc": {
+        "acc": 0.532,
+        "baseline": 0.532,
+        "delta_vs_baseline": 0.0
+      }
+    },
+    "r2_03_valley": {
+      "t_start": 10,
+      "t_end": 24,
+      "alpha": 0.3,
+      "n_t": 15,
+      "boolq": {
+        "acc": 0.862,
+        "baseline": 0.862,
+        "delta_vs_baseline": 0.0
+      },
+      "arc": {
+        "acc": 0.556,
+        "baseline": 0.532,
+        "delta_vs_baseline": 0.02400000000000002
+      }
+    },
+    "arc_opt_orig": {
+      "t_start": 12,
+      "t_end": 20,
+      "alpha": 1.0,
+      "n_t": 9,
+      "boolq": {
+        "acc": 0.854,
+        "baseline": 0.862,
+        "delta_vs_baseline": -0.008000000000000007
+      },
+      "arc": {
+        "acc": 0.53,
+        "baseline": 0.532,
+        "delta_vs_baseline": -0.0020000000000000018
+      }
+    }
+  },
+  "baseline": {
+    "boolq": 0.862,
+    "arc": 0.532
+  },
+  "N_SAMPLES": 500,
+  "total_time_seconds": 620.6
+}
