@@ -1,0 +1,48 @@
+{
+  "n_per_bench": 20,
+  "benchmarks": [
+    "ARC-C",
+    "TruthfulQA",
+    "CSQA",
+    "MMLU-HS-Math"
+  ],
+  "r30_optimal": {
+    "ARC-C": {
+      "t_start": 14,
+      "t_stop": 20
+    },
+    "TruthfulQA": {
+      "t_start": 16,
+      "t_stop": 19
+    },
+    "CSQA": {
+      "t_start": 10,
+      "t_stop": 22
+    },
+    "MMLU-HS-Math": {
+      "t_start": 10,
+      "t_stop": 18
+    }
+  },
+  "signals": [
+    "residual_delta_l2",
+    "contraction_ratio",
+    "logit_lens_jsd_vel",
+    "logit_lens_jsd_curv",
+    "erank",
+    "delta_erank",
+    "attn_consensus",
+    "delta_norm_to_tstart",
+    "attn_entropy",
+    "logit_top1_margin"
+  ],
+  "model": "/root/autodl-tmp/model_qwen",
+  "plan_doc": "/root/autodl-tmp/loop_layer/experiments/plan_proposed_signals_experiment.md",
+  "elapsed_probe_sec": 420.20836305618286,
+  "counts": {
+    "ARC-C": 20,
+    "TruthfulQA": 20,
+    "CSQA": 20,
+    "MMLU-HS-Math": 20
+  }
+}

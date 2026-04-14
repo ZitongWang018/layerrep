@@ -1,0 +1,146 @@
+{
+  "spearman_rho": {
+    "rc_global": {
+      "BoolQ": 0.045753111247713016,
+      "ARC-C": -0.024614968691635736,
+      "CSQA": -0.05774822561946603,
+      "TruthfulQA": 0.09261386357887835
+    },
+    "theta_global": {
+      "BoolQ": 0.01631783490897984,
+      "ARC-C": 0.009217547989357226,
+      "CSQA": 0.09709888725114187,
+      "TruthfulQA": -0.04070323476202037
+    },
+    "logit_align": {
+      "BoolQ": -0.032433037828585934,
+      "ARC-C": 0.0853815394903607,
+      "CSQA": -0.021782791706080145,
+      "TruthfulQA": -0.03454885249639368
+    },
+    "max_rc": {
+      "BoolQ": -0.045528626788897006,
+      "ARC-C": -0.06121078997893495,
+      "CSQA": 0.07530660247798857,
+      "TruthfulQA": -0.11764345711273375
+    },
+    "n_expanding": {
+      "BoolQ": NaN,
+      "ARC-C": NaN,
+      "CSQA": NaN,
+      "TruthfulQA": NaN
+    },
+    "mean_theta_layers": {
+      "BoolQ": -0.04410424309888744,
+      "ARC-C": -0.0038738525568312084,
+      "CSQA": 0.10907913789747377,
+      "TruthfulQA": 0.012487262505017306
+    },
+    "hessian_proxy": {
+      "BoolQ": -0.01631783490897984,
+      "ARC-C": -0.009217547989357226,
+      "CSQA": -0.09709888725114187,
+      "TruthfulQA": 0.04070323476202037
+    }
+  },
+  "spearman_p": {
+    "rc_global": {
+      "BoolQ": 0.5200112910035788,
+      "ARC-C": 0.7293587223990852,
+      "CSQA": 0.4166525881082315,
+      "TruthfulQA": 0.1921131313610384
+    },
+    "theta_global": {
+      "BoolQ": 0.8186063497655883,
+      "ARC-C": 0.8969291986180175,
+      "CSQA": 0.171370713022144,
+      "TruthfulQA": 0.5671459692739618
+    },
+    "logit_align": {
+      "BoolQ": 0.6484493659493072,
+      "ARC-C": 0.2293227680265352,
+      "CSQA": 0.7594823517137307,
+      "TruthfulQA": 0.6271961527658824
+    },
+    "max_rc": {
+      "BoolQ": 0.5220632087919813,
+      "ARC-C": 0.38921982272026884,
+      "CSQA": 0.2892235646704786,
+      "TruthfulQA": 0.09710218996280975
+    },
+    "n_expanding": {
+      "BoolQ": NaN,
+      "ARC-C": NaN,
+      "CSQA": NaN,
+      "TruthfulQA": NaN
+    },
+    "mean_theta_layers": {
+      "BoolQ": 0.5351784689253246,
+      "ARC-C": 0.9565835274758648,
+      "CSQA": 0.12416255208822498,
+      "TruthfulQA": 0.8606895314745568
+    },
+    "hessian_proxy": {
+      "BoolQ": 0.8186063497655883,
+      "ARC-C": 0.8969291986180175,
+      "CSQA": 0.171370713022144,
+      "TruthfulQA": 0.5671459692739618
+    }
+  },
+  "critical_layer": {
+    "BoolQ": {
+      "oracle_t_start": 8,
+      "argmax_rc_mean": 8.0,
+      "argmax_rc_std": 0.0,
+      "mae": 0.0
+    },
+    "ARC-C": {
+      "oracle_t_start": 14,
+      "argmax_rc_mean": 8.56,
+      "argmax_rc_std": 1.2947586647711613,
+      "mae": 5.44
+    },
+    "CSQA": {
+      "oracle_t_start": 10,
+      "argmax_rc_mean": 8.0,
+      "argmax_rc_std": 0.0,
+      "mae": 2.0
+    },
+    "TruthfulQA": {
+      "oracle_t_start": 16,
+      "argmax_rc_mean": 8.12,
+      "argmax_rc_std": 0.8518215775618742,
+      "mae": 7.88
+    }
+  },
+  "per_bench": {
+    "BoolQ": {
+      "n": 200,
+      "n_pos": 9,
+      "n_neg": 1,
+      "n_zero": 190,
+      "bl_acc": 0.995
+    },
+    "ARC-C": {
+      "n": 200,
+      "n_pos": 15,
+      "n_neg": 10,
+      "n_zero": 175,
+      "bl_acc": 0.95
+    },
+    "CSQA": {
+      "n": 200,
+      "n_pos": 6,
+      "n_neg": 5,
+      "n_zero": 189,
+      "bl_acc": 0.975
+    },
+    "TruthfulQA": {
+      "n": 200,
+      "n_pos": 9,
+      "n_neg": 2,
+      "n_zero": 189,
+      "bl_acc": 0.99
+    }
+  }
+}

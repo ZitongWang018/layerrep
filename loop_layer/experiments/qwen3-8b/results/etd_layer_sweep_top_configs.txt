@@ -1,0 +1,9 @@
+# Imported from R30 sweep — Qwen3-8B
+# 2026-04-13T06:28:22.030210+00:00
+
+ARC-C: best_acc=0.6000 baseline=0.5600 t_start=14 t_stop=20 n_t=6
+TruthfulQA: best_acc=0.3800 baseline=0.3000 t_start=16 t_stop=19 n_t=3
+CSQA: best_acc=0.7100 baseline=0.6600 t_start=10 t_stop=22 n_t=12
+MMLU-HS-Math: best_acc=0.4500 baseline=0.3800 t_start=10 t_stop=18 n_t=8
+macro_baseline (mean of bench baselines)=0.4750
+MACRO: best_etd_macro=0.5050 delta_vs_macro_baseline=+0.0300 t_start=15 t_stop=20

@@ -1,0 +1,8 @@
+# Best (t_start, t_stop) by benchmark — ETD k=2 alpha=auto
+# Generated 2026-04-13T13:58:20.629548+00:00
+
+GPQA-Diamond: best_acc=0.3100 baseline=0.2800 t_start=15 t_stop=20 n_t=5
+AGIEval-Gaokao-MathQA: best_acc=0.3000 baseline=0.2500 t_start=5 t_stop=11 n_t=6
+LogiQA: best_acc=0.2500 baseline=0.2200 t_start=5 t_stop=24 n_t=19
+macro_baseline (mean of bench baselines)=0.2500
+MACRO: best_etd_macro=0.2667 delta_vs_macro_baseline=+0.0167 t_start=16 t_stop=17

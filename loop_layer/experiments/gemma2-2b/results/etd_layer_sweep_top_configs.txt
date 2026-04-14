@@ -1,0 +1,9 @@
+# Best (t_start, t_stop) by benchmark — ETD k=2 alpha=auto
+# Generated 2026-04-12T22:45:32.476211+00:00
+
+BoolQ: best_acc=0.7400 baseline=0.6800 t_start=16 t_stop=23 n_t=7
+ARC-C: best_acc=0.3500 baseline=0.2900 t_start=5 t_stop=11 n_t=6
+TruthfulQA: best_acc=0.3200 baseline=0.2800 t_start=7 t_stop=24 n_t=17
+CSQA: best_acc=0.2800 baseline=0.2100 t_start=6 t_stop=21 n_t=15
+MMLU-HS-Math: best_acc=0.2000 baseline=0.1100 t_start=8 t_stop=10 n_t=2
+MACRO: best_macro=0.3340 t_start=7 t_stop=24

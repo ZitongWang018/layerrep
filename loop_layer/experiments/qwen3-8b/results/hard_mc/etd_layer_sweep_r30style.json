@@ -1,0 +1,2335 @@
+{
+  "config": {
+    "k": 2,
+    "alpha_fn": "min(1.0, 6.0/n_t)",
+    "seed": 42,
+    "num_layers": 36,
+    "grid_bounds": {
+      "t_start_min": 5,
+      "t_start_max": 23,
+      "t_stop_min": 18,
+      "t_stop_max": 30
+    },
+    "n_samples_per_benchmark": {
+      "_default": 100,
+      "TruthfulQA": 50
+    },
+    "model_path": "/root/autodl-tmp/model_qwen",
+    "preset": "qwen3-8b",
+    "bench_profile": "hard_mc",
+    "benchmarks_used": [
+      "GPQA-Diamond",
+      "AGIEval-Gaokao-MathQA",
+      "LogiQA"
+    ],
+    "t_stop_exclusive": true
+  },
+  "baseline": {
+    "GPQA-Diamond": 0.38,
+    "AGIEval-Gaokao-MathQA": 0.52,
+    "LogiQA": 0.34
+  },
+  "macro_baseline": 0.413333,
+  "note_baseline": "Standard 1\u00d7 forward (no ETD); computed once before the (t_start,t_stop) grid.",
+  "benchmarks_used": [
+    "GPQA-Diamond",
+    "AGIEval-Gaokao-MathQA",
+    "LogiQA"
+  ],
+  "results": [
+    {
+      "t_start": 5,
+      "t_stop": 18,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.29,
+      "AGIEval-Gaokao-MathQA": 0.29,
+      "LogiQA": 0.22,
+      "macro_avg": 0.266667
+    },
+    {
+      "t_start": 5,
+      "t_stop": 19,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.28,
+      "AGIEval-Gaokao-MathQA": 0.25,
+      "LogiQA": 0.22,
+      "macro_avg": 0.25
+    },
+    {
+      "t_start": 5,
+      "t_stop": 20,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.22,
+      "AGIEval-Gaokao-MathQA": 0.23,
+      "LogiQA": 0.22,
+      "macro_avg": 0.223333
+    },
+    {
+      "t_start": 5,
+      "t_stop": 21,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.21,
+      "AGIEval-Gaokao-MathQA": 0.23,
+      "LogiQA": 0.22,
+      "macro_avg": 0.22
+    },
+    {
+      "t_start": 5,
+      "t_stop": 22,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.18,
+      "AGIEval-Gaokao-MathQA": 0.18,
+      "LogiQA": 0.22,
+      "macro_avg": 0.193333
+    },
+    {
+      "t_start": 5,
+      "t_stop": 23,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.22,
+      "AGIEval-Gaokao-MathQA": 0.23,
+      "LogiQA": 0.22,
+      "macro_avg": 0.223333
+    },
+    {
+      "t_start": 5,
+      "t_stop": 24,
+      "n_t": 19,
+      "alpha": 0.315789,
+      "GPQA-Diamond": 0.27,
+      "AGIEval-Gaokao-MathQA": 0.15,
+      "LogiQA": 0.23,
+      "macro_avg": 0.216667
+    },
+    {
+      "t_start": 5,
+      "t_stop": 25,
+      "n_t": 20,
+      "alpha": 0.3,
+      "GPQA-Diamond": 0.3,
+      "AGIEval-Gaokao-MathQA": 0.25,
+      "LogiQA": 0.21,
+      "macro_avg": 0.253333
+    },
+    {
+      "t_start": 5,
+      "t_stop": 26,
+      "n_t": 21,
+      "alpha": 0.285714,
+      "GPQA-Diamond": 0.31,
+      "AGIEval-Gaokao-MathQA": 0.24,
+      "LogiQA": 0.21,
+      "macro_avg": 0.253333
+    },
+    {
+      "t_start": 5,
+      "t_stop": 27,
+      "n_t": 22,
+      "alpha": 0.272727,
+      "GPQA-Diamond": 0.26,
+      "AGIEval-Gaokao-MathQA": 0.23,
+      "LogiQA": 0.21,
+      "macro_avg": 0.233333
+    },
+    {
+      "t_start": 5,
+      "t_stop": 28,
+      "n_t": 23,
+      "alpha": 0.26087,
+      "GPQA-Diamond": 0.24,
+      "AGIEval-Gaokao-MathQA": 0.25,
+      "LogiQA": 0.21,
+      "macro_avg": 0.233333
+    },
+    {
+      "t_start": 5,
+      "t_stop": 29,
+      "n_t": 24,
+      "alpha": 0.25,
+      "GPQA-Diamond": 0.24,
+      "AGIEval-Gaokao-MathQA": 0.29,
+      "LogiQA": 0.21,
+      "macro_avg": 0.246667
+    },
+    {
+      "t_start": 5,
+      "t_stop": 30,
+      "n_t": 25,
+      "alpha": 0.24,
+      "GPQA-Diamond": 0.24,
+      "AGIEval-Gaokao-MathQA": 0.27,
+      "LogiQA": 0.21,
+      "macro_avg": 0.24
+    },
+    {
+      "t_start": 6,
+      "t_stop": 18,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.28,
+      "AGIEval-Gaokao-MathQA": 0.28,
+      "LogiQA": 0.22,
+      "macro_avg": 0.26
+    },
+    {
+      "t_start": 6,
+      "t_stop": 19,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.28,
+      "AGIEval-Gaokao-MathQA": 0.26,
+      "LogiQA": 0.22,
+      "macro_avg": 0.253333
+    },
+    {
+      "t_start": 6,
+      "t_stop": 20,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.28,
+      "AGIEval-Gaokao-MathQA": 0.26,
+      "LogiQA": 0.22,
+      "macro_avg": 0.253333
+    },
+    {
+      "t_start": 6,
+      "t_stop": 21,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.28,
+      "AGIEval-Gaokao-MathQA": 0.22,
+      "LogiQA": 0.22,
+      "macro_avg": 0.24
+    },
+    {
+      "t_start": 6,
+      "t_stop": 22,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.2,
+      "AGIEval-Gaokao-MathQA": 0.23,
+      "LogiQA": 0.22,
+      "macro_avg": 0.216667
+    },
+    {
+      "t_start": 6,
+      "t_stop": 23,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.23,
+      "AGIEval-Gaokao-MathQA": 0.18,
+      "LogiQA": 0.22,
+      "macro_avg": 0.21
+    },
+    {
+      "t_start": 6,
+      "t_stop": 24,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.31,
+      "AGIEval-Gaokao-MathQA": 0.2,
+      "LogiQA": 0.22,
+      "macro_avg": 0.243333
+    },
+    {
+      "t_start": 6,
+      "t_stop": 25,
+      "n_t": 19,
+      "alpha": 0.315789,
+      "GPQA-Diamond": 0.27,
+      "AGIEval-Gaokao-MathQA": 0.27,
+      "LogiQA": 0.24,
+      "macro_avg": 0.26
+    },
+    {
+      "t_start": 6,
+      "t_stop": 26,
+      "n_t": 20,
+      "alpha": 0.3,
+      "GPQA-Diamond": 0.28,
+      "AGIEval-Gaokao-MathQA": 0.23,
+      "LogiQA": 0.22,
+      "macro_avg": 0.243333
+    },
+    {
+      "t_start": 6,
+      "t_stop": 27,
+      "n_t": 21,
+      "alpha": 0.285714,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.2,
+      "LogiQA": 0.21,
+      "macro_avg": 0.246667
+    },
+    {
+      "t_start": 6,
+      "t_stop": 28,
+      "n_t": 22,
+      "alpha": 0.272727,
+      "GPQA-Diamond": 0.26,
+      "AGIEval-Gaokao-MathQA": 0.2,
+      "LogiQA": 0.21,
+      "macro_avg": 0.223333
+    },
+    {
+      "t_start": 6,
+      "t_stop": 29,
+      "n_t": 23,
+      "alpha": 0.26087,
+      "GPQA-Diamond": 0.25,
+      "AGIEval-Gaokao-MathQA": 0.22,
+      "LogiQA": 0.21,
+      "macro_avg": 0.226667
+    },
+    {
+      "t_start": 6,
+      "t_stop": 30,
+      "n_t": 24,
+      "alpha": 0.25,
+      "GPQA-Diamond": 0.23,
+      "AGIEval-Gaokao-MathQA": 0.27,
+      "LogiQA": 0.21,
+      "macro_avg": 0.236667
+    },
+    {
+      "t_start": 7,
+      "t_stop": 18,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.41,
+      "LogiQA": 0.36,
+      "macro_avg": 0.376667
+    },
+    {
+      "t_start": 7,
+      "t_stop": 19,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.32,
+      "AGIEval-Gaokao-MathQA": 0.44,
+      "LogiQA": 0.34,
+      "macro_avg": 0.366667
+    },
+    {
+      "t_start": 7,
+      "t_stop": 20,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.45,
+      "LogiQA": 0.38,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 7,
+      "t_stop": 21,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.45,
+      "LogiQA": 0.36,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 7,
+      "t_stop": 22,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.32,
+      "AGIEval-Gaokao-MathQA": 0.42,
+      "LogiQA": 0.44,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 7,
+      "t_stop": 23,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.43,
+      "LogiQA": 0.37,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 7,
+      "t_stop": 24,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.44,
+      "LogiQA": 0.36,
+      "macro_avg": 0.383333
+    },
+    {
+      "t_start": 7,
+      "t_stop": 25,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.38,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 7,
+      "t_stop": 26,
+      "n_t": 19,
+      "alpha": 0.315789,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.37,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 7,
+      "t_stop": 27,
+      "n_t": 20,
+      "alpha": 0.3,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.33,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 7,
+      "t_stop": 28,
+      "n_t": 21,
+      "alpha": 0.285714,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.28,
+      "macro_avg": 0.373333
+    },
+    {
+      "t_start": 7,
+      "t_stop": 29,
+      "n_t": 22,
+      "alpha": 0.272727,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.28,
+      "macro_avg": 0.383333
+    },
+    {
+      "t_start": 7,
+      "t_stop": 30,
+      "n_t": 23,
+      "alpha": 0.26087,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.36,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 8,
+      "t_stop": 18,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.42,
+      "LogiQA": 0.4,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 8,
+      "t_stop": 19,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.43,
+      "LogiQA": 0.4,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 8,
+      "t_stop": 20,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.42,
+      "macro_avg": 0.423333
+    },
+    {
+      "t_start": 8,
+      "t_stop": 21,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.32,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.34,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 8,
+      "t_stop": 22,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.4,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 8,
+      "t_stop": 23,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.31,
+      "AGIEval-Gaokao-MathQA": 0.46,
+      "LogiQA": 0.42,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 8,
+      "t_stop": 24,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.44,
+      "LogiQA": 0.34,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 8,
+      "t_stop": 25,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.36,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 8,
+      "t_stop": 26,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.35,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 8,
+      "t_stop": 27,
+      "n_t": 19,
+      "alpha": 0.315789,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.34,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 8,
+      "t_stop": 28,
+      "n_t": 20,
+      "alpha": 0.3,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.27,
+      "macro_avg": 0.37
+    },
+    {
+      "t_start": 8,
+      "t_stop": 29,
+      "n_t": 21,
+      "alpha": 0.285714,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.25,
+      "macro_avg": 0.37
+    },
+    {
+      "t_start": 8,
+      "t_stop": 30,
+      "n_t": 22,
+      "alpha": 0.272727,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.34,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 9,
+      "t_stop": 18,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.44,
+      "LogiQA": 0.42,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 9,
+      "t_stop": 19,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.43,
+      "LogiQA": 0.41,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 9,
+      "t_stop": 20,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.42,
+      "macro_avg": 0.426667
+    },
+    {
+      "t_start": 9,
+      "t_stop": 21,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.44,
+      "macro_avg": 0.423333
+    },
+    {
+      "t_start": 9,
+      "t_stop": 22,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.43,
+      "macro_avg": 0.43
+    },
+    {
+      "t_start": 9,
+      "t_stop": 23,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.39,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 9,
+      "t_stop": 24,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.36,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 9,
+      "t_stop": 25,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.42,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.37,
+      "macro_avg": 0.423333
+    },
+    {
+      "t_start": 9,
+      "t_stop": 26,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.33,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 9,
+      "t_stop": 27,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.3,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 9,
+      "t_stop": 28,
+      "n_t": 19,
+      "alpha": 0.315789,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.44,
+      "LogiQA": 0.31,
+      "macro_avg": 0.37
+    },
+    {
+      "t_start": 9,
+      "t_stop": 29,
+      "n_t": 20,
+      "alpha": 0.3,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.29,
+      "macro_avg": 0.376667
+    },
+    {
+      "t_start": 9,
+      "t_stop": 30,
+      "n_t": 21,
+      "alpha": 0.285714,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.3,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 10,
+      "t_stop": 18,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.46,
+      "LogiQA": 0.41,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 10,
+      "t_stop": 19,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.46,
+      "LogiQA": 0.43,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 10,
+      "t_stop": 20,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.45,
+      "LogiQA": 0.39,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 10,
+      "t_stop": 21,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.31,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.42,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 10,
+      "t_stop": 22,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.4,
+      "macro_avg": 0.426667
+    },
+    {
+      "t_start": 10,
+      "t_stop": 23,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.39,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 10,
+      "t_stop": 24,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.35,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 10,
+      "t_stop": 25,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.36,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 10,
+      "t_stop": 26,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.36,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 10,
+      "t_stop": 27,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.3,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 10,
+      "t_stop": 28,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.31,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 10,
+      "t_stop": 29,
+      "n_t": 19,
+      "alpha": 0.315789,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.3,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 10,
+      "t_stop": 30,
+      "n_t": 20,
+      "alpha": 0.3,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.36,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 11,
+      "t_stop": 18,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.41,
+      "macro_avg": 0.423333
+    },
+    {
+      "t_start": 11,
+      "t_stop": 19,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.41,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 11,
+      "t_stop": 20,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.41,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 11,
+      "t_stop": 21,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.37,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 11,
+      "t_stop": 22,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.42,
+      "macro_avg": 0.436667
+    },
+    {
+      "t_start": 11,
+      "t_stop": 23,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.39,
+      "macro_avg": 0.416667
+    },
+    {
+      "t_start": 11,
+      "t_stop": 24,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.36,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 11,
+      "t_stop": 25,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.35,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 11,
+      "t_stop": 26,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.35,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 11,
+      "t_stop": 27,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.46,
+      "LogiQA": 0.3,
+      "macro_avg": 0.376667
+    },
+    {
+      "t_start": 11,
+      "t_stop": 28,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.31,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 11,
+      "t_stop": 29,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.25,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 11,
+      "t_stop": 30,
+      "n_t": 19,
+      "alpha": 0.315789,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.29,
+      "macro_avg": 0.383333
+    },
+    {
+      "t_start": 12,
+      "t_stop": 18,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.4,
+      "macro_avg": 0.416667
+    },
+    {
+      "t_start": 12,
+      "t_stop": 19,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.37,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 12,
+      "t_stop": 20,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.41,
+      "macro_avg": 0.443333
+    },
+    {
+      "t_start": 12,
+      "t_stop": 21,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.37,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 12,
+      "t_stop": 22,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.37,
+      "macro_avg": 0.43
+    },
+    {
+      "t_start": 12,
+      "t_stop": 23,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.37,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 12,
+      "t_stop": 24,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.37,
+      "macro_avg": 0.416667
+    },
+    {
+      "t_start": 12,
+      "t_stop": 25,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.35,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 12,
+      "t_stop": 26,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.35,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 12,
+      "t_stop": 27,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.47,
+      "LogiQA": 0.31,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 12,
+      "t_stop": 28,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.3,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 12,
+      "t_stop": 29,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.26,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 12,
+      "t_stop": 30,
+      "n_t": 18,
+      "alpha": 0.333333,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.29,
+      "macro_avg": 0.383333
+    },
+    {
+      "t_start": 13,
+      "t_stop": 18,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.39,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 13,
+      "t_stop": 19,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.31,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.37,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 13,
+      "t_stop": 20,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.58,
+      "LogiQA": 0.4,
+      "macro_avg": 0.453333
+    },
+    {
+      "t_start": 13,
+      "t_stop": 21,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.37,
+      "macro_avg": 0.416667
+    },
+    {
+      "t_start": 13,
+      "t_stop": 22,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.4,
+      "AGIEval-Gaokao-MathQA": 0.56,
+      "LogiQA": 0.37,
+      "macro_avg": 0.443333
+    },
+    {
+      "t_start": 13,
+      "t_stop": 23,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.35,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 13,
+      "t_stop": 24,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.37,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 13,
+      "t_stop": 25,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.34,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 13,
+      "t_stop": 26,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.33,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 13,
+      "t_stop": 27,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.35,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 13,
+      "t_stop": 28,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.28,
+      "macro_avg": 0.383333
+    },
+    {
+      "t_start": 13,
+      "t_stop": 29,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.23,
+      "macro_avg": 0.36
+    },
+    {
+      "t_start": 13,
+      "t_stop": 30,
+      "n_t": 17,
+      "alpha": 0.352941,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.31,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 14,
+      "t_stop": 18,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.46,
+      "macro_avg": 0.456667
+    },
+    {
+      "t_start": 14,
+      "t_stop": 19,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.5,
+      "macro_avg": 0.446667
+    },
+    {
+      "t_start": 14,
+      "t_stop": 20,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.57,
+      "LogiQA": 0.42,
+      "macro_avg": 0.456667
+    },
+    {
+      "t_start": 14,
+      "t_stop": 21,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.57,
+      "LogiQA": 0.42,
+      "macro_avg": 0.443333
+    },
+    {
+      "t_start": 14,
+      "t_stop": 22,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.4,
+      "macro_avg": 0.436667
+    },
+    {
+      "t_start": 14,
+      "t_stop": 23,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.38,
+      "macro_avg": 0.43
+    },
+    {
+      "t_start": 14,
+      "t_stop": 24,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.38,
+      "macro_avg": 0.433333
+    },
+    {
+      "t_start": 14,
+      "t_stop": 25,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.35,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 14,
+      "t_stop": 26,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.39,
+      "macro_avg": 0.423333
+    },
+    {
+      "t_start": 14,
+      "t_stop": 27,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.36,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 14,
+      "t_stop": 28,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.28,
+      "macro_avg": 0.373333
+    },
+    {
+      "t_start": 14,
+      "t_stop": 29,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.25,
+      "macro_avg": 0.373333
+    },
+    {
+      "t_start": 14,
+      "t_stop": 30,
+      "n_t": 16,
+      "alpha": 0.375,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.3,
+      "macro_avg": 0.383333
+    },
+    {
+      "t_start": 15,
+      "t_stop": 18,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.43,
+      "macro_avg": 0.443333
+    },
+    {
+      "t_start": 15,
+      "t_stop": 19,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.32,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.43,
+      "macro_avg": 0.433333
+    },
+    {
+      "t_start": 15,
+      "t_stop": 20,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.4,
+      "AGIEval-Gaokao-MathQA": 0.57,
+      "LogiQA": 0.38,
+      "macro_avg": 0.45
+    },
+    {
+      "t_start": 15,
+      "t_stop": 21,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.39,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 15,
+      "t_stop": 22,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.34,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 15,
+      "t_stop": 23,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.35,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 15,
+      "t_stop": 24,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.35,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 15,
+      "t_stop": 25,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.34,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 15,
+      "t_stop": 26,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.35,
+      "macro_avg": 0.423333
+    },
+    {
+      "t_start": 15,
+      "t_stop": 27,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.33,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.36,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 15,
+      "t_stop": 28,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.31,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 15,
+      "t_stop": 29,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.3,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 15,
+      "t_stop": 30,
+      "n_t": 15,
+      "alpha": 0.4,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.33,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 16,
+      "t_stop": 18,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.39,
+      "macro_avg": 0.436667
+    },
+    {
+      "t_start": 16,
+      "t_stop": 19,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.56,
+      "LogiQA": 0.43,
+      "macro_avg": 0.456667
+    },
+    {
+      "t_start": 16,
+      "t_stop": 20,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.42,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.39,
+      "macro_avg": 0.45
+    },
+    {
+      "t_start": 16,
+      "t_stop": 21,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.38,
+      "macro_avg": 0.433333
+    },
+    {
+      "t_start": 16,
+      "t_stop": 22,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.56,
+      "LogiQA": 0.34,
+      "macro_avg": 0.426667
+    },
+    {
+      "t_start": 16,
+      "t_stop": 23,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.56,
+      "LogiQA": 0.32,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 16,
+      "t_stop": 24,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.34,
+      "macro_avg": 0.426667
+    },
+    {
+      "t_start": 16,
+      "t_stop": 25,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.27,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 16,
+      "t_stop": 26,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.3,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 16,
+      "t_stop": 27,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.34,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 16,
+      "t_stop": 28,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.29,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 16,
+      "t_stop": 29,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.3,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 16,
+      "t_stop": 30,
+      "n_t": 14,
+      "alpha": 0.428571,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.29,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 17,
+      "t_stop": 18,
+      "n_t": 1,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.33,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 17,
+      "t_stop": 19,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.48,
+      "LogiQA": 0.38,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 17,
+      "t_stop": 20,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.4,
+      "AGIEval-Gaokao-MathQA": 0.57,
+      "LogiQA": 0.43,
+      "macro_avg": 0.466667
+    },
+    {
+      "t_start": 17,
+      "t_stop": 21,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.42,
+      "macro_avg": 0.453333
+    },
+    {
+      "t_start": 17,
+      "t_stop": 22,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.4,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.34,
+      "macro_avg": 0.43
+    },
+    {
+      "t_start": 17,
+      "t_stop": 23,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.58,
+      "LogiQA": 0.34,
+      "macro_avg": 0.436667
+    },
+    {
+      "t_start": 17,
+      "t_stop": 24,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.33,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 17,
+      "t_stop": 25,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.3,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 17,
+      "t_stop": 26,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.31,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 17,
+      "t_stop": 27,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.34,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 17,
+      "t_stop": 28,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.32,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 17,
+      "t_stop": 29,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.3,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 17,
+      "t_stop": 30,
+      "n_t": 13,
+      "alpha": 0.461538,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.28,
+      "macro_avg": 0.376667
+    },
+    {
+      "t_start": 18,
+      "t_stop": 19,
+      "n_t": 1,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.45,
+      "macro_avg": 0.45
+    },
+    {
+      "t_start": 18,
+      "t_stop": 20,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.44,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.45,
+      "macro_avg": 0.47
+    },
+    {
+      "t_start": 18,
+      "t_stop": 21,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.4,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.45,
+      "macro_avg": 0.46
+    },
+    {
+      "t_start": 18,
+      "t_stop": 22,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.56,
+      "LogiQA": 0.41,
+      "macro_avg": 0.46
+    },
+    {
+      "t_start": 18,
+      "t_stop": 23,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.58,
+      "LogiQA": 0.35,
+      "macro_avg": 0.433333
+    },
+    {
+      "t_start": 18,
+      "t_stop": 24,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.42,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.33,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 18,
+      "t_stop": 25,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.26,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 18,
+      "t_stop": 26,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.3,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 18,
+      "t_stop": 27,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.3,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 18,
+      "t_stop": 28,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.31,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 18,
+      "t_stop": 29,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.33,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 18,
+      "t_stop": 30,
+      "n_t": 12,
+      "alpha": 0.5,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.27,
+      "macro_avg": 0.376667
+    },
+    {
+      "t_start": 19,
+      "t_stop": 20,
+      "n_t": 1,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.4,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.39,
+      "macro_avg": 0.43
+    },
+    {
+      "t_start": 19,
+      "t_stop": 21,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.42,
+      "AGIEval-Gaokao-MathQA": 0.57,
+      "LogiQA": 0.39,
+      "macro_avg": 0.46
+    },
+    {
+      "t_start": 19,
+      "t_stop": 22,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.57,
+      "LogiQA": 0.33,
+      "macro_avg": 0.426667
+    },
+    {
+      "t_start": 19,
+      "t_stop": 23,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.58,
+      "LogiQA": 0.35,
+      "macro_avg": 0.436667
+    },
+    {
+      "t_start": 19,
+      "t_stop": 24,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.43,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.29,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 19,
+      "t_stop": 25,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.24,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 19,
+      "t_stop": 26,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.27,
+      "macro_avg": 0.373333
+    },
+    {
+      "t_start": 19,
+      "t_stop": 27,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.29,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 19,
+      "t_stop": 28,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.28,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 19,
+      "t_stop": 29,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.37,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 19,
+      "t_stop": 30,
+      "n_t": 11,
+      "alpha": 0.545455,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.31,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 20,
+      "t_stop": 21,
+      "n_t": 1,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.4,
+      "macro_avg": 0.426667
+    },
+    {
+      "t_start": 20,
+      "t_stop": 22,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.56,
+      "LogiQA": 0.21,
+      "macro_avg": 0.37
+    },
+    {
+      "t_start": 20,
+      "t_stop": 23,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.29,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 20,
+      "t_stop": 24,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.42,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.32,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 20,
+      "t_stop": 25,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.23,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 20,
+      "t_stop": 26,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.29,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 20,
+      "t_stop": 27,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.31,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 20,
+      "t_stop": 28,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.31,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 20,
+      "t_stop": 29,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.36,
+      "macro_avg": 0.41
+    },
+    {
+      "t_start": 20,
+      "t_stop": 30,
+      "n_t": 10,
+      "alpha": 0.6,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.31,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 21,
+      "t_stop": 22,
+      "n_t": 1,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.29,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 21,
+      "t_stop": 23,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.23,
+      "macro_avg": 0.386667
+    },
+    {
+      "t_start": 21,
+      "t_stop": 24,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.43,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.28,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 21,
+      "t_stop": 25,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.28,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 21,
+      "t_stop": 26,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.29,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 21,
+      "t_stop": 27,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.32,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 21,
+      "t_stop": 28,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.31,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 21,
+      "t_stop": 29,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.39,
+      "macro_avg": 0.43
+    },
+    {
+      "t_start": 21,
+      "t_stop": 30,
+      "n_t": 9,
+      "alpha": 0.666667,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.35,
+      "macro_avg": 0.416667
+    },
+    {
+      "t_start": 22,
+      "t_stop": 23,
+      "n_t": 1,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.25,
+      "macro_avg": 0.38
+    },
+    {
+      "t_start": 22,
+      "t_stop": 24,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.32,
+      "macro_avg": 0.4
+    },
+    {
+      "t_start": 22,
+      "t_stop": 25,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.49,
+      "LogiQA": 0.27,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 22,
+      "t_stop": 26,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.25,
+      "macro_avg": 0.383333
+    },
+    {
+      "t_start": 22,
+      "t_stop": 27,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.36,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.33,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 22,
+      "t_stop": 28,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.28,
+      "macro_avg": 0.393333
+    },
+    {
+      "t_start": 22,
+      "t_stop": 29,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.37,
+      "AGIEval-Gaokao-MathQA": 0.52,
+      "LogiQA": 0.38,
+      "macro_avg": 0.423333
+    },
+    {
+      "t_start": 22,
+      "t_stop": 30,
+      "n_t": 8,
+      "alpha": 0.75,
+      "GPQA-Diamond": 0.35,
+      "AGIEval-Gaokao-MathQA": 0.51,
+      "LogiQA": 0.35,
+      "macro_avg": 0.403333
+    },
+    {
+      "t_start": 23,
+      "t_stop": 24,
+      "n_t": 1,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.34,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 23,
+      "t_stop": 25,
+      "n_t": 2,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.4,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.28,
+      "macro_avg": 0.406667
+    },
+    {
+      "t_start": 23,
+      "t_stop": 26,
+      "n_t": 3,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.41,
+      "AGIEval-Gaokao-MathQA": 0.5,
+      "LogiQA": 0.26,
+      "macro_avg": 0.39
+    },
+    {
+      "t_start": 23,
+      "t_stop": 27,
+      "n_t": 4,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.55,
+      "LogiQA": 0.31,
+      "macro_avg": 0.413333
+    },
+    {
+      "t_start": 23,
+      "t_stop": 28,
+      "n_t": 5,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.38,
+      "AGIEval-Gaokao-MathQA": 0.53,
+      "LogiQA": 0.28,
+      "macro_avg": 0.396667
+    },
+    {
+      "t_start": 23,
+      "t_stop": 29,
+      "n_t": 6,
+      "alpha": 1.0,
+      "GPQA-Diamond": 0.39,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.33,
+      "macro_avg": 0.42
+    },
+    {
+      "t_start": 23,
+      "t_stop": 30,
+      "n_t": 7,
+      "alpha": 0.857143,
+      "GPQA-Diamond": 0.34,
+      "AGIEval-Gaokao-MathQA": 0.54,
+      "LogiQA": 0.36,
+      "macro_avg": 0.413333
+    }
+  ],
+  "summary": {
+    "best_per_benchmark": {
+      "GPQA-Diamond": {
+        "t_start": 18,
+        "t_stop": 20,
+        "n_t": 2,
+        "GPQA-Diamond": 0.44,
+        "macro_avg": 0.47
+      },
+      "AGIEval-Gaokao-MathQA": {
+        "t_start": 13,
+        "t_stop": 20,
+        "n_t": 7,
+        "AGIEval-Gaokao-MathQA": 0.58,
+        "macro_avg": 0.453333
+      },
+      "LogiQA": {
+        "t_start": 14,
+        "t_stop": 19,
+        "n_t": 5,
+        "LogiQA": 0.5,
+        "macro_avg": 0.446667
+      }
+    },
+    "best_macro_avg_cell": {
+      "t_start": 18,
+      "t_stop": 20,
+      "n_t": 2,
+      "macro_avg": 0.47
+    },
+    "macro_baseline": 0.413333
+  },
+  "finished_utc": "2026-04-13T19:06:33.790866+00:00",
+  "elapsed_sec_wall": 18362.951420783997
+}

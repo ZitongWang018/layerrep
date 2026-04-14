@@ -1,5 +1,10 @@
 # Local model weights — never commit
 model_qwen/
+Llama3-8B/
+Gemma2-2B/
+
+# Local trash
+.Trash-0/
 
 # AutoDL / Jupyter / local IDE junk — never commit
 .autodl/

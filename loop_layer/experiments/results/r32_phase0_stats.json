@@ -1,0 +1,58 @@
+{
+  "BoolQ": {
+    "n": 20,
+    "n_pos": 0,
+    "n_neg": 0,
+    "rc_mean": 0.6780724734067917,
+    "theta_mean": 0.37307123839855194,
+    "logit_align_mean": 0.2466077168472111,
+    "spearman_rc_gain": NaN,
+    "p_rc": NaN,
+    "spearman_th_gain": NaN,
+    "p_th": NaN,
+    "spearman_la_gain": NaN,
+    "p_la": NaN
+  },
+  "ARC-C": {
+    "n": 20,
+    "n_pos": 1,
+    "n_neg": 0,
+    "rc_mean": 0.6467967003583908,
+    "theta_mean": 0.3793598756194115,
+    "logit_align_mean": 0.28105594450607896,
+    "spearman_rc_gain": -0.25860727100631337,
+    "p_rc": 0.27093129221232176,
+    "spearman_th_gain": -0.17903580300437075,
+    "p_th": 0.45009791291219303,
+    "spearman_la_gain": -0.2983930050072846,
+    "p_la": 0.20129127736465824
+  },
+  "CSQA": {
+    "n": 20,
+    "n_pos": 2,
+    "n_neg": 0,
+    "rc_mean": 0.6809395790100098,
+    "theta_mean": 0.3506468877196312,
+    "logit_align_mean": 0.18440020363777876,
+    "spearman_rc_gain": -0.23122932520643197,
+    "p_rc": 0.32665013864442755,
+    "spearman_th_gain": -0.05780733130160799,
+    "p_th": 0.8087196700139525,
+    "spearman_la_gain": -0.23122932520643197,
+    "p_la": 0.32665013864442755
+  },
+  "TruthfulQA": {
+    "n": 20,
+    "n_pos": 0,
+    "n_neg": 0,
+    "rc_mean": 0.6684656828641892,
+    "theta_mean": 0.4196255400776863,
+    "logit_align_mean": 0.30483224987983704,
+    "spearman_rc_gain": NaN,
+    "p_rc": NaN,
+    "spearman_th_gain": NaN,
+    "p_th": NaN,
+    "spearman_la_gain": NaN,
+    "p_la": NaN
+  }
+}

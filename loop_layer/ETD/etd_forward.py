@@ -1,4 +1,8 @@
-"""ETD forward for Qwen3: E -> T^k -> D using the same masks/RoPE as Qwen3Model."""
+"""ETD forward: E -> T^k -> D with per-layer masks and RoPE matching the backbone.
+
+Supports Qwen3 (cfg.layer_types + optional sliding), Gemma2 (layer_types + sliding), and
+Llama (no layer_types: full causal mask for every layer).
+"""
 
 from __future__ import annotations
 
@@ -105,7 +109,12 @@ def etd_forward_logits(
     causal_mask_mapping: dict[str, torch.Tensor] = {
         "full_attention": create_causal_mask(**mask_kwargs),
     }
-    if getattr(base, "has_sliding_layers", False):
+    layer_types = getattr(cfg, "layer_types", None)
+    use_layer_types = bool(layer_types) and len(layer_types) == l_total
+    needs_sliding = (use_layer_types and "sliding_attention" in layer_types) or getattr(
+        base, "has_sliding_layers", False
+    )
+    if needs_sliding:
         from transformers.masking_utils import create_sliding_window_causal_mask
 
         causal_mask_mapping["sliding_attention"] = create_sliding_window_causal_mask(**mask_kwargs)
@@ -114,8 +123,11 @@ def etd_forward_logits(
     hidden_states = inputs_embeds
 
     def run_layer(layer_idx: int, hs: torch.Tensor) -> torch.Tensor:
-        layer_type = cfg.layer_types[layer_idx]
-        attn_mask = causal_mask_mapping[layer_type]
+        if use_layer_types:
+            attn_mask = causal_mask_mapping[layer_types[layer_idx]]
+        else:
+            # Llama / models without per-layer mask routing: full causal only
+            attn_mask = causal_mask_mapping["full_attention"]
         out = base.layers[layer_idx](
             hs,
             attention_mask=attn_mask,
