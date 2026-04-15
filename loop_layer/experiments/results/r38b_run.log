@@ -1,0 +1,324 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+======================================================================
+R38b: Wide-Window Signal Extension
+MIN_START_WIDE=6  NT_WIDE=(4, 6, 8, 10, 12, 14)
+New conditions: ['persample_wide', 'calib_adaptive', 'two_phase']
+======================================================================
+[导入] 从 R38a 结果读取 (7 benchmark)
+Loading Qwen3-8B …
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:19,  5.02it/s]Loading weights:   1%|          | 2/399 [00:00<01:25,  4.65it/s]Loading weights:   4%|▍         | 16/399 [00:00<00:09, 39.82it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:06, 57.72it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:05, 69.99it/s]Loading weights:  14%|█▍        | 55/399 [00:00<00:03, 93.07it/s]Loading weights:  18%|█▊        | 70/399 [00:01<00:03, 103.37it/s]Loading weights:  21%|██        | 82/399 [00:01<00:03, 100.98it/s]Loading weights:  24%|██▎       | 94/399 [00:01<00:02, 103.20it/s]Loading weights:  26%|██▋       | 105/399 [00:01<00:02, 103.14it/s]Loading weights:  29%|██▉       | 116/399 [00:01<00:02, 103.16it/s]Loading weights:  32%|███▏      | 127/399 [00:01<00:02, 100.97it/s]Loading weights:  35%|███▍      | 138/399 [00:01<00:02, 99.51it/s] Loading weights:  37%|███▋      | 149/399 [00:01<00:02, 97.27it/s]Loading weights:  40%|████      | 160/399 [00:01<00:02, 96.22it/s]Loading weights:  43%|████▎     | 171/399 [00:02<00:02, 94.48it/s]Loading weights:  46%|████▌     | 182/399 [00:02<00:02, 95.58it/s]Loading weights:  49%|████▉     | 196/399 [00:02<00:01, 107.37it/s]Loading weights:  52%|█████▏    | 207/399 [00:02<00:01, 107.27it/s]Loading weights:  55%|█████▍    | 219/399 [00:02<00:01, 109.27it/s]Loading weights:  58%|█████▊    | 231/399 [00:02<00:01, 107.90it/s]Loading weights:  61%|██████    | 242/399 [00:02<00:01, 104.87it/s]Loading weights:  63%|██████▎   | 253/399 [00:02<00:01, 101.89it/s]Loading weights:  66%|██████▌   | 264/399 [00:02<00:01, 98.10it/s] Loading weights:  69%|██████▊   | 274/399 [00:03<00:01, 95.06it/s]Loading weights:  71%|███████   | 284/399 [00:03<00:01, 95.00it/s]Loading weights:  74%|███████▎  | 294/399 [00:03<00:01, 93.50it/s]Loading weights:  76%|███████▌  | 304/399 [00:03<00:01, 90.24it/s]Loading weights:  80%|███████▉  | 318/399 [00:03<00:00, 101.53it/s]Loading weights:  84%|████████▎ | 334/399 [00:03<00:00, 113.88it/s]Loading weights:  87%|████████▋ | 346/399 [00:03<00:00, 106.61it/s]Loading weights:  89%|████████▉ | 357/399 [00:03<00:00, 107.31it/s]Loading weights:  92%|█████████▏| 368/399 [00:03<00:00, 103.26it/s]Loading weights:  95%|█████████▍| 379/399 [00:04<00:00, 100.28it/s]Loading weights:  98%|█████████▊| 390/399 [00:04<00:00, 88.52it/s] Loading weights: 100%|██████████| 399/399 [00:04<00:00, 93.99it/s]
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+Using the latest cached version of the dataset since Idavidrein/gpqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'gpqa_diamond' at /root/.cache/huggingface/datasets/Idavidrein___gpqa/gpqa_diamond/0.0.0/633f5ee89ab8ad4522a9f850766b73f62147ffdd (last modified on Mon Apr 13 15:05:27 2026).
+  36 layers, device=cuda
+
+────────────────────────────────────────────────────────────
+Benchmark: BoolQ  N=100  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (1.8s)  calib_adaptive=(6, 10)
+  [ 10/100] wide=0.900 adap=0.400 phas=0.400 | 4s ETA 36s
+  [ 20/100] wide=0.850 adap=0.450 phas=0.450 | 8s ETA 31s
+  [ 30/100] wide=0.800 adap=0.367 phas=0.367 | 12s ETA 27s
+  [ 40/100] wide=0.800 adap=0.350 phas=0.350 | 15s ETA 23s
+  [ 50/100] wide=0.820 adap=0.400 phas=0.400 | 19s ETA 19s
+  [ 60/100] wide=0.800 adap=0.417 phas=0.417 | 24s ETA 16s
+  [ 70/100] wide=0.800 adap=0.457 phas=0.457 | 27s ETA 12s
+  [ 80/100] wide=0.825 adap=0.463 phas=0.463 | 31s ETA 8s
+  [ 90/100] wide=0.800 adap=0.456 phas=0.456 | 34s ETA 4s
+  [100/100] wide=0.790 adap=0.470 phas=0.470 | 38s ETA 0s
+
+  === BoolQ R38b 新条件 Results ===
+    persample_wide      : 0.7900  Δbaseline=-0.0300  90.8% of sweep
+    calib_adaptive      : 0.4700  Δbaseline=-0.3500  54.0% of sweep
+    two_phase           : 0.4700  Δbaseline=-0.3500  54.0% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_BoolQ.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: ARC-C  N=100  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.9s)  calib_adaptive=(6, 10)
+  [ 10/100] wide=0.200 adap=0.100 phas=0.100 | 5s ETA 46s
+  [ 20/100] wide=0.300 adap=0.250 phas=0.250 | 10s ETA 41s
+  [ 30/100] wide=0.300 adap=0.233 phas=0.233 | 15s ETA 36s
+  [ 40/100] wide=0.275 adap=0.225 phas=0.225 | 20s ETA 30s
+  [ 50/100] wide=0.300 adap=0.260 phas=0.260 | 25s ETA 25s
+  [ 60/100] wide=0.283 adap=0.250 phas=0.250 | 30s ETA 20s
+  [ 70/100] wide=0.271 adap=0.243 phas=0.243 | 35s ETA 15s
+  [ 80/100] wide=0.263 adap=0.237 phas=0.237 | 40s ETA 10s
+  [ 90/100] wide=0.289 adap=0.267 phas=0.267 | 45s ETA 5s
+  [100/100] wide=0.290 adap=0.270 phas=0.270 | 50s ETA 0s
+
+  === ARC-C R38b 新条件 Results ===
+    persample_wide      : 0.2900  Δbaseline=-0.2700  50.0% of sweep
+    calib_adaptive      : 0.2700  Δbaseline=-0.2900  46.6% of sweep
+    two_phase           : 0.2700  Δbaseline=-0.2900  46.6% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_ARC-C.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: TruthfulQA  N=50  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 50 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.8s)  calib_adaptive=(6, 10)
+  [ 10/50] wide=0.200 adap=0.100 phas=0.100 | 7s ETA 29s
+  [ 20/50] wide=0.200 adap=0.150 phas=0.150 | 13s ETA 20s
+  [ 30/50] wide=0.167 adap=0.133 phas=0.133 | 20s ETA 13s
+  [ 40/50] wide=0.150 adap=0.125 phas=0.125 | 26s ETA 7s
+  [ 50/50] wide=0.160 adap=0.140 phas=0.140 | 33s ETA 0s
+
+  === TruthfulQA R38b 新条件 Results ===
+    persample_wide      : 0.1600  Δbaseline=-0.1600  42.1% of sweep
+    calib_adaptive      : 0.1400  Δbaseline=-0.1800  36.8% of sweep
+    two_phase           : 0.1400  Δbaseline=-0.1800  36.8% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_TruthfulQA.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: CSQA  N=100  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.8s)  calib_adaptive=(6, 10)
+  [ 10/100] wide=0.100 adap=0.100 phas=0.100 | 6s ETA 52s
+  [ 20/100] wide=0.200 adap=0.200 phas=0.200 | 11s ETA 46s
+  [ 30/100] wide=0.267 adap=0.300 phas=0.300 | 17s ETA 40s
+  [ 40/100] wide=0.250 adap=0.250 phas=0.250 | 23s ETA 35s
+  [ 50/100] wide=0.220 adap=0.220 phas=0.220 | 29s ETA 29s
+  [ 60/100] wide=0.217 adap=0.183 phas=0.183 | 35s ETA 23s
+  [ 70/100] wide=0.229 adap=0.186 phas=0.186 | 41s ETA 17s
+  [ 80/100] wide=0.250 adap=0.188 phas=0.188 | 46s ETA 12s
+  [ 90/100] wide=0.244 adap=0.189 phas=0.189 | 52s ETA 6s
+  [100/100] wide=0.270 adap=0.200 phas=0.200 | 58s ETA 0s
+
+  === CSQA R38b 新条件 Results ===
+    persample_wide      : 0.2700  Δbaseline=-0.3700  39.1% of sweep
+    calib_adaptive      : 0.2000  Δbaseline=-0.4400  29.0% of sweep
+    two_phase           : 0.2000  Δbaseline=-0.4400  29.0% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_CSQA.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: MMLU-HS-Math  N=100  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.9s)  calib_adaptive=(6, 10)
+  [ 10/100] wide=0.300 adap=0.200 phas=0.200 | 5s ETA 48s
+  [ 20/100] wide=0.200 adap=0.150 phas=0.150 | 10s ETA 42s
+  [ 30/100] wide=0.200 adap=0.167 phas=0.167 | 15s ETA 36s
+  [ 40/100] wide=0.150 adap=0.150 phas=0.150 | 21s ETA 31s
+  [ 50/100] wide=0.120 adap=0.120 phas=0.120 | 26s ETA 26s
+  [ 60/100] wide=0.117 adap=0.117 phas=0.117 | 31s ETA 21s
+  [ 70/100] wide=0.129 adap=0.143 phas=0.143 | 36s ETA 15s
+  [ 80/100] wide=0.150 adap=0.163 phas=0.163 | 41s ETA 10s
+  [ 90/100] wide=0.167 adap=0.167 phas=0.167 | 46s ETA 5s
+  [100/100] wide=0.160 adap=0.150 phas=0.150 | 52s ETA 0s
+
+  === MMLU-HS-Math R38b 新条件 Results ===
+    persample_wide      : 0.1600  Δbaseline=-0.2400  37.2% of sweep
+    calib_adaptive      : 0.1500  Δbaseline=-0.2500  34.9% of sweep
+    two_phase           : 0.1500  Δbaseline=-0.2500  34.9% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_MMLU-HS-Math.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: GPQA-Diamond  N=100  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (1.3s)  calib_adaptive=(6, 12)
+  [ 10/100] wide=0.300 adap=0.400 phas=0.300 | 8s ETA 73s
+  [ 20/100] wide=0.300 adap=0.300 phas=0.300 | 17s ETA 69s
+Using the latest cached version of the dataset since hails/agieval-gaokao-mathqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/hails___agieval-gaokao-mathqa/default/0.0.0/c7810f0856cd8ac59bb9102bf4f10139849b70d7 (last modified on Mon Apr 13 14:58:10 2026).
+Using the latest cached version of the dataset since fireworks-ai/logiqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/fireworks-ai___logiqa/default/0.0.0/d8ef7e0cc4373988ac01f8f342d4bc6cb27919ad (last modified on Mon Apr 13 14:59:23 2026).
+  [ 30/100] wide=0.267 adap=0.300 phas=0.267 | 26s ETA 61s
+  [ 40/100] wide=0.250 adap=0.275 phas=0.250 | 35s ETA 52s
+  [ 50/100] wide=0.320 adap=0.320 phas=0.320 | 43s ETA 43s
+  [ 60/100] wide=0.350 adap=0.333 phas=0.350 | 50s ETA 34s
+  [ 70/100] wide=0.329 adap=0.343 phas=0.329 | 58s ETA 25s
+  [ 80/100] wide=0.312 adap=0.312 phas=0.312 | 69s ETA 17s
+  [ 90/100] wide=0.311 adap=0.300 phas=0.311 | 78s ETA 9s
+  [100/100] wide=0.280 adap=0.280 phas=0.280 | 86s ETA 0s
+
+  === GPQA-Diamond R38b 新条件 Results ===
+    persample_wide      : 0.2800  Δbaseline=-0.1000  63.6% of sweep
+    calib_adaptive      : 0.2800  Δbaseline=-0.1000  63.6% of sweep
+    two_phase           : 0.2800  Δbaseline=-0.1000  63.6% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_GPQA-Diamond.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: AGIEval-Gaokao-MathQA  N=100  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (1.0s)  calib_adaptive=(6, 10)
+  [ 10/100] wide=0.100 adap=0.100 phas=0.100 | 7s ETA 62s
+  [ 20/100] wide=0.200 adap=0.200 phas=0.200 | 13s ETA 52s
+  [ 30/100] wide=0.200 adap=0.200 phas=0.200 | 20s ETA 46s
+  [ 40/100] wide=0.250 adap=0.225 phas=0.225 | 28s ETA 42s
+  [ 50/100] wide=0.280 adap=0.260 phas=0.260 | 35s ETA 35s
+  [ 60/100] wide=0.283 adap=0.267 phas=0.267 | 42s ETA 28s
+  [ 70/100] wide=0.286 adap=0.257 phas=0.257 | 48s ETA 21s
+  [ 80/100] wide=0.275 adap=0.237 phas=0.237 | 54s ETA 14s
+  [ 90/100] wide=0.278 adap=0.222 phas=0.222 | 61s ETA 7s
+  [100/100] wide=0.300 adap=0.230 phas=0.230 | 68s ETA 0s
+
+  === AGIEval-Gaokao-MathQA R38b 新条件 Results ===
+    persample_wide      : 0.3000  Δbaseline=-0.2200  55.6% of sweep
+    calib_adaptive      : 0.2300  Δbaseline=-0.2900  42.6% of sweep
+    two_phase           : 0.2300  Δbaseline=-0.2900  42.6% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_AGIEval-Gaokao-MathQA.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: LogiQA  N=100  [R38b 新条件]
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (1.2s)  calib_adaptive=(6, 10)
+  [ 10/100] wide=0.200 adap=0.200 phas=0.200 | 7s ETA 65s
+  [ 20/100] wide=0.200 adap=0.200 phas=0.200 | 16s ETA 62s
+  [ 30/100] wide=0.233 adap=0.233 phas=0.233 | 25s ETA 57s
+  [ 40/100] wide=0.225 adap=0.225 phas=0.225 | 34s ETA 50s
+  [ 50/100] wide=0.220 adap=0.220 phas=0.220 | 42s ETA 42s
+  [ 60/100] wide=0.217 adap=0.217 phas=0.217 | 50s ETA 34s
+  [ 70/100] wide=0.243 adap=0.243 phas=0.243 | 58s ETA 25s
+  [ 80/100] wide=0.237 adap=0.237 phas=0.237 | 65s ETA 16s
+  [ 90/100] wide=0.222 adap=0.222 phas=0.222 | 72s ETA 8s
+  [100/100] wide=0.220 adap=0.220 phas=0.220 | 80s ETA 0s
+  [NOTE] LogiQA 无 R38a 基础结果，baseline/sweep_best 需单独运行
+
+  === LogiQA R38b 新条件 Results ===
+    persample_wide      : 0.2200  Δbaseline=+0.2200  0.0% of sweep
+    calib_adaptive      : 0.2200  Δbaseline=+0.2200  0.0% of sweep
+    two_phase           : 0.2200  Δbaseline=+0.2200  0.0% of sweep
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_bar_LogiQA.png
+  保存 → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+============================================================
+生成合并汇总可视化 …
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_heatmap.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/combined_summary_final.png
+
+======================================================================
+R38 Combined 假设验证摘要（R38a + R38b）
+======================================================================
+
+BoolQ  (N=100):
+  Baseline=0.8200  扫参最优=0.8700  Δsweep=+0.0500
+    persample_cos8    : 0.8200  Δ=+0.0000  94.3% of sweep
+  ★ persample_var     : 0.8400  Δ=+0.0200  96.6% of sweep
+    onset_fixed8      : 0.8200  Δ=+0.0000  94.3% of sweep
+    calib_onset8      : 0.8200  Δ=+0.0000  94.3% of sweep
+    calib_global8     : 0.8300  Δ=+0.0100  95.4% of sweep
+    persample_wide    : 0.7900  Δ=-0.0300  90.8% of sweep
+    calib_adaptive    : 0.4700  Δ=-0.3500  54.0% of sweep
+    two_phase         : 0.4700  Δ=-0.3500  54.0% of sweep
+
+ARC-C  (N=100):
+  Baseline=0.5600  扫参最优=0.5800  Δsweep=+0.0200
+    persample_cos8    : 0.5400  Δ=-0.0200  93.1% of sweep
+    persample_var     : 0.5500  Δ=-0.0100  94.8% of sweep
+    onset_fixed8      : 0.5100  Δ=-0.0500  87.9% of sweep
+    calib_onset8      : 0.5200  Δ=-0.0400  89.7% of sweep
+  ★ calib_global8     : 0.5600  Δ=+0.0000  96.6% of sweep
+    persample_wide    : 0.2900  Δ=-0.2700  50.0% of sweep
+    calib_adaptive    : 0.2700  Δ=-0.2900  46.6% of sweep
+    two_phase         : 0.2700  Δ=-0.2900  46.6% of sweep
+
+TruthfulQA  (N=50):
+  Baseline=0.3200  扫参最优=0.3800  Δsweep=+0.0600
+    persample_cos8    : 0.3000  Δ=-0.0200  78.9% of sweep
+  ★ persample_var     : 0.3600  Δ=+0.0400  94.7% of sweep
+    onset_fixed8      : 0.3400  Δ=+0.0200  89.5% of sweep
+    calib_onset8      : 0.3200  Δ=+0.0000  84.2% of sweep
+    calib_global8     : 0.3000  Δ=-0.0200  78.9% of sweep
+    persample_wide    : 0.1600  Δ=-0.1600  42.1% of sweep
+    calib_adaptive    : 0.1400  Δ=-0.1800  36.8% of sweep
+    two_phase         : 0.1400  Δ=-0.1800  36.8% of sweep
+
+CSQA  (N=100):
+  Baseline=0.6400  扫参最优=0.6900  Δsweep=+0.0500
+  ★ persample_cos8    : 0.6800  Δ=+0.0400  98.6% of sweep
+    persample_var     : 0.6200  Δ=-0.0200  89.9% of sweep
+    onset_fixed8      : 0.6300  Δ=-0.0100  91.3% of sweep
+    calib_onset8      : 0.6200  Δ=-0.0200  89.9% of sweep
+    calib_global8     : 0.6700  Δ=+0.0300  97.1% of sweep
+    persample_wide    : 0.2700  Δ=-0.3700  39.1% of sweep
+    calib_adaptive    : 0.2000  Δ=-0.4400  29.0% of sweep
+    two_phase         : 0.2000  Δ=-0.4400  29.0% of sweep
+
+MMLU-HS-Math  (N=100):
+  Baseline=0.4000  扫参最优=0.4300  Δsweep=+0.0300
+    persample_cos8    : 0.3700  Δ=-0.0300  86.0% of sweep
+    persample_var     : 0.3700  Δ=-0.0300  86.0% of sweep
+    onset_fixed8      : 0.4300  Δ=+0.0300  100.0% of sweep
+  ★ calib_onset8      : 0.4500  Δ=+0.0500  104.7% of sweep
+    calib_global8     : 0.3700  Δ=-0.0300  86.0% of sweep
+    persample_wide    : 0.1600  Δ=-0.2400  37.2% of sweep
+    calib_adaptive    : 0.1500  Δ=-0.2500  34.9% of sweep
+    two_phase         : 0.1500  Δ=-0.2500  34.9% of sweep
+
+GPQA-Diamond  (N=100):
+  Baseline=0.3800  扫参最优=0.4400  Δsweep=+0.0600
+  ★ persample_cos8    : 0.4000  Δ=+0.0200  90.9% of sweep
+    persample_var     : 0.3700  Δ=-0.0100  84.1% of sweep
+    onset_fixed8      : 0.3600  Δ=-0.0200  81.8% of sweep
+    calib_onset8      : 0.3600  Δ=-0.0200  81.8% of sweep
+    calib_global8     : 0.3900  Δ=+0.0100  88.6% of sweep
+    persample_wide    : 0.2800  Δ=-0.1000  63.6% of sweep
+    calib_adaptive    : 0.2800  Δ=-0.1000  63.6% of sweep
+    two_phase         : 0.2800  Δ=-0.1000  63.6% of sweep
+
+AGIEval-Gaokao-MathQA  (N=100):
+  Baseline=0.5200  扫参最优=0.5400  Δsweep=+0.0200
+    persample_cos8    : 0.5000  Δ=-0.0200  92.6% of sweep
+  ★ persample_var     : 0.5800  Δ=+0.0600  107.4% of sweep
+    onset_fixed8      : 0.4700  Δ=-0.0500  87.0% of sweep
+    calib_onset8      : 0.5200  Δ=+0.0000  96.3% of sweep
+    calib_global8     : 0.4800  Δ=-0.0400  88.9% of sweep
+    persample_wide    : 0.3000  Δ=-0.2200  55.6% of sweep
+    calib_adaptive    : 0.2300  Δ=-0.2900  42.6% of sweep
+    two_phase         : 0.2300  Δ=-0.2900  42.6% of sweep
+
+LogiQA  (N=100):
+  Baseline=0.0000  扫参最优=0.0000  Δsweep=+0.0000
+  ★ persample_wide    : 0.2200  Δ=+0.2200  0.0% of sweep
+    calib_adaptive    : 0.2200  Δ=+0.2200  0.0% of sweep
+    two_phase         : 0.2200  Δ=+0.2200  0.0% of sweep
+
+──────────────────────────────────────────────────────────────────────
+方法 | 赢 benchmark 数 | 优于 baseline 数 | 宏平均 Δacc
+  逐样本-8层         | 2/8         | 2/7           | -0.0043
+  逐样本-变长         | 3/8         | 3/7           | +0.0071
+  固定Onset-8      | 0/8         | 2/7           | -0.0114
+  标定Onset-8      | 1/8         | 1/7           | -0.0043
+  标定全局-8         | 1/8         | 3/7           | -0.0057
+  逐样本-宽搜索        | 1/8         | 1/8           | -0.1462
+  标定自适应宽         | 1/8         | 1/8           | -0.2100
+  两阶段选层          | 1/8         | 1/8           | -0.2100
+  扫参最优           |              |              | +0.0362
+
+Saved → /root/autodl-tmp/loop_layer/experiments/results/r38_combined_results.json
+
+======================================================================
+R38b 完成！总耗时 482s (8.0min)
+======================================================================

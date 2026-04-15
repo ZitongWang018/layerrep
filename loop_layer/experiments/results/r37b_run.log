@@ -1,0 +1,146 @@
+预计算全局窗口（来自 R36 数据）：
+  MMLU-HS-Math: n_t=6 → (13, 19), n_t=8 → (13, 21)
+  GPQA-Diamond: n_t=6 → (13, 19), n_t=8 → (13, 21)
+  AGIEval-Gaokao-MathQA: n_t=6 → (13, 19), n_t=8 → (13, 21)
+============================================================
+R37: Signal-Guided ETD Layer Selection
+N_SAMPLES=100  PROBE_LAYERS=[6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+============================================================
+Saved → /root/autodl-tmp/loop_layer/experiments/figures/r37_signal_loop/MMLU-HS-Math_cos_res_windows.png
+Saved → /root/autodl-tmp/loop_layer/experiments/figures/r37_signal_loop/GPQA-Diamond_cos_res_windows.png
+Saved → /root/autodl-tmp/loop_layer/experiments/figures/r37_signal_loop/AGIEval-Gaokao-MathQA_cos_res_windows.png
+Loading Qwen3-8B …
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:52,  3.53it/s]Loading weights:   4%|▍         | 16/399 [00:00<00:07, 49.53it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:05, 66.10it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:04, 76.69it/s]Loading weights:  14%|█▍        | 57/399 [00:00<00:03, 105.95it/s]Loading weights:  18%|█▊        | 70/399 [00:00<00:02, 112.08it/s]Loading weights:  21%|██        | 83/399 [00:00<00:02, 106.05it/s]Loading weights:  24%|██▍       | 95/399 [00:01<00:02, 107.83it/s]Loading weights:  27%|██▋       | 107/399 [00:01<00:02, 106.57it/s]Loading weights:  30%|██▉       | 119/399 [00:01<00:02, 102.30it/s]Loading weights:  33%|███▎      | 130/399 [00:01<00:02, 100.38it/s]Loading weights:  35%|███▌      | 141/399 [00:01<00:02, 100.29it/s]Loading weights:  38%|███▊      | 152/399 [00:01<00:02, 99.29it/s] Loading weights:  41%|████      | 163/399 [00:01<00:02, 97.89it/s]Loading weights:  43%|████▎     | 173/399 [00:01<00:02, 94.14it/s]Loading weights:  47%|████▋     | 189/399 [00:02<00:01, 111.74it/s]Loading weights:  51%|█████     | 202/399 [00:02<00:01, 110.18it/s]Loading weights:  54%|█████▎    | 214/399 [00:02<00:01, 106.04it/s]Loading weights:  56%|█████▋    | 225/399 [00:02<00:01, 105.81it/s]Loading weights:  59%|█████▉    | 236/399 [00:02<00:01, 102.36it/s]Loading weights:  62%|██████▏   | 247/399 [00:02<00:01, 99.71it/s] Loading weights:  65%|██████▍   | 258/399 [00:02<00:01, 96.54it/s]Loading weights:  67%|██████▋   | 269/399 [00:02<00:01, 95.22it/s]Loading weights:  70%|███████   | 280/399 [00:02<00:01, 94.60it/s]Loading weights:  73%|███████▎  | 291/399 [00:03<00:01, 93.88it/s]Loading weights:  76%|███████▌  | 302/399 [00:03<00:01, 93.63it/s]Loading weights:  79%|███████▊  | 314/399 [00:03<00:00, 95.86it/s]Loading weights:  81%|████████▏ | 325/399 [00:03<00:00, 94.48it/s]Loading weights:  85%|████████▍ | 339/399 [00:03<00:00, 106.30it/s]Loading weights:  88%|████████▊ | 350/399 [00:03<00:00, 102.07it/s]Loading weights:  90%|█████████ | 361/399 [00:03<00:00, 99.84it/s] Loading weights:  93%|█████████▎| 372/399 [00:03<00:00, 96.38it/s]Loading weights:  96%|█████████▌| 382/399 [00:04<00:00, 91.50it/s]Loading weights:  98%|█████████▊| 392/399 [00:04<00:00, 90.76it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 96.36it/s]
+  36 layers, device=cuda
+
+──────────────────────────────────────────────────
+Benchmark: MMLU-HS-Math
+  Oracle:     (10, 18)
+  Global-cos6:(13, 19)
+  Global-cos8:(13, 21)
+──────────────────────────────────────────────────
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+  Loaded 100 samples
+  [MMLU-HS-Math] 10/100  16s | base=0.200  oracle=0.200  glb6=0.200  ps6=0.300  psvar=0.300  onset=0.200
+  [MMLU-HS-Math] 20/100  31s | base=0.250  oracle=0.400  glb6=0.250  ps6=0.250  psvar=0.300  onset=0.350
+  [MMLU-HS-Math] 30/100  46s | base=0.400  oracle=0.467  glb6=0.367  ps6=0.367  psvar=0.400  onset=0.433
+  [MMLU-HS-Math] 40/100  61s | base=0.400  oracle=0.500  glb6=0.400  ps6=0.425  psvar=0.450  onset=0.475
+  [MMLU-HS-Math] 50/100  77s | base=0.400  oracle=0.500  glb6=0.380  ps6=0.420  psvar=0.440  onset=0.440
+  [MMLU-HS-Math] 60/100  93s | base=0.383  oracle=0.467  glb6=0.383  ps6=0.433  psvar=0.417  onset=0.433
+  [MMLU-HS-Math] 70/100  108s | base=0.386  oracle=0.429  glb6=0.371  ps6=0.414  psvar=0.386  onset=0.414
+  [MMLU-HS-Math] 80/100  123s | base=0.400  oracle=0.425  glb6=0.375  ps6=0.412  psvar=0.375  onset=0.438
+  [MMLU-HS-Math] 90/100  138s | base=0.400  oracle=0.422  glb6=0.367  ps6=0.411  psvar=0.367  onset=0.433
+  [MMLU-HS-Math] 100/100  154s | base=0.400  oracle=0.430  glb6=0.370  ps6=0.410  psvar=0.370  onset=0.430
+
+  === MMLU-HS-Math Results ===
+    baseline            : 0.4000  (Δbaseline=+0.0000, 93.02% of oracle)
+    oracle              : 0.4300  (Δbaseline=+0.0300, 100.00% of oracle)
+    global_cos6         : 0.3700  (Δbaseline=-0.0300, 86.05% of oracle)
+    global_cos8         : 0.4100  (Δbaseline=+0.0100, 95.35% of oracle)
+    persample_cos6      : 0.4100  (Δbaseline=+0.0100, 95.35% of oracle)
+    persample_cos8      : 0.3700  (Δbaseline=-0.0300, 86.05% of oracle)
+    persample_cos10     : 0.4000  (Δbaseline=+0.0000, 93.02% of oracle)
+    persample_variable  : 0.3700  (Δbaseline=-0.0300, 86.05% of oracle)
+    onset_cos8          : 0.4300  (Δbaseline=+0.0300, 100.00% of oracle)
+Saved → /root/autodl-tmp/loop_layer/experiments/figures/r37_signal_loop/MMLU-HS-Math_window_dist.png
+
+──────────────────────────────────────────────────
+Benchmark: GPQA-Diamond
+  Oracle:     (15, 21)
+  Global-cos6:(13, 19)
+  Global-cos8:(13, 21)
+──────────────────────────────────────────────────
+Using the latest cached version of the dataset since Idavidrein/gpqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'gpqa_diamond' at /root/.cache/huggingface/datasets/Idavidrein___gpqa/gpqa_diamond/0.0.0/633f5ee89ab8ad4522a9f850766b73f62147ffdd (last modified on Mon Apr 13 15:05:27 2026).
+  Loaded 100 samples
+  [GPQA-Diamond] 10/100  24s | base=0.300  oracle=0.500  glb6=0.200  ps6=0.500  psvar=0.400  onset=0.200
+  [GPQA-Diamond] 20/100  51s | base=0.450  oracle=0.450  glb6=0.350  ps6=0.500  psvar=0.450  onset=0.400
+  [GPQA-Diamond] 30/100  76s | base=0.300  oracle=0.300  glb6=0.267  ps6=0.333  psvar=0.300  onset=0.300
+  [GPQA-Diamond] 40/100  103s | base=0.350  oracle=0.350  glb6=0.325  ps6=0.400  psvar=0.350  onset=0.350
+  [GPQA-Diamond] 50/100  127s | base=0.340  oracle=0.360  glb6=0.320  ps6=0.400  psvar=0.360  onset=0.360
+  [GPQA-Diamond] 60/100  148s | base=0.350  oracle=0.333  glb6=0.317  ps6=0.400  psvar=0.350  onset=0.367
+  [GPQA-Diamond] 70/100  170s | base=0.343  oracle=0.314  glb6=0.286  ps6=0.371  psvar=0.329  onset=0.343
+  [GPQA-Diamond] 80/100  202s | base=0.362  oracle=0.338  glb6=0.312  ps6=0.388  psvar=0.350  onset=0.375
+  [GPQA-Diamond] 90/100  230s | base=0.378  oracle=0.333  glb6=0.311  ps6=0.378  psvar=0.356  onset=0.367
+  [GPQA-Diamond] 100/100  254s | base=0.380  oracle=0.330  glb6=0.310  ps6=0.380  psvar=0.370  onset=0.360
+
+  === GPQA-Diamond Results ===
+    baseline            : 0.3800  (Δbaseline=+0.0000, 115.15% of oracle)
+    oracle              : 0.3300  (Δbaseline=-0.0500, 100.00% of oracle)
+    global_cos6         : 0.3100  (Δbaseline=-0.0700, 93.94% of oracle)
+    global_cos8         : 0.3900  (Δbaseline=+0.0100, 118.18% of oracle)
+    persample_cos6      : 0.3800  (Δbaseline=+0.0000, 115.15% of oracle)
+    persample_cos8      : 0.4000  (Δbaseline=+0.0200, 121.21% of oracle)
+    persample_cos10     : 0.3600  (Δbaseline=-0.0200, 109.09% of oracle)
+    persample_variable  : 0.3700  (Δbaseline=-0.0100, 112.12% of oracle)
+    onset_cos8          : 0.3600  (Δbaseline=-0.0200, 109.09% of oracle)
+Saved → /root/autodl-tmp/loop_layer/experiments/figures/r37_signal_loop/GPQA-Diamond_window_dist.png
+
+──────────────────────────────────────────────────
+Benchmark: AGIEval-Gaokao-MathQA
+  Oracle:     (13, 20)
+  Global-cos6:(13, 19)
+  Global-cos8:(13, 21)
+──────────────────────────────────────────────────
+Using the latest cached version of the dataset since hails/agieval-gaokao-mathqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/hails___agieval-gaokao-mathqa/default/0.0.0/c7810f0856cd8ac59bb9102bf4f10139849b70d7 (last modified on Mon Apr 13 14:58:10 2026).
+  Loaded 100 samples
+  [AGIEval-Gaokao-MathQA] 10/100  20s | base=0.600  oracle=0.600  glb6=0.600  ps6=0.700  psvar=0.700  onset=0.600
+  [AGIEval-Gaokao-MathQA] 20/100  39s | base=0.600  oracle=0.600  glb6=0.550  ps6=0.650  psvar=0.600  onset=0.500
+  [AGIEval-Gaokao-MathQA] 30/100  58s | base=0.567  oracle=0.533  glb6=0.567  ps6=0.600  psvar=0.600  onset=0.500
+  [AGIEval-Gaokao-MathQA] 40/100  78s | base=0.550  oracle=0.475  glb6=0.500  ps6=0.600  psvar=0.600  onset=0.475
+  [AGIEval-Gaokao-MathQA] 50/100  100s | base=0.480  oracle=0.460  glb6=0.480  ps6=0.560  psvar=0.540  onset=0.400
+  [AGIEval-Gaokao-MathQA] 60/100  120s | base=0.467  oracle=0.467  glb6=0.467  ps6=0.533  psvar=0.533  onset=0.400
+  [AGIEval-Gaokao-MathQA] 70/100  138s | base=0.486  oracle=0.471  glb6=0.486  ps6=0.543  psvar=0.543  onset=0.414
+  [AGIEval-Gaokao-MathQA] 80/100  157s | base=0.487  oracle=0.487  glb6=0.525  ps6=0.550  psvar=0.550  onset=0.425
+  [AGIEval-Gaokao-MathQA] 90/100  176s | base=0.511  oracle=0.522  glb6=0.533  ps6=0.578  psvar=0.578  onset=0.444
+  [AGIEval-Gaokao-MathQA] 100/100  197s | base=0.520  oracle=0.540  glb6=0.530  ps6=0.570  psvar=0.580  onset=0.470
+
+  === AGIEval-Gaokao-MathQA Results ===
+    baseline            : 0.5200  (Δbaseline=+0.0000, 96.30% of oracle)
+    oracle              : 0.5400  (Δbaseline=+0.0200, 100.00% of oracle)
+    global_cos6         : 0.5300  (Δbaseline=+0.0100, 98.15% of oracle)
+    global_cos8         : 0.5400  (Δbaseline=+0.0200, 100.00% of oracle)
+    persample_cos6      : 0.5700  (Δbaseline=+0.0500, 105.56% of oracle)
+    persample_cos8      : 0.5000  (Δbaseline=-0.0200, 92.59% of oracle)
+    persample_cos10     : 0.5000  (Δbaseline=-0.0200, 92.59% of oracle)
+    persample_variable  : 0.5800  (Δbaseline=+0.0600, 107.41% of oracle)
+    onset_cos8          : 0.4700  (Δbaseline=-0.0500, 87.04% of oracle)
+Saved → /root/autodl-tmp/loop_layer/experiments/figures/r37_signal_loop/AGIEval-Gaokao-MathQA_window_dist.png
+Saved → /root/autodl-tmp/loop_layer/experiments/figures/r37_signal_loop/summary_bar.png
+
+============================================================
+假设验证摘要
+============================================================
+
+MMLU-HS-Math:
+  Baseline=0.4000, Oracle=0.4300, Δ=+0.0300
+  H1 (global_cos6 > baseline): ✗  0.3700 vs 0.4000
+  H2 (best_persample ≥ best_global): ✓  0.4100 vs 0.4100
+  H3 (best_signal ≥ 90%% oracle): ✓  best_signal=0.4300, 90%%oracle=0.3870
+  [persample_variable] acc=0.3700  Δbaseline=-0.0300
+  [onset_cos8] acc=0.4300  Δbaseline=+0.0300
+
+GPQA-Diamond:
+  Baseline=0.3800, Oracle=0.3300, Δ=-0.0500
+  H1 (global_cos6 > baseline): ✗  0.3100 vs 0.3800
+  H2 (best_persample ≥ best_global): ✓  0.4000 vs 0.3900
+  H3 (best_signal ≥ 90%% oracle): ✓  best_signal=0.4000, 90%%oracle=0.2970
+  [persample_variable] acc=0.3700  Δbaseline=-0.0100
+  [onset_cos8] acc=0.3600  Δbaseline=-0.0200
+
+AGIEval-Gaokao-MathQA:
+  Baseline=0.5200, Oracle=0.5400, Δ=+0.0200
+  H1 (global_cos6 > baseline): ✓  0.5300 vs 0.5200
+  H2 (best_persample ≥ best_global): ✓  0.5700 vs 0.5400
+  H3 (best_signal ≥ 90%% oracle): ✓  best_signal=0.5800, 90%%oracle=0.4860
+  [persample_variable] acc=0.5800  Δbaseline=+0.0600
+  [onset_cos8] acc=0.4700  Δbaseline=-0.0500
+
+Saved → /root/autodl-tmp/loop_layer/experiments/results/r37_signal_loop_results.json
+
+============================================================
+R37 完成！总耗时 612s (10.2min)
+============================================================

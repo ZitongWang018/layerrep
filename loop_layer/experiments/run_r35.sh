@@ -1,21 +1,20 @@
 #!/usr/bin/env bash
 # ─────────────────────────────────────────────────────────────────────────────
-# R34: 基于方向与交叉交互的 FFN-Attention 信号探针
+# R35: Attention-FFN 非对易交换子探针
 #
 # 用法：
-#   bash run_r34.sh          # 等待 1 小时后自动运行
-#   bash run_r34.sh --now    # 立即运行（跳过等待）
+#   bash run_r35.sh          # 立即运行
+#   bash run_r35.sh --wait   # 等待 1 小时后运行（当前有进程时使用）
 # ─────────────────────────────────────────────────────────────────────────────
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
-WAIT_SECONDS=1  # 1 小时
+WAIT_SECONDS=0
 
-# --now 参数：跳过等待
-if [[ "${1:-}" == "--now" ]]; then
-    WAIT_SECONDS=0
+if [[ "${1:-}" == "--wait" ]]; then
+    WAIT_SECONDS=3600
 fi
 
 # ─── 环境 ────────────────────────────────────────────────────────────────────
@@ -23,24 +22,25 @@ export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
 export HF_DATASETS_OFFLINE="${HF_DATASETS_OFFLINE:-1}"
 export PYTHONPATH="/root/autodl-tmp/loop_layer:/root/autodl-tmp/loop_layer/ETD:/root/autodl-tmp/loop_layer/experiments:${PYTHONPATH:-}"
 
-LOG_FILE="$SCRIPT_DIR/results/r34_run.log"
+LOG_FILE="$SCRIPT_DIR/results/r35_run.log"
 mkdir -p "$SCRIPT_DIR/results"
 
 echo "============================================================"
-echo "  R34 Cross-Memory Signal Probe"
+echo "  R35 Attention-FFN Commutator Probe"
 echo "============================================================"
 echo "  时间：$(date '+%Y-%m-%d %H:%M:%S')"
-echo "  等待：${WAIT_SECONDS}s ($(( WAIT_SECONDS / 60 ))min) 后开始"
+if [[ $WAIT_SECONDS -gt 0 ]]; then
+    echo "  等待：${WAIT_SECONDS}s ($(( WAIT_SECONDS / 60 ))min) 后开始"
+fi
 echo "  日志：$LOG_FILE"
 echo "============================================================"
 
 if [[ $WAIT_SECONDS -gt 0 ]]; then
     echo ""
     echo "当前有 GPU 进程运行中，等待 ${WAIT_SECONDS}s ..."
-    echo "（可 Ctrl+C 取消，稍后用 bash run_r34.sh --now 立即运行）"
+    echo "（可 Ctrl+C 取消，稍后用 bash run_r35.sh 立即运行）"
     echo ""
 
-    # 每 60 秒打印一次倒计时
     REMAINING=$WAIT_SECONDS
     while [[ $REMAINING -gt 0 ]]; do
         MINS=$(( REMAINING / 60 ))
@@ -59,30 +59,36 @@ fi
 
 echo ""
 echo ">>> 检查 GPU 状态 ..."
-nvidia-smi --query-gpu=index,name,memory.used,memory.total,utilization.gpu --format=csv,noheader 2>/dev/null || echo "(nvidia-smi 不可用)"
+nvidia-smi --query-gpu=index,name,memory.used,memory.total,utilization.gpu \
+    --format=csv,noheader 2>/dev/null || echo "(nvidia-smi 不可用)"
 
 echo ""
-echo ">>> 启动 R34 实验 ..."
+echo ">>> 启动 R35 实验（精确 Attention-FFN 交换子）..."
 echo "    输出同时写入终端和 $LOG_FILE"
+echo "    预计耗时：~100-130s（含每层额外 MLP + Attention 重跑）"
 echo ""
 
-python3 "$SCRIPT_DIR/exp_r34_cross_memory_probe.py" 2>&1 | tee "$LOG_FILE"
+python3 "$SCRIPT_DIR/exp_r35_commutator_probe.py" 2>&1 | tee "$LOG_FILE"
 
 EXIT_CODE=${PIPESTATUS[0]}
 
 echo ""
 echo "============================================================"
 if [[ $EXIT_CODE -eq 0 ]]; then
-    echo "  R34 实验完成！$(date '+%Y-%m-%d %H:%M:%S')"
-    echo "  图表：$SCRIPT_DIR/figures/r34_cross_memory/"
-    echo "  数据：$SCRIPT_DIR/results/r34_cross_memory_data_full.json"
-    echo "  统计：$SCRIPT_DIR/results/r34_cross_memory_stats.json"
+    echo "  R35 实验完成！$(date '+%Y-%m-%d %H:%M:%S')"
     echo ""
-    echo ">>> 派生图（demean / delta / var，离线）…"
-    python3 "$SCRIPT_DIR/plot_r34_derived_signals.py" || echo "  [WARN] plot_r34_derived_signals.py 失败（可稍后手动运行）"
-    echo "  派生图：$SCRIPT_DIR/figures/r34_cross_memory/derived/"
+    echo "  图表目录：$SCRIPT_DIR/figures/r35_commutator/"
+    echo "  完整数据：$SCRIPT_DIR/results/r35_commutator_data_full.json"
+    echo "  统计摘要：$SCRIPT_DIR/results/r35_commutator_stats.json"
+    echo ""
+    echo "  关键图表："
+    echo "    *_r35_commutator_vs_layer.png   -- 每 benchmark 的 10 个交换子信号"
+    echo "    *_r35_vs_r34_comparison.png     -- R35 vs R34 对比（每 benchmark）"
+    echo "    r35_all_overlay.png             -- 全 benchmark 叠图"
+    echo "    r35_vs_r34_comparison.png       -- 全 bench 对比（H1/H2 检验）"
+    echo "    r35_scatter_commutator_vs_delta.png  -- Phase 2 散点图（H3 检验）"
 else
-    echo "  R34 实验失败 (exit code=$EXIT_CODE)"
+    echo "  R35 实验失败 (exit code=$EXIT_CODE)"
     echo "  日志：$LOG_FILE"
 fi
 echo "============================================================"

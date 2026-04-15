@@ -1,0 +1,70 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+======================================================================
+R38c: LogiQA 补全 + 最终可视化
+======================================================================
+[导入] R38a (7 benchmarks)
+
+补全 LogiQA …
+Loading Qwen3-8B …
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:20,  4.95it/s]Loading weights:   1%|          | 2/399 [00:00<01:25,  4.62it/s]Loading weights:   4%|▍         | 16/399 [00:00<00:09, 40.13it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:06, 60.07it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:04, 72.50it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:04, 79.75it/s]Loading weights:  15%|█▌        | 61/399 [00:00<00:03, 84.89it/s]Loading weights:  18%|█▊        | 72/399 [00:01<00:03, 87.87it/s]Loading weights:  21%|██        | 83/399 [00:01<00:03, 93.65it/s]Loading weights:  24%|██▎       | 94/399 [00:01<00:03, 96.50it/s]Loading weights:  26%|██▋       | 105/399 [00:01<00:03, 96.78it/s]Loading weights:  31%|███▏      | 125/399 [00:01<00:02, 119.34it/s]Loading weights:  34%|███▍      | 137/399 [00:01<00:02, 112.20it/s]Loading weights:  37%|███▋      | 149/399 [00:01<00:02, 109.22it/s]Loading weights:  40%|████      | 160/399 [00:01<00:02, 109.07it/s]Loading weights:  43%|████▎     | 171/399 [00:01<00:02, 107.76it/s]Loading weights:  46%|████▌     | 182/399 [00:02<00:02, 108.31it/s]Loading weights:  48%|████▊     | 193/399 [00:02<00:01, 103.99it/s]Loading weights:  51%|█████     | 204/399 [00:02<00:01, 101.20it/s]Loading weights:  54%|█████▍    | 215/399 [00:02<00:01, 98.21it/s] Loading weights:  57%|█████▋    | 226/399 [00:02<00:01, 97.75it/s]Loading weights:  59%|█████▉    | 237/399 [00:02<00:01, 94.85it/s]Loading weights:  64%|██████▍   | 257/399 [00:02<00:01, 117.41it/s]Loading weights:  67%|██████▋   | 269/399 [00:02<00:01, 113.06it/s]Loading weights:  70%|███████   | 281/399 [00:03<00:01, 110.52it/s]Loading weights:  74%|███████▍  | 297/399 [00:03<00:00, 123.29it/s]Loading weights:  78%|███████▊  | 312/399 [00:03<00:00, 125.51it/s]Loading weights:  81%|████████▏ | 325/399 [00:03<00:00, 108.84it/s]Loading weights:  84%|████████▍ | 337/399 [00:03<00:00, 107.50it/s]Loading weights:  87%|████████▋ | 349/399 [00:03<00:00, 105.86it/s]Loading weights:  90%|█████████ | 360/399 [00:03<00:00, 104.13it/s]Loading weights:  93%|█████████▎| 371/399 [00:03<00:00, 99.56it/s] Loading weights:  96%|█████████▌| 382/399 [00:04<00:00, 96.50it/s]Loading weights:  99%|█████████▉| 397/399 [00:04<00:00, 108.02it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 96.95it/s] 
+Using the latest cached version of the dataset since fireworks-ai/logiqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/fireworks-ai___logiqa/default/0.0.0/d8ef7e0cc4373988ac01f8f342d4bc6cb27919ad (last modified on Mon Apr 13 14:59:23 2026).
+  36 layers, device=cuda
+  LogiQA: 加载 100 样本
+  [标定] 聚合前 20 样本 cos_res profile …
+  [标定] 完成 (1.9s)
+    calib_global8=(13, 21)  calib_onset8=(18, 26)  sweep=(14, 19)
+  [ 10/100] base=0.200 swee=0.300 pers=0.200 pers=0.400 onse=0.300 cali=0.200 cali=0.200 | 17s ETA 151s
+  [ 20/100] base=0.250 swee=0.350 pers=0.250 pers=0.350 onse=0.350 cali=0.300 cali=0.250 | 36s ETA 144s
+  [ 30/100] base=0.333 swee=0.500 pers=0.333 pers=0.433 onse=0.400 cali=0.400 cali=0.300 | 57s ETA 133s
+  [ 40/100] base=0.350 swee=0.475 pers=0.350 pers=0.425 onse=0.400 cali=0.400 cali=0.350 | 78s ETA 116s
+  [ 50/100] base=0.360 swee=0.480 pers=0.360 pers=0.420 onse=0.380 cali=0.380 cali=0.340 | 98s ETA 98s
+  [ 60/100] base=0.367 swee=0.517 pers=0.383 pers=0.417 onse=0.367 cali=0.367 cali=0.367 | 116s ETA 77s
+  [ 70/100] base=0.371 swee=0.500 pers=0.371 pers=0.400 onse=0.343 cali=0.343 cali=0.357 | 133s ETA 57s
+  [ 80/100] base=0.388 swee=0.525 pers=0.400 pers=0.425 onse=0.350 cali=0.350 cali=0.388 | 150s ETA 37s
+  [ 90/100] base=0.367 swee=0.511 pers=0.378 pers=0.422 onse=0.333 cali=0.333 cali=0.378 | 167s ETA 19s
+  [100/100] base=0.360 swee=0.500 pers=0.380 pers=0.420 onse=0.310 cali=0.310 cali=0.380 | 185s ETA 0s
+
+  === LogiQA Results ===
+    baseline          : 0.3600  Δ=+0.0000  72.0% of sweep
+    sweep_best        : 0.5000  Δ=+0.1400  100.0% of sweep
+    persample_cos8    : 0.3800  Δ=+0.0200  76.0% of sweep
+    persample_var     : 0.4200  Δ=+0.0600  84.0% of sweep
+    onset_fixed8      : 0.3100  Δ=-0.0500  62.0% of sweep
+    calib_onset8      : 0.3100  Δ=-0.0500  62.0% of sweep
+    calib_global8     : 0.3800  Δ=+0.0200  76.0% of sweep
+
+生成最终可视化（8 benchmarks）…
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/all_benchmark_bars.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/final_heatmap.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/final_delta_scatter.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/final_calib_profiles.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/final_tstart_violin.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/final_summary.png
+
+======================================================================
+R38 最终结论（8 benchmarks，含 LogiQA）
+======================================================================
+
+Benchmark                      base  sweep  best_sig   Δbase  %sweep           方法
+BoolQ                         0.820  0.870     0.840   0.020   96.6%       逐样本-变长
+ARC-C                         0.560  0.580     0.560   0.000   96.6%       标定全局-8
+TruthfulQA                    0.320  0.380     0.360   0.040   94.7%       逐样本-变长
+CSQA                          0.640  0.690     0.680   0.040   98.6%       逐样本-8层
+MMLU-HS-Math                  0.400  0.430     0.450   0.050  104.7%    标定Onset-8
+GPQA-Diamond                  0.380  0.440     0.400   0.020   90.9%       逐样本-8层
+AGIEval-Gaokao-MathQA         0.520  0.540     0.580   0.060  107.4%       逐样本-变长
+LogiQA                        0.360  0.500     0.420   0.060   84.0%       逐样本-变长
+
+──────────────────────────────────────────────────────────────────────
+方法               wins   beats_base   macro_Δ
+逐样本-8层              2/8       3/8     -0.0013
+逐样本-变长              4/8       4/8     +0.0137
+固定Onset-8           0/8       2/8     -0.0163
+标定Onset-8           1/8       1/8     -0.0100
+标定全局-8              1/8       4/8     -0.0025
+扫参最优                ─            ─      +0.0537
+
+Saved → /root/autodl-tmp/loop_layer/experiments/results/r38_final_results.json
+
+R38c 完成！耗时 195s

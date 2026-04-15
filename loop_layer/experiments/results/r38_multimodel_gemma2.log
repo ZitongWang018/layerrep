@@ -1,0 +1,155 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+每 benchmark sweep_best（来自扫参 JSON）:
+  BoolQ: (16, 23)
+  ARC-C: (5, 11)
+  TruthfulQA: (7, 24)
+  CSQA: (6, 21)
+  MMLU-HS-Math: (8, 10)
+  GPQA-Diamond: (15, 20)
+  AGIEval-Gaokao-MathQA: (5, 11)
+  LogiQA: (5, 24)
+Loading model from /root/autodl-tmp/Gemma2-2B …
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   0%|          | 1/288 [00:00<00:28,  9.97it/s]Loading weights:   9%|▉         | 26/288 [00:00<00:01, 149.33it/s]Loading weights:  16%|█▋        | 47/288 [00:00<00:01, 168.98it/s]Loading weights:  22%|██▏       | 64/288 [00:00<00:01, 163.37it/s]Loading weights:  28%|██▊       | 81/288 [00:00<00:01, 131.56it/s]Loading weights:  35%|███▌      | 102/288 [00:00<00:01, 152.60it/s]Loading weights:  41%|████▏     | 119/288 [00:00<00:01, 149.79it/s]Loading weights:  48%|████▊     | 137/288 [00:00<00:00, 157.63it/s]Loading weights:  55%|█████▍    | 157/288 [00:01<00:00, 165.58it/s]Loading weights:  62%|██████▏   | 179/288 [00:01<00:00, 146.95it/s]Loading weights:  70%|███████   | 202/288 [00:01<00:00, 166.39it/s]Loading weights:  76%|███████▋  | 220/288 [00:01<00:00, 166.46it/s]Loading weights:  83%|████████▎ | 238/288 [00:01<00:00, 169.00it/s]Loading weights:  90%|████████▉ | 258/288 [00:01<00:00, 176.89it/s]Loading weights:  97%|█████████▋| 279/288 [00:01<00:00, 181.43it/s]Loading weights: 100%|██████████| 288/288 [00:01<00:00, 166.01it/s]
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+Using the latest cached version of the dataset since Idavidrein/gpqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'gpqa_diamond' at /root/.cache/huggingface/datasets/Idavidrein___gpqa/gpqa_diamond/0.0.0/633f5ee89ab8ad4522a9f850766b73f62147ffdd (last modified on Mon Apr 13 15:05:27 2026).
+num_layers=26 arch=gemma2
+
+──────────────────────────────────────────────────
+BoolQ  N=100  sweep_best=(16, 23)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 1.0s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(16, 23)
+  [ 10/100] base=0.600 swee=0.800 pers=0.800 pers=0.500 onse=0.800 cali=0.600 cali=0.800 | 4s ETA 38s
+  [ 20/100] base=0.700 swee=0.850 pers=0.850 pers=0.650 onse=0.850 cali=0.650 cali=0.850 | 8s ETA 33s
+  [ 30/100] base=0.700 swee=0.867 pers=0.833 pers=0.667 onse=0.833 cali=0.700 cali=0.833 | 12s ETA 29s
+  [ 40/100] base=0.700 swee=0.825 pers=0.825 pers=0.650 onse=0.825 cali=0.650 cali=0.825 | 16s ETA 25s
+  [ 50/100] base=0.680 swee=0.800 pers=0.820 pers=0.620 onse=0.820 cali=0.620 cali=0.820 | 21s ETA 21s
+  [ 60/100] base=0.700 swee=0.783 pers=0.783 pers=0.633 onse=0.783 cali=0.633 cali=0.783 | 25s ETA 17s
+  [ 70/100] base=0.643 swee=0.757 pers=0.757 pers=0.629 onse=0.757 cali=0.600 cali=0.757 | 29s ETA 13s
+  [ 80/100] base=0.675 swee=0.750 pers=0.750 pers=0.662 onse=0.750 cali=0.562 cali=0.750 | 33s ETA 8s
+  [ 90/100] base=0.667 swee=0.744 pers=0.733 pers=0.667 onse=0.733 cali=0.544 cali=0.722 | 37s ETA 4s
+  [100/100] base=0.680 swee=0.740 pers=0.730 pers=0.670 onse=0.730 cali=0.540 cali=0.720 | 41s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+
+──────────────────────────────────────────────────
+ARC-C  N=100  sweep_best=(5, 11)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 0.6s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(5, 11)
+  [ 10/100] base=0.100 swee=0.000 pers=0.000 pers=0.000 onse=0.000 cali=0.000 cali=0.000 | 7s ETA 65s
+  [ 20/100] base=0.250 swee=0.200 pers=0.150 pers=0.150 onse=0.150 cali=0.150 cali=0.150 | 14s ETA 58s
+  [ 30/100] base=0.267 swee=0.200 pers=0.200 pers=0.167 onse=0.200 cali=0.200 cali=0.200 | 22s ETA 50s
+  [ 40/100] base=0.275 swee=0.225 pers=0.225 pers=0.175 onse=0.225 cali=0.225 cali=0.225 | 29s ETA 43s
+  [ 50/100] base=0.300 swee=0.280 pers=0.240 pers=0.220 onse=0.240 cali=0.240 cali=0.240 | 36s ETA 36s
+  [ 60/100] base=0.267 swee=0.317 pers=0.233 pers=0.200 onse=0.233 cali=0.233 cali=0.233 | 43s ETA 29s
+  [ 70/100] base=0.271 swee=0.314 pers=0.243 pers=0.200 onse=0.243 cali=0.243 cali=0.243 | 50s ETA 21s
+  [ 80/100] base=0.237 swee=0.287 pers=0.225 pers=0.188 onse=0.225 cali=0.225 cali=0.225 | 57s ETA 14s
+  [ 90/100] base=0.233 swee=0.300 pers=0.222 pers=0.178 onse=0.222 cali=0.222 cali=0.222 | 64s ETA 7s
+  [100/100] base=0.290 swee=0.350 pers=0.250 pers=0.210 onse=0.250 cali=0.250 cali=0.250 | 71s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+
+──────────────────────────────────────────────────
+TruthfulQA  N=50  sweep_best=(7, 24)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 0.5s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(7, 24)
+  [ 10/50] base=0.200 swee=0.400 pers=0.200 pers=0.200 onse=0.200 cali=0.200 cali=0.200 | 11s ETA 44s
+  [ 20/50] base=0.350 swee=0.400 pers=0.300 pers=0.300 onse=0.300 cali=0.250 cali=0.300 | 20s ETA 31s
+  [ 30/50] base=0.300 swee=0.333 pers=0.267 pers=0.267 onse=0.267 cali=0.200 cali=0.267 | 31s ETA 21s
+  [ 40/50] base=0.275 swee=0.350 pers=0.225 pers=0.275 onse=0.225 cali=0.225 cali=0.225 | 40s ETA 10s
+  [ 50/50] base=0.280 swee=0.320 pers=0.240 pers=0.280 onse=0.240 cali=0.220 cali=0.240 | 50s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+
+──────────────────────────────────────────────────
+CSQA  N=100  sweep_best=(6, 21)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 0.5s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(6, 21)
+  [ 10/100] base=0.300 swee=0.400 pers=0.300 pers=0.400 onse=0.300 cali=0.300 cali=0.300 | 9s ETA 80s
+  [ 20/100] base=0.350 swee=0.300 pers=0.250 pers=0.350 onse=0.250 cali=0.300 cali=0.250 | 18s ETA 71s
+  [ 30/100] base=0.400 swee=0.367 pers=0.300 pers=0.433 onse=0.300 cali=0.367 cali=0.300 | 27s ETA 62s
+  [ 40/100] base=0.350 swee=0.300 pers=0.250 pers=0.350 onse=0.250 cali=0.275 cali=0.250 | 35s ETA 53s
+  [ 50/100] base=0.300 swee=0.300 pers=0.220 pers=0.300 onse=0.220 cali=0.240 cali=0.220 | 44s ETA 44s
+  [ 60/100] base=0.250 swee=0.283 pers=0.183 pers=0.250 onse=0.183 cali=0.200 cali=0.183 | 53s ETA 35s
+  [ 70/100] base=0.229 swee=0.300 pers=0.171 pers=0.243 onse=0.171 cali=0.186 cali=0.171 | 62s ETA 27s
+  [ 80/100] base=0.225 swee=0.300 pers=0.188 pers=0.250 onse=0.188 cali=0.175 cali=0.188 | 71s ETA 18s
+  [ 90/100] base=0.222 swee=0.289 pers=0.200 pers=0.244 onse=0.200 cali=0.167 cali=0.200 | 80s ETA 9s
+  [100/100] base=0.210 swee=0.280 pers=0.190 pers=0.250 onse=0.190 cali=0.160 cali=0.190 | 89s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+
+──────────────────────────────────────────────────
+MMLU-HS-Math  N=100  sweep_best=(8, 10)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 0.6s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(8, 10)
+  [ 10/100] base=0.100 swee=0.200 pers=0.200 pers=0.200 onse=0.200 cali=0.200 cali=0.200 | 7s ETA 63s
+  [ 20/100] base=0.100 swee=0.200 pers=0.200 pers=0.200 onse=0.200 cali=0.200 cali=0.200 | 14s ETA 56s
+  [ 30/100] base=0.100 swee=0.233 pers=0.200 pers=0.200 onse=0.200 cali=0.200 cali=0.200 | 21s ETA 49s
+  [ 40/100] base=0.125 swee=0.225 pers=0.150 pers=0.175 onse=0.150 cali=0.200 cali=0.150 | 28s ETA 42s
+  [ 50/100] base=0.120 swee=0.220 pers=0.140 pers=0.140 onse=0.140 cali=0.180 cali=0.140 | 35s ETA 35s
+  [ 60/100] base=0.100 swee=0.200 pers=0.133 pers=0.133 onse=0.133 cali=0.150 cali=0.133 | 42s ETA 28s
+  [ 70/100] base=0.114 swee=0.200 pers=0.143 pers=0.143 onse=0.143 cali=0.171 cali=0.143 | 49s ETA 21s
+  [ 80/100] base=0.125 swee=0.188 pers=0.138 pers=0.138 onse=0.138 cali=0.175 cali=0.138 | 56s ETA 14s
+  [ 90/100] base=0.111 swee=0.178 pers=0.133 pers=0.133 onse=0.133 cali=0.178 cali=0.133 | 63s ETA 7s
+  [100/100] base=0.110 swee=0.200 pers=0.140 pers=0.140 onse=0.140 cali=0.190 cali=0.140 | 70s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+
+──────────────────────────────────────────────────
+GPQA-Diamond  N=100  sweep_best=(15, 20)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 0.7s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(15, 20)
+  [ 10/100] base=0.400 swee=0.500 pers=0.300 pers=0.300 onse=0.300 cali=0.300 cali=0.300 | 9s ETA 77s
+  [ 20/100] base=0.300 swee=0.400 pers=0.300 pers=0.300 onse=0.300 cali=0.250 cali=0.300 | 18s ETA 71s
+  [ 30/100] base=0.300 swee=0.367 pers=0.300 pers=0.300 onse=0.300 cali=0.267 cali=0.300 | 27s ETA 62s
+  [ 40/100] base=0.275 swee=0.350 pers=0.275 pers=0.300 onse=0.275 cali=0.250 cali=0.275 | 35s ETA 53s
+  [ 50/100] base=0.320 swee=0.380 pers=0.320 pers=0.340 onse=0.320 cali=0.300 cali=0.320 | 44s ETA 44s
+  [ 60/100] base=0.333 swee=0.383 pers=0.333 pers=0.350 onse=0.333 cali=0.317 cali=0.333 | 51s ETA 34s
+  [ 70/100] base=0.343 swee=0.386 pers=0.343 pers=0.357 onse=0.343 cali=0.329 cali=0.343 | 59s ETA 25s
+  [ 80/100] base=0.300 swee=0.338 pers=0.300 pers=0.312 onse=0.300 cali=0.287 cali=0.300 | 69s ETA 17s
+  [ 90/100] base=0.300 swee=0.333 pers=0.300 pers=0.311 onse=0.300 cali=0.289 cali=0.300 | 79s ETA 9s
+  [100/100] base=0.280 swee=0.310 pers=0.280 pers=0.290 onse=0.280 cali=0.270 cali=0.280 | 87s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+Using the latest cached version of the dataset since hails/agieval-gaokao-mathqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/hails___agieval-gaokao-mathqa/default/0.0.0/c7810f0856cd8ac59bb9102bf4f10139849b70d7 (last modified on Mon Apr 13 14:58:10 2026).
+Using the latest cached version of the dataset since fireworks-ai/logiqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/fireworks-ai___logiqa/default/0.0.0/d8ef7e0cc4373988ac01f8f342d4bc6cb27919ad (last modified on Mon Apr 13 14:59:23 2026).
+
+──────────────────────────────────────────────────
+AGIEval-Gaokao-MathQA  N=100  sweep_best=(5, 11)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 0.6s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(5, 11)
+  [ 10/100] base=0.100 swee=0.300 pers=0.100 pers=0.100 onse=0.100 cali=0.200 cali=0.100 | 8s ETA 69s
+  [ 20/100] base=0.250 swee=0.350 pers=0.250 pers=0.250 onse=0.250 cali=0.300 cali=0.250 | 15s ETA 61s
+  [ 30/100] base=0.233 swee=0.300 pers=0.233 pers=0.233 onse=0.233 cali=0.267 cali=0.233 | 23s ETA 53s
+  [ 40/100] base=0.275 swee=0.300 pers=0.250 pers=0.250 onse=0.250 cali=0.275 cali=0.250 | 30s ETA 45s
+  [ 50/100] base=0.280 swee=0.300 pers=0.240 pers=0.240 onse=0.240 cali=0.260 cali=0.240 | 38s ETA 38s
+  [ 60/100] base=0.267 swee=0.317 pers=0.250 pers=0.250 onse=0.250 cali=0.267 cali=0.250 | 46s ETA 31s
+  [ 70/100] base=0.257 swee=0.300 pers=0.243 pers=0.243 onse=0.243 cali=0.257 cali=0.243 | 53s ETA 23s
+  [ 80/100] base=0.250 swee=0.287 pers=0.237 pers=0.237 onse=0.237 cali=0.250 cali=0.237 | 61s ETA 15s
+  [ 90/100] base=0.244 swee=0.278 pers=0.244 pers=0.244 onse=0.244 cali=0.244 cali=0.244 | 68s ETA 8s
+  [100/100] base=0.250 swee=0.300 pers=0.250 pers=0.250 onse=0.250 cali=0.250 cali=0.250 | 76s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+
+──────────────────────────────────────────────────
+LogiQA  N=100  sweep_best=(5, 24)
+  [标定] 前 20 条聚合 cos_res …
+  [标定] 0.6s  calib_global8=(15, 23) calib_onset8=(8, 16) sweep_best=(5, 24)
+  [ 10/100] base=0.200 swee=0.200 pers=0.200 pers=0.200 onse=0.200 cali=0.200 cali=0.200 | 8s ETA 72s
+  [ 20/100] base=0.200 swee=0.200 pers=0.200 pers=0.200 onse=0.200 cali=0.200 cali=0.200 | 17s ETA 67s
+  [ 30/100] base=0.233 swee=0.267 pers=0.233 pers=0.233 onse=0.233 cali=0.233 cali=0.233 | 26s ETA 61s
+  [ 40/100] base=0.225 swee=0.250 pers=0.225 pers=0.225 onse=0.225 cali=0.225 cali=0.225 | 36s ETA 53s
+  [ 50/100] base=0.220 swee=0.240 pers=0.240 pers=0.240 onse=0.240 cali=0.220 cali=0.240 | 45s ETA 45s
+  [ 60/100] base=0.217 swee=0.250 pers=0.250 pers=0.233 onse=0.250 cali=0.217 cali=0.250 | 53s ETA 36s
+  [ 70/100] base=0.243 swee=0.271 pers=0.271 pers=0.257 onse=0.271 cali=0.243 cali=0.271 | 61s ETA 26s
+  [ 80/100] base=0.237 swee=0.263 pers=0.263 pers=0.250 onse=0.263 cali=0.237 cali=0.263 | 70s ETA 17s
+  [ 90/100] base=0.222 swee=0.244 pers=0.244 pers=0.233 onse=0.244 cali=0.222 cali=0.244 | 78s ETA 9s
+  [100/100] base=0.220 swee=0.250 pers=0.230 pers=0.210 onse=0.230 cali=0.220 cali=0.230 | 86s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json
+Saved figure → /root/autodl-tmp/loop_layer/experiments/figures/r38_multimodel_gemma2/summary_multimodel.png
+
+完成。结果: /root/autodl-tmp/loop_layer/experiments/results/r38_multimodel_gemma2_signal.json

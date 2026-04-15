@@ -1,0 +1,339 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+======================================================================
+R38: Signal-Guided ETD — Full Benchmark Evaluation
+N_CALIB=20  PROBE_LAYERS=[6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+Conditions: ['baseline', 'sweep_best', 'persample_cos8', 'persample_var', 'onset_fixed8', 'calib_onset8', 'calib_global8']
+======================================================================
+Loading Qwen3-8B …
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:18,  5.10it/s]Loading weights:   1%|          | 2/399 [00:00<01:25,  4.63it/s]Loading weights:   4%|▍         | 15/399 [00:00<00:09, 38.77it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:06, 61.56it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:04, 73.85it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:04, 82.87it/s]Loading weights:  15%|█▌        | 61/399 [00:00<00:03, 88.36it/s]Loading weights:  18%|█▊        | 72/399 [00:01<00:03, 91.15it/s]Loading weights:  21%|██        | 83/399 [00:01<00:03, 90.79it/s]Loading weights:  24%|██▎       | 94/399 [00:01<00:03, 93.52it/s]Loading weights:  27%|██▋       | 108/399 [00:01<00:02, 106.25it/s]Loading weights:  30%|███       | 120/399 [00:01<00:02, 108.30it/s]Loading weights:  34%|███▍      | 136/399 [00:01<00:02, 117.69it/s]Loading weights:  37%|███▋      | 148/399 [00:01<00:02, 111.17it/s]Loading weights:  40%|████      | 160/399 [00:01<00:02, 107.19it/s]Loading weights:  43%|████▎     | 171/399 [00:01<00:02, 106.77it/s]Loading weights:  46%|████▌     | 182/399 [00:02<00:02, 103.95it/s]Loading weights:  48%|████▊     | 193/399 [00:02<00:02, 102.45it/s]Loading weights:  51%|█████     | 204/399 [00:02<00:01, 101.55it/s]Loading weights:  54%|█████▍    | 215/399 [00:02<00:01, 101.37it/s]Loading weights:  57%|█████▋    | 226/399 [00:02<00:01, 99.06it/s] Loading weights:  59%|█████▉    | 237/399 [00:02<00:01, 96.99it/s]Loading weights:  62%|██████▏   | 248/399 [00:02<00:01, 95.24it/s]Loading weights:  66%|██████▌   | 263/399 [00:02<00:01, 109.86it/s]Loading weights:  70%|██████▉   | 279/399 [00:03<00:01, 117.71it/s]Loading weights:  73%|███████▎  | 291/399 [00:03<00:00, 111.06it/s]Loading weights:  76%|███████▌  | 303/399 [00:03<00:00, 103.45it/s]Loading weights:  79%|███████▊  | 314/399 [00:03<00:00, 102.26it/s]Loading weights:  81%|████████▏ | 325/399 [00:03<00:00, 99.83it/s] Loading weights:  84%|████████▍ | 336/399 [00:03<00:00, 94.07it/s]Loading weights:  87%|████████▋ | 346/399 [00:03<00:00, 88.70it/s]Loading weights:  90%|████████▉ | 358/399 [00:03<00:00, 92.13it/s]Loading weights:  92%|█████████▏| 368/399 [00:03<00:00, 88.79it/s]Loading weights:  95%|█████████▍| 379/399 [00:04<00:00, 93.46it/s]Loading weights:  98%|█████████▊| 390/399 [00:04<00:00, 97.55it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 93.61it/s]
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+  36 layers, device=cuda
+
+────────────────────────────────────────────────────────────
+Benchmark: BoolQ  N=100
+  sweep_best = (8, 22)
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (1.6s)
+    calib_global8  : (15, 23)
+    calib_onset8   : (18, 26)
+    sweep_best     : (8, 22)
+  [ 10/100] baseline=1.000 sweep_best=1.000 persample_cos8=1.000 persample_var=1.000 onset_fixed8=1.000 calib_onset8=1.000 calib_global8=1.000 | 9s elapsed, ETA 81s
+  [ 20/100] baseline=0.900 sweep_best=0.900 persample_cos8=0.900 persample_var=0.900 onset_fixed8=0.950 calib_onset8=0.950 calib_global8=0.900 | 18s elapsed, ETA 70s
+  [ 30/100] baseline=0.833 sweep_best=0.867 persample_cos8=0.900 persample_var=0.833 onset_fixed8=0.900 calib_onset8=0.867 calib_global8=0.900 | 26s elapsed, ETA 61s
+  [ 40/100] baseline=0.850 sweep_best=0.875 persample_cos8=0.900 persample_var=0.850 onset_fixed8=0.900 calib_onset8=0.850 calib_global8=0.900 | 34s elapsed, ETA 51s
+  [ 50/100] baseline=0.860 sweep_best=0.880 persample_cos8=0.900 persample_var=0.860 onset_fixed8=0.900 calib_onset8=0.880 calib_global8=0.900 | 43s elapsed, ETA 43s
+  [ 60/100] baseline=0.833 sweep_best=0.867 persample_cos8=0.850 persample_var=0.833 onset_fixed8=0.850 calib_onset8=0.850 calib_global8=0.850 | 53s elapsed, ETA 35s
+  [ 70/100] baseline=0.829 sweep_best=0.857 persample_cos8=0.829 persample_var=0.843 onset_fixed8=0.814 calib_onset8=0.829 calib_global8=0.829 | 61s elapsed, ETA 26s
+  [ 80/100] baseline=0.850 sweep_best=0.875 persample_cos8=0.850 persample_var=0.863 onset_fixed8=0.825 calib_onset8=0.825 calib_global8=0.850 | 69s elapsed, ETA 17s
+  [ 90/100] baseline=0.833 sweep_best=0.856 persample_cos8=0.833 persample_var=0.844 onset_fixed8=0.822 calib_onset8=0.822 calib_global8=0.833 | 78s elapsed, ETA 9s
+  [100/100] baseline=0.820 sweep_best=0.870 persample_cos8=0.820 persample_var=0.840 onset_fixed8=0.820 calib_onset8=0.820 calib_global8=0.830 | 85s elapsed, ETA 0s
+
+  === BoolQ Results ===
+    baseline          : 0.8200  Δ=+0.0000  94.3% of sweep_best
+    sweep_best        : 0.8700  Δ=+0.0500  100.0% of sweep_best
+    persample_cos8    : 0.8200  Δ=+0.0000  94.3% of sweep_best
+    persample_var     : 0.8400  Δ=+0.0200  96.6% of sweep_best
+    onset_fixed8      : 0.8200  Δ=+0.0000  94.3% of sweep_best
+    calib_onset8      : 0.8200  Δ=+0.0000  94.3% of sweep_best
+    calib_global8     : 0.8300  Δ=+0.0100  95.4% of sweep_best
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/bar_BoolQ.png
+  保存中间结果 → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: ARC-C  N=100
+  sweep_best = (14, 20)
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.9s)
+    calib_global8  : (15, 23)
+    calib_onset8   : (18, 26)
+    sweep_best     : (14, 20)
+  [ 10/100] baseline=0.500 sweep_best=0.500 persample_cos8=0.400 persample_var=0.400 onset_fixed8=0.400 calib_onset8=0.400 calib_global8=0.400 | 12s elapsed, ETA 107s
+  [ 20/100] baseline=0.450 sweep_best=0.500 persample_cos8=0.400 persample_var=0.450 onset_fixed8=0.400 calib_onset8=0.400 calib_global8=0.400 | 23s elapsed, ETA 94s
+  [ 30/100] baseline=0.500 sweep_best=0.567 persample_cos8=0.500 persample_var=0.500 onset_fixed8=0.433 calib_onset8=0.433 calib_global8=0.500 | 35s elapsed, ETA 82s
+  [ 40/100] baseline=0.525 sweep_best=0.575 persample_cos8=0.500 persample_var=0.525 onset_fixed8=0.475 calib_onset8=0.475 calib_global8=0.525 | 47s elapsed, ETA 70s
+  [ 50/100] baseline=0.560 sweep_best=0.600 persample_cos8=0.540 persample_var=0.560 onset_fixed8=0.500 calib_onset8=0.500 calib_global8=0.560 | 58s elapsed, ETA 58s
+  [ 60/100] baseline=0.550 sweep_best=0.550 persample_cos8=0.533 persample_var=0.517 onset_fixed8=0.483 calib_onset8=0.483 calib_global8=0.550 | 70s elapsed, ETA 46s
+  [ 70/100] baseline=0.543 sweep_best=0.557 persample_cos8=0.529 persample_var=0.514 onset_fixed8=0.486 calib_onset8=0.486 calib_global8=0.543 | 81s elapsed, ETA 35s
+  [ 80/100] baseline=0.512 sweep_best=0.537 persample_cos8=0.500 persample_var=0.500 onset_fixed8=0.463 calib_onset8=0.475 calib_global8=0.512 | 93s elapsed, ETA 23s
+  [ 90/100] baseline=0.556 sweep_best=0.578 persample_cos8=0.533 persample_var=0.544 onset_fixed8=0.500 calib_onset8=0.511 calib_global8=0.556 | 104s elapsed, ETA 12s
+  [100/100] baseline=0.560 sweep_best=0.580 persample_cos8=0.540 persample_var=0.550 onset_fixed8=0.510 calib_onset8=0.520 calib_global8=0.560 | 116s elapsed, ETA 0s
+
+  === ARC-C Results ===
+    baseline          : 0.5600  Δ=+0.0000  96.6% of sweep_best
+    sweep_best        : 0.5800  Δ=+0.0200  100.0% of sweep_best
+    persample_cos8    : 0.5400  Δ=-0.0200  93.1% of sweep_best
+    persample_var     : 0.5500  Δ=-0.0100  94.8% of sweep_best
+    onset_fixed8      : 0.5100  Δ=-0.0500  87.9% of sweep_best
+    calib_onset8      : 0.5200  Δ=-0.0400  89.7% of sweep_best
+    calib_global8     : 0.5600  Δ=+0.0000  96.6% of sweep_best
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/bar_ARC-C.png
+  保存中间结果 → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: TruthfulQA  N=50
+  sweep_best = (16, 19)
+────────────────────────────────────────────────────────────
+  加载 50 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.8s)
+    calib_global8  : (15, 23)
+    calib_onset8   : (16, 24)
+    sweep_best     : (16, 19)
+  [ 10/50] baseline=0.500 sweep_best=0.500 persample_cos8=0.400 persample_var=0.500 onset_fixed8=0.500 calib_onset8=0.500 calib_global8=0.400 | 17s elapsed, ETA 67s
+  [ 20/50] baseline=0.400 sweep_best=0.450 persample_cos8=0.350 persample_var=0.450 onset_fixed8=0.400 calib_onset8=0.400 calib_global8=0.350 | 31s elapsed, ETA 47s
+  [ 30/50] baseline=0.433 sweep_best=0.467 persample_cos8=0.400 persample_var=0.467 onset_fixed8=0.433 calib_onset8=0.433 calib_global8=0.400 | 47s elapsed, ETA 31s
+  [ 40/50] baseline=0.350 sweep_best=0.375 persample_cos8=0.325 persample_var=0.350 onset_fixed8=0.350 calib_onset8=0.350 calib_global8=0.325 | 61s elapsed, ETA 15s
+  [ 50/50] baseline=0.320 sweep_best=0.380 persample_cos8=0.300 persample_var=0.360 onset_fixed8=0.340 calib_onset8=0.320 calib_global8=0.300 | 76s elapsed, ETA 0s
+
+  === TruthfulQA Results ===
+    baseline          : 0.3200  Δ=+0.0000  84.2% of sweep_best
+    sweep_best        : 0.3800  Δ=+0.0600  100.0% of sweep_best
+    persample_cos8    : 0.3000  Δ=-0.0200  78.9% of sweep_best
+    persample_var     : 0.3600  Δ=+0.0400  94.7% of sweep_best
+    onset_fixed8      : 0.3400  Δ=+0.0200  89.5% of sweep_best
+    calib_onset8      : 0.3200  Δ=+0.0000  84.2% of sweep_best
+    calib_global8     : 0.3000  Δ=-0.0200  78.9% of sweep_best
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/bar_TruthfulQA.png
+  保存中间结果 → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+────────────────────────────────────────────────────────────
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+Using the latest cached version of the dataset since Idavidrein/gpqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'gpqa_diamond' at /root/.cache/huggingface/datasets/Idavidrein___gpqa/gpqa_diamond/0.0.0/633f5ee89ab8ad4522a9f850766b73f62147ffdd (last modified on Mon Apr 13 15:05:27 2026).
+Benchmark: CSQA  N=100
+  sweep_best = (10, 22)
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.8s)
+    calib_global8  : (13, 21)
+    calib_onset8   : (16, 24)
+    sweep_best     : (10, 22)
+  [ 10/100] baseline=0.800 sweep_best=0.800 persample_cos8=0.800 persample_var=0.800 onset_fixed8=0.800 calib_onset8=0.800 calib_global8=0.800 | 14s elapsed, ETA 123s
+  [ 20/100] baseline=0.600 sweep_best=0.700 persample_cos8=0.600 persample_var=0.650 onset_fixed8=0.600 calib_onset8=0.600 calib_global8=0.650 | 27s elapsed, ETA 109s
+  [ 30/100] baseline=0.600 sweep_best=0.667 persample_cos8=0.600 persample_var=0.633 onset_fixed8=0.600 calib_onset8=0.600 calib_global8=0.633 | 41s elapsed, ETA 96s
+  [ 40/100] baseline=0.625 sweep_best=0.700 persample_cos8=0.650 persample_var=0.625 onset_fixed8=0.625 calib_onset8=0.625 calib_global8=0.675 | 55s elapsed, ETA 83s
+  [ 50/100] baseline=0.620 sweep_best=0.680 persample_cos8=0.640 persample_var=0.600 onset_fixed8=0.600 calib_onset8=0.600 calib_global8=0.660 | 69s elapsed, ETA 69s
+  [ 60/100] baseline=0.600 sweep_best=0.683 persample_cos8=0.650 persample_var=0.567 onset_fixed8=0.617 calib_onset8=0.617 calib_global8=0.633 | 83s elapsed, ETA 55s
+  [ 70/100] baseline=0.586 sweep_best=0.671 persample_cos8=0.643 persample_var=0.586 onset_fixed8=0.614 calib_onset8=0.614 calib_global8=0.629 | 97s elapsed, ETA 41s
+  [ 80/100] baseline=0.613 sweep_best=0.675 persample_cos8=0.662 persample_var=0.600 onset_fixed8=0.613 calib_onset8=0.600 calib_global8=0.650 | 110s elapsed, ETA 28s
+  [ 90/100] baseline=0.611 sweep_best=0.667 persample_cos8=0.656 persample_var=0.589 onset_fixed8=0.600 calib_onset8=0.589 calib_global8=0.644 | 124s elapsed, ETA 14s
+  [100/100] baseline=0.640 sweep_best=0.690 persample_cos8=0.680 persample_var=0.620 onset_fixed8=0.630 calib_onset8=0.620 calib_global8=0.670 | 138s elapsed, ETA 0s
+
+  === CSQA Results ===
+    baseline          : 0.6400  Δ=+0.0000  92.8% of sweep_best
+    sweep_best        : 0.6900  Δ=+0.0500  100.0% of sweep_best
+    persample_cos8    : 0.6800  Δ=+0.0400  98.6% of sweep_best
+    persample_var     : 0.6200  Δ=-0.0200  89.9% of sweep_best
+    onset_fixed8      : 0.6300  Δ=-0.0100  91.3% of sweep_best
+    calib_onset8      : 0.6200  Δ=-0.0200  89.9% of sweep_best
+    calib_global8     : 0.6700  Δ=+0.0300  97.1% of sweep_best
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/bar_CSQA.png
+  保存中间结果 → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: MMLU-HS-Math  N=100
+  sweep_best = (10, 18)
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (0.9s)
+    calib_global8  : (15, 23)
+    calib_onset8   : (12, 20)
+    sweep_best     : (10, 18)
+  [ 10/100] baseline=0.200 sweep_best=0.200 persample_cos8=0.300 persample_var=0.300 onset_fixed8=0.200 calib_onset8=0.300 calib_global8=0.300 | 12s elapsed, ETA 112s
+  [ 20/100] baseline=0.250 sweep_best=0.400 persample_cos8=0.300 persample_var=0.300 onset_fixed8=0.350 calib_onset8=0.400 calib_global8=0.250 | 24s elapsed, ETA 97s
+  [ 30/100] baseline=0.400 sweep_best=0.467 persample_cos8=0.433 persample_var=0.400 onset_fixed8=0.433 calib_onset8=0.467 calib_global8=0.333 | 36s elapsed, ETA 84s
+  [ 40/100] baseline=0.400 sweep_best=0.500 persample_cos8=0.450 persample_var=0.450 onset_fixed8=0.475 calib_onset8=0.500 calib_global8=0.400 | 48s elapsed, ETA 72s
+  [ 50/100] baseline=0.400 sweep_best=0.500 persample_cos8=0.400 persample_var=0.440 onset_fixed8=0.440 calib_onset8=0.480 calib_global8=0.360 | 60s elapsed, ETA 60s
+  [ 60/100] baseline=0.383 sweep_best=0.467 persample_cos8=0.383 persample_var=0.417 onset_fixed8=0.433 calib_onset8=0.467 calib_global8=0.350 | 72s elapsed, ETA 48s
+  [ 70/100] baseline=0.386 sweep_best=0.429 persample_cos8=0.357 persample_var=0.386 onset_fixed8=0.414 calib_onset8=0.457 calib_global8=0.343 | 84s elapsed, ETA 36s
+  [ 80/100] baseline=0.400 sweep_best=0.425 persample_cos8=0.362 persample_var=0.375 onset_fixed8=0.438 calib_onset8=0.475 calib_global8=0.350 | 96s elapsed, ETA 24s
+  [ 90/100] baseline=0.400 sweep_best=0.422 persample_cos8=0.367 persample_var=0.367 onset_fixed8=0.433 calib_onset8=0.467 calib_global8=0.356 | 108s elapsed, ETA 12s
+  [100/100] baseline=0.400 sweep_best=0.430 persample_cos8=0.370 persample_var=0.370 onset_fixed8=0.430 calib_onset8=0.450 calib_global8=0.370 | 120s elapsed, ETA 0s
+
+  === MMLU-HS-Math Results ===
+    baseline          : 0.4000  Δ=+0.0000  93.0% of sweep_best
+    sweep_best        : 0.4300  Δ=+0.0300  100.0% of sweep_best
+    persample_cos8    : 0.3700  Δ=-0.0300  86.0% of sweep_best
+    persample_var     : 0.3700  Δ=-0.0300  86.0% of sweep_best
+    onset_fixed8      : 0.4300  Δ=+0.0300  100.0% of sweep_best
+    calib_onset8      : 0.4500  Δ=+0.0500  104.7% of sweep_best
+    calib_global8     : 0.3700  Δ=-0.0300  86.0% of sweep_best
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/bar_MMLU-HS-Math.png
+  保存中间结果 → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: GPQA-Diamond  N=100
+  sweep_best = (18, 20)
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (1.3s)
+    calib_global8  : (13, 21)
+    calib_onset8   : (10, 18)
+    sweep_best     : (18, 20)
+  [ 10/100] baseline=0.300 sweep_best=0.500 persample_cos8=0.400 persample_var=0.400 onset_fixed8=0.200 calib_onset8=0.300 calib_global8=0.500 | 18s elapsed, ETA 164s
+  [ 20/100] baseline=0.450 sweep_best=0.500 persample_cos8=0.500 persample_var=0.450 onset_fixed8=0.400 calib_onset8=0.450 calib_global8=0.500 | 39s elapsed, ETA 156s
+  [ 30/100] baseline=0.300 sweep_best=0.433 persample_cos8=0.367 persample_var=0.300 onset_fixed8=0.300 calib_onset8=0.367 calib_global8=0.367 | 59s elapsed, ETA 137s
+  [ 40/100] baseline=0.350 sweep_best=0.450 persample_cos8=0.400 persample_var=0.350 onset_fixed8=0.350 calib_onset8=0.400 calib_global8=0.400 | 79s elapsed, ETA 118s
+  [ 50/100] baseline=0.340 sweep_best=0.440 persample_cos8=0.400 persample_var=0.360 onset_fixed8=0.360 calib_onset8=0.400 calib_global8=0.380 | 97s elapsed, ETA 97s
+  [ 60/100] baseline=0.350 sweep_best=0.433 persample_cos8=0.400 persample_var=0.350 onset_fixed8=0.367 calib_onset8=0.400 calib_global8=0.400 | 114s elapsed, ETA 76s
+  [ 70/100] baseline=0.343 sweep_best=0.414 persample_cos8=0.386 persample_var=0.329 onset_fixed8=0.343 calib_onset8=0.357 calib_global8=0.386 | 130s elapsed, ETA 56s
+  [ 80/100] baseline=0.362 sweep_best=0.425 persample_cos8=0.400 persample_var=0.350 onset_fixed8=0.375 calib_onset8=0.375 calib_global8=0.400 | 155s elapsed, ETA 39s
+  [ 90/100] baseline=0.378 sweep_best=0.444 persample_cos8=0.400 persample_var=0.356 onset_fixed8=0.367 calib_onset8=0.367 calib_global8=0.400 | 177s elapsed, ETA 20s
+  [100/100] baseline=0.380 sweep_best=0.440 persample_cos8=0.400 persample_var=0.370 onset_fixed8=0.360 calib_onset8=0.360 calib_global8=0.390 | 195s elapsed, ETA 0s
+
+  === GPQA-Diamond Results ===
+    baseline          : 0.3800  Δ=+0.0000  86.4% of sweep_best
+    sweep_best        : 0.4400  Δ=+0.0600  100.0% of sweep_best
+Using the latest cached version of the dataset since hails/agieval-gaokao-mathqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/hails___agieval-gaokao-mathqa/default/0.0.0/c7810f0856cd8ac59bb9102bf4f10139849b70d7 (last modified on Mon Apr 13 14:58:10 2026).
+    persample_cos8    : 0.4000  Δ=+0.0200  90.9% of sweep_best
+    persample_var     : 0.3700  Δ=-0.0100  84.1% of sweep_best
+    onset_fixed8      : 0.3600  Δ=-0.0200  81.8% of sweep_best
+    calib_onset8      : 0.3600  Δ=-0.0200  81.8% of sweep_best
+    calib_global8     : 0.3900  Δ=+0.0100  88.6% of sweep_best
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/bar_GPQA-Diamond.png
+  保存中间结果 → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: AGIEval-Gaokao-MathQA  N=100
+  sweep_best = (13, 20)
+────────────────────────────────────────────────────────────
+  加载 100 样本
+  [标定] 聚合前 20 样本的 cos_res profile …
+  [标定] 完成 (1.0s)
+    calib_global8  : (11, 19)
+    calib_onset8   : (16, 24)
+    sweep_best     : (13, 20)
+  [ 10/100] baseline=0.600 sweep_best=0.600 persample_cos8=0.600 persample_var=0.700 onset_fixed8=0.600 calib_onset8=0.700 calib_global8=0.500 | 16s elapsed, ETA 144s
+  [ 20/100] baseline=0.600 sweep_best=0.600 persample_cos8=0.550 persample_var=0.600 onset_fixed8=0.500 calib_onset8=0.700 calib_global8=0.450 | 30s elapsed, ETA 120s
+  [ 30/100] baseline=0.567 sweep_best=0.533 persample_cos8=0.533 persample_var=0.600 onset_fixed8=0.500 calib_onset8=0.600 calib_global8=0.433 | 46s elapsed, ETA 106s
+  [ 40/100] baseline=0.550 sweep_best=0.475 persample_cos8=0.475 persample_var=0.600 onset_fixed8=0.475 calib_onset8=0.550 calib_global8=0.400 | 61s elapsed, ETA 92s
+  [ 50/100] baseline=0.480 sweep_best=0.460 persample_cos8=0.420 persample_var=0.540 onset_fixed8=0.400 calib_onset8=0.500 calib_global8=0.380 | 78s elapsed, ETA 78s
+  [ 60/100] baseline=0.467 sweep_best=0.467 persample_cos8=0.433 persample_var=0.533 onset_fixed8=0.400 calib_onset8=0.500 calib_global8=0.400 | 94s elapsed, ETA 63s
+  [ 70/100] baseline=0.486 sweep_best=0.471 persample_cos8=0.429 persample_var=0.543 onset_fixed8=0.414 calib_onset8=0.486 calib_global8=0.414 | 108s elapsed, ETA 46s
+  [ 80/100] baseline=0.487 sweep_best=0.487 persample_cos8=0.450 persample_var=0.550 onset_fixed8=0.425 calib_onset8=0.487 calib_global8=0.450 | 122s elapsed, ETA 31s
+  [ 90/100] baseline=0.511 sweep_best=0.522 persample_cos8=0.478 persample_var=0.578 onset_fixed8=0.444 calib_onset8=0.511 calib_global8=0.467 | 138s elapsed, ETA 15s
+  [100/100] baseline=0.520 sweep_best=0.540 persample_cos8=0.500 persample_var=0.580 onset_fixed8=0.470 calib_onset8=0.520 calib_global8=0.480 | 154s elapsed, ETA 0s
+
+  === AGIEval-Gaokao-MathQA Results ===
+    baseline          : 0.5200  Δ=+0.0000  96.3% of sweep_best
+    sweep_best        : 0.5400  Δ=+0.0200  100.0% of sweep_best
+    persample_cos8    : 0.5000  Δ=-0.0200  92.6% of sweep_best
+    persample_var     : 0.5800  Δ=+0.0600  107.4% of sweep_best
+    onset_fixed8      : 0.4700  Δ=-0.0500  87.0% of sweep_best
+    calib_onset8      : 0.5200  Δ=+0.0000  96.3% of sweep_best
+    calib_global8     : 0.4800  Δ=-0.0400  88.9% of sweep_best
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/bar_AGIEval-Gaokao-MathQA.png
+  保存中间结果 → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+────────────────────────────────────────────────────────────
+Benchmark: LogiQA  N=100
+  sweep_best = (14, 19)
+────────────────────────────────────────────────────────────
+  [ERROR] 加载 LogiQA 失败: Couldn't reach 'EleutherAI/logiqa' on the Hub (OfflineModeIsEnabled)
+
+============================================================
+生成汇总可视化 …
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/heatmap_delta_acc.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/delta_acc_scatter.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/calib_profiles.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/tstart_violin.png
+  Saved → /root/autodl-tmp/loop_layer/experiments/figures/r38_signal_full/summary_final.png
+
+======================================================================
+假设验证摘要（R38）
+======================================================================
+
+BoolQ  (N=100):
+  Baseline=0.8200  扫参最优=0.8700  Δsweep=+0.0500
+    persample_cos8    : 0.8200  Δ=+0.0000  94.3% of sweep
+  ★ persample_var     : 0.8400  Δ=+0.0200  96.6% of sweep
+    onset_fixed8      : 0.8200  Δ=+0.0000  94.3% of sweep
+    calib_onset8      : 0.8200  Δ=+0.0000  94.3% of sweep
+    calib_global8     : 0.8300  Δ=+0.0100  95.4% of sweep
+
+ARC-C  (N=100):
+  Baseline=0.5600  扫参最优=0.5800  Δsweep=+0.0200
+    persample_cos8    : 0.5400  Δ=-0.0200  93.1% of sweep
+    persample_var     : 0.5500  Δ=-0.0100  94.8% of sweep
+    onset_fixed8      : 0.5100  Δ=-0.0500  87.9% of sweep
+    calib_onset8      : 0.5200  Δ=-0.0400  89.7% of sweep
+  ★ calib_global8     : 0.5600  Δ=+0.0000  96.6% of sweep
+
+TruthfulQA  (N=50):
+  Baseline=0.3200  扫参最优=0.3800  Δsweep=+0.0600
+    persample_cos8    : 0.3000  Δ=-0.0200  78.9% of sweep
+  ★ persample_var     : 0.3600  Δ=+0.0400  94.7% of sweep
+    onset_fixed8      : 0.3400  Δ=+0.0200  89.5% of sweep
+    calib_onset8      : 0.3200  Δ=+0.0000  84.2% of sweep
+    calib_global8     : 0.3000  Δ=-0.0200  78.9% of sweep
+
+CSQA  (N=100):
+  Baseline=0.6400  扫参最优=0.6900  Δsweep=+0.0500
+  ★ persample_cos8    : 0.6800  Δ=+0.0400  98.6% of sweep
+    persample_var     : 0.6200  Δ=-0.0200  89.9% of sweep
+    onset_fixed8      : 0.6300  Δ=-0.0100  91.3% of sweep
+    calib_onset8      : 0.6200  Δ=-0.0200  89.9% of sweep
+    calib_global8     : 0.6700  Δ=+0.0300  97.1% of sweep
+
+MMLU-HS-Math  (N=100):
+  Baseline=0.4000  扫参最优=0.4300  Δsweep=+0.0300
+    persample_cos8    : 0.3700  Δ=-0.0300  86.0% of sweep
+    persample_var     : 0.3700  Δ=-0.0300  86.0% of sweep
+    onset_fixed8      : 0.4300  Δ=+0.0300  100.0% of sweep
+  ★ calib_onset8      : 0.4500  Δ=+0.0500  104.7% of sweep
+    calib_global8     : 0.3700  Δ=-0.0300  86.0% of sweep
+
+GPQA-Diamond  (N=100):
+  Baseline=0.3800  扫参最优=0.4400  Δsweep=+0.0600
+  ★ persample_cos8    : 0.4000  Δ=+0.0200  90.9% of sweep
+    persample_var     : 0.3700  Δ=-0.0100  84.1% of sweep
+    onset_fixed8      : 0.3600  Δ=-0.0200  81.8% of sweep
+    calib_onset8      : 0.3600  Δ=-0.0200  81.8% of sweep
+    calib_global8     : 0.3900  Δ=+0.0100  88.6% of sweep
+
+AGIEval-Gaokao-MathQA  (N=100):
+  Baseline=0.5200  扫参最优=0.5400  Δsweep=+0.0200
+    persample_cos8    : 0.5000  Δ=-0.0200  92.6% of sweep
+  ★ persample_var     : 0.5800  Δ=+0.0600  107.4% of sweep
+    onset_fixed8      : 0.4700  Δ=-0.0500  87.0% of sweep
+    calib_onset8      : 0.5200  Δ=+0.0000  96.3% of sweep
+    calib_global8     : 0.4800  Δ=-0.0400  88.9% of sweep
+
+──────────────────────────────────────────────────────────────────────
+方法 | 赢 benchmark 数 | 优于 baseline 的 benchmark 数
+  逐样本-8层       | 2/7       | 2/7
+  逐样本-变长       | 3/7       | 3/7
+  固定Onset-8    | 0/7       | 2/7
+  标定Onset-8    | 1/7       | 1/7
+  标定全局-8       | 1/7       | 3/7
+
+──────────────────────────────────────────────────────────────────────
+宏平均 Δacc（vs baseline）：
+  逐样本-8层       : -0.0043
+  逐样本-变长       : +0.0071
+  固定Onset-8    : -0.0114
+  标定Onset-8    : -0.0043
+  标定全局-8       : -0.0057
+  扫参最优         : +0.0414
+
+Saved → /root/autodl-tmp/loop_layer/experiments/results/r38_signal_full_bench_results.json
+
+======================================================================
+R38 完成！总耗时 900s (15.0min)
+======================================================================

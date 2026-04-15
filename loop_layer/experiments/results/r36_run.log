@@ -1,0 +1,26 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:40,  3.95it/s]Loading weights:   1%|          | 2/399 [00:00<01:45,  3.77it/s]Loading weights:   4%|▍         | 15/399 [00:00<00:11, 32.18it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:07, 52.53it/s]Loading weights:  10%|▉         | 38/399 [00:00<00:05, 66.46it/s]Loading weights:  12%|█▏        | 49/399 [00:00<00:04, 76.70it/s]Loading weights:  15%|█▌        | 60/399 [00:01<00:04, 84.51it/s]Loading weights:  18%|█▊        | 71/399 [00:01<00:03, 89.06it/s]Loading weights:  21%|██        | 82/399 [00:01<00:03, 92.66it/s]Loading weights:  23%|██▎       | 93/399 [00:01<00:03, 89.67it/s]Loading weights:  26%|██▌       | 104/399 [00:01<00:03, 90.69it/s]Loading weights:  29%|██▉       | 115/399 [00:01<00:03, 89.70it/s]Loading weights:  31%|███▏      | 125/399 [00:01<00:02, 92.41it/s]Loading weights:  34%|███▍      | 135/399 [00:01<00:02, 88.14it/s]Loading weights:  37%|███▋      | 148/399 [00:02<00:02, 92.13it/s]Loading weights:  40%|███▉      | 159/399 [00:02<00:02, 93.56it/s]Loading weights:  43%|████▎     | 170/399 [00:02<00:02, 94.34it/s]Loading weights:  45%|████▌     | 181/399 [00:02<00:02, 95.10it/s]Loading weights:  48%|████▊     | 192/399 [00:02<00:02, 93.93it/s]Loading weights:  51%|█████     | 203/399 [00:02<00:02, 93.01it/s]Loading weights:  54%|█████▎    | 214/399 [00:02<00:02, 90.46it/s]Loading weights:  56%|█████▋    | 225/399 [00:02<00:01, 88.85it/s]Loading weights:  59%|█████▉    | 236/399 [00:02<00:01, 87.11it/s]Loading weights:  62%|██████▏   | 247/399 [00:03<00:01, 86.57it/s]Loading weights:  65%|██████▍   | 258/399 [00:03<00:01, 89.38it/s]Loading weights:  67%|██████▋   | 269/399 [00:03<00:01, 94.36it/s]Loading weights:  70%|███████   | 280/399 [00:03<00:01, 94.65it/s]Loading weights:  73%|███████▎  | 291/399 [00:03<00:01, 97.69it/s]Loading weights:  76%|███████▌  | 302/399 [00:03<00:00, 99.92it/s]Loading weights:  79%|███████▊  | 314/399 [00:03<00:00, 95.79it/s]Loading weights:  81%|████████▏ | 325/399 [00:03<00:00, 94.39it/s]Loading weights:  84%|████████▍ | 336/399 [00:04<00:00, 92.89it/s]Loading weights:  87%|████████▋ | 347/399 [00:04<00:00, 90.97it/s]Loading weights:  90%|████████▉ | 358/399 [00:04<00:00, 89.68it/s]Loading weights:  92%|█████████▏| 369/399 [00:04<00:00, 87.25it/s]Loading weights:  95%|█████████▌| 380/399 [00:04<00:00, 88.82it/s]Loading weights:  98%|█████████▊| 391/399 [00:04<00:00, 91.86it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 85.09it/s]
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+  Loaded: 36 layers, d_model=4096, device=cuda
+
+=======================================================
+BoolQ
+  Loaded 20 samples
+Traceback (most recent call last):
+  File "/root/autodl-tmp/loop_layer/experiments/exp_r36_propagation_etd.py", line 1037, in <module>
+    main()
+  File "/root/autodl-tmp/loop_layer/experiments/exp_r36_propagation_etd.py", line 976, in main
+    base_sigs, probe_vecs, orig_logits = collect_r36_base_signals(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/loop_layer/experiments/exp_r36_propagation_etd.py", line 407, in collect_r36_base_signals
+    signals["comm_persist"].append(safe_cos(commutator, prev_commutator_v))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/loop_layer/experiments/exp_r36_propagation_etd.py", line 151, in safe_cos
+    return float((u @ v / (nu * nv)).clamp(-1, 1).item())
+                  ~~^~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument tensor in method wrapper_CUDA__dot)

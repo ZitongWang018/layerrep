@@ -1,0 +1,451 @@
+{
+  "preset": "llama3-8b",
+  "model_path": "/root/autodl-tmp/Llama3-8B",
+  "arch": "llama",
+  "n_layers": 32,
+  "probe_layers": [
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26
+  ],
+  "min_start": 8,
+  "max_start": 20,
+  "sweep_best_source": {
+    "sweep_main": "/root/autodl-tmp/loop_layer/experiments/llama3-8b/results/etd_layer_sweep_r30style.json",
+    "sweep_hard": "/root/autodl-tmp/loop_layer/experiments/llama3-8b/results/hard_mc/etd_layer_sweep_r30style.json"
+  },
+  "results": {
+    "BoolQ": {
+      "benchmark": "BoolQ",
+      "n": 100,
+      "elapsed_s": 74.95050096511841,
+      "accuracies": {
+        "baseline": 0.72,
+        "sweep_best": 0.83,
+        "persample_cos8": 0.78,
+        "persample_var": 0.77,
+        "onset_fixed8": 0.78,
+        "calib_onset8": 0.79,
+        "calib_global8": 0.79
+      },
+      "sweep_best_window": [
+        9,
+        15
+      ],
+      "calib_global8_window": [
+        8,
+        16
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "6": 0.10800101954373531,
+        "8": 0.11507675645407289,
+        "10": 0.16753769312053918,
+        "12": 0.08441412986139767,
+        "14": 0.08657481232658029,
+        "16": 0.08897923899348825,
+        "18": 0.12263128403574228,
+        "20": 0.06845934837474488,
+        "22": -0.12442525699734688,
+        "24": -0.16100884033367038,
+        "26": -0.35289969891309736
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 9.11,
+          "t_start_std": 1.7429572570777516
+        },
+        "persample_var": {
+          "t_start_mean": 10.13,
+          "t_start_std": 2.961941930558396
+        },
+        "onset_fixed8": {
+          "t_start_mean": 9.37,
+          "t_start_std": 2.0816099538578303
+        }
+      }
+    },
+    "ARC-C": {
+      "benchmark": "ARC-C",
+      "n": 100,
+      "elapsed_s": 105.19198441505432,
+      "accuracies": {
+        "baseline": 0.52,
+        "sweep_best": 0.55,
+        "persample_cos8": 0.52,
+        "persample_var": 0.49,
+        "onset_fixed8": 0.51,
+        "calib_onset8": 0.51,
+        "calib_global8": 0.5
+      },
+      "sweep_best_window": [
+        15,
+        22
+      ],
+      "calib_global8_window": [
+        8,
+        16
+      ],
+      "calib_onset8_window": [
+        10,
+        18
+      ],
+      "mean_profile": {
+        "6": 0.04467317142989487,
+        "8": 0.011255194852128624,
+        "10": 0.18640914037823678,
+        "12": -0.006264069455210119,
+        "14": 0.09002791373059153,
+        "16": -0.02164005972445011,
+        "18": 0.1450817047385499,
+        "20": 0.005203622090630233,
+        "22": -0.15942639503628014,
+        "24": -0.1020619205199182,
+        "26": -0.09732760953629623
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 9.54,
+          "t_start_std": 2.255748212899658
+        },
+        "persample_var": {
+          "t_start_mean": 10.65,
+          "t_start_std": 3.4996428389194234
+        },
+        "onset_fixed8": {
+          "t_start_mean": 9.78,
+          "t_start_std": 2.300347799790284
+        }
+      }
+    },
+    "TruthfulQA": {
+      "benchmark": "TruthfulQA",
+      "n": 50,
+      "elapsed_s": 69.72498202323914,
+      "accuracies": {
+        "baseline": 0.24,
+        "sweep_best": 0.3,
+        "persample_cos8": 0.2,
+        "persample_var": 0.24,
+        "onset_fixed8": 0.22,
+        "calib_onset8": 0.26,
+        "calib_global8": 0.18
+      },
+      "sweep_best_window": [
+        7,
+        15
+      ],
+      "calib_global8_window": [
+        8,
+        16
+      ],
+      "calib_onset8_window": [
+        10,
+        18
+      ],
+      "mean_profile": {
+        "6": 0.04304961236193776,
+        "8": 0.12684552992286627,
+        "10": 0.2407216239720583,
+        "12": 0.06138299573212862,
+        "14": 0.08326396481716074,
+        "16": 0.11963629107922316,
+        "18": 0.19022370353341103,
+        "20": 0.05188456792384386,
+        "22": -0.03657230297103524,
+        "24": -0.03890848755836487,
+        "26": -0.2360957082360983
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 10.4,
+          "t_start_std": 2.8844410203711917
+        },
+        "persample_var": {
+          "t_start_mean": 11.82,
+          "t_start_std": 4.102145779954681
+        },
+        "onset_fixed8": {
+          "t_start_mean": 11.22,
+          "t_start_std": 3.5002285639655017
+        }
+      }
+    },
+    "CSQA": {
+      "benchmark": "CSQA",
+      "n": 100,
+      "elapsed_s": 124.02623796463013,
+      "accuracies": {
+        "baseline": 0.61,
+        "sweep_best": 0.67,
+        "persample_cos8": 0.62,
+        "persample_var": 0.62,
+        "onset_fixed8": 0.62,
+        "calib_onset8": 0.62,
+        "calib_global8": 0.62
+      },
+      "sweep_best_window": [
+        11,
+        18
+      ],
+      "calib_global8_window": [
+        8,
+        16
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "6": 0.017069686949253083,
+        "8": 0.1426598209887743,
+        "10": 0.20931293163448572,
+        "12": 0.04167656464269385,
+        "14": 0.07849800158292056,
+        "16": 0.0336317942594178,
+        "18": 0.14596034213900566,
+        "20": 0.047927120234817266,
+        "22": -0.07107570660300552,
+        "24": -0.11983200991526247,
+        "26": -0.22773012593388559
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 9.25,
+          "t_start_std": 2.426417111710186
+        },
+        "persample_var": {
+          "t_start_mean": 10.09,
+          "t_start_std": 3.515949373924488
+        },
+        "onset_fixed8": {
+          "t_start_mean": 9.55,
+          "t_start_std": 2.290742237791062
+        }
+      }
+    },
+    "MMLU-HS-Math": {
+      "benchmark": "MMLU-HS-Math",
+      "n": 100,
+      "elapsed_s": 106.18043923377991,
+      "accuracies": {
+        "baseline": 0.3,
+        "sweep_best": 0.33,
+        "persample_cos8": 0.2,
+        "persample_var": 0.28,
+        "onset_fixed8": 0.19,
+        "calib_onset8": 0.21,
+        "calib_global8": 0.21
+      },
+      "sweep_best_window": [
+        13,
+        15
+      ],
+      "calib_global8_window": [
+        8,
+        16
+      ],
+      "calib_onset8_window": [
+        10,
+        18
+      ],
+      "mean_profile": {
+        "6": -0.011753891338594257,
+        "8": 0.16092164367437362,
+        "10": 0.2660708032548428,
+        "12": 0.032096185108821375,
+        "14": 0.10775662595406174,
+        "16": 0.030239063175395132,
+        "18": 0.20239189881831407,
+        "20": -0.08269234718754888,
+        "22": -0.0851998982951045,
+        "24": -0.07852439049165696,
+        "26": -0.03711786995045259
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 8.53,
+          "t_start_std": 1.3073255141700557
+        },
+        "persample_var": {
+          "t_start_mean": 9.03,
+          "t_start_std": 2.3214435164354095
+        },
+        "onset_fixed8": {
+          "t_start_mean": 10.0,
+          "t_start_std": 2.4124676163629637
+        }
+      }
+    },
+    "GPQA-Diamond": {
+      "benchmark": "GPQA-Diamond",
+      "n": 100,
+      "elapsed_s": 179.06148719787598,
+      "accuracies": {
+        "baseline": 0.29,
+        "sweep_best": 0.37,
+        "persample_cos8": 0.25,
+        "persample_var": 0.27,
+        "onset_fixed8": 0.27,
+        "calib_onset8": 0.3,
+        "calib_global8": 0.26
+      },
+      "sweep_best_window": [
+        8,
+        14
+      ],
+      "calib_global8_window": [
+        13,
+        21
+      ],
+      "calib_onset8_window": [
+        14,
+        22
+      ],
+      "mean_profile": {
+        "6": 0.01307214826811105,
+        "8": 0.06819272330030798,
+        "10": 0.017655522546556314,
+        "12": -0.0734341572620906,
+        "14": 0.1712657206808217,
+        "16": -0.06902380883693696,
+        "18": 0.16452998667955399,
+        "20": -0.027210948523133993,
+        "22": -0.08861238155514002,
+        "24": -0.18001397587358953,
+        "26": -0.01299497612635605
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 11.65,
+          "t_start_std": 2.006863224038948
+        },
+        "persample_var": {
+          "t_start_mean": 13.33,
+          "t_start_std": 2.825084069545542
+        },
+        "onset_fixed8": {
+          "t_start_mean": 11.93,
+          "t_start_std": 2.4341528300416964
+        }
+      }
+    },
+    "AGIEval-Gaokao-MathQA": {
+      "benchmark": "AGIEval-Gaokao-MathQA",
+      "n": 100,
+      "elapsed_s": 137.62517714500427,
+      "accuracies": {
+        "baseline": 0.31,
+        "sweep_best": 0.36,
+        "persample_cos8": 0.26,
+        "persample_var": 0.3,
+        "onset_fixed8": 0.26,
+        "calib_onset8": 0.26,
+        "calib_global8": 0.26
+      },
+      "sweep_best_window": [
+        20,
+        22
+      ],
+      "calib_global8_window": [
+        8,
+        16
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "6": 0.07258275356143713,
+        "8": 0.15645047277212143,
+        "10": 0.1876940421760082,
+        "12": 0.012074238853529096,
+        "14": 0.07201046417467297,
+        "16": -0.07060206909663976,
+        "18": 0.02192865186370909,
+        "20": 0.020917522883974016,
+        "22": -0.15114012248814107,
+        "24": -0.09927058555185794,
+        "26": -0.324684439599514
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 8.1,
+          "t_start_std": 0.9000000000000002
+        },
+        "persample_var": {
+          "t_start_mean": 8.08,
+          "t_start_std": 0.3655133376499412
+        },
+        "onset_fixed8": {
+          "t_start_mean": 8.1,
+          "t_start_std": 0.9000000000000002
+        }
+      }
+    },
+    "LogiQA": {
+      "benchmark": "LogiQA",
+      "n": 100,
+      "elapsed_s": 168.1102647781372,
+      "accuracies": {
+        "baseline": 0.29,
+        "sweep_best": 0.41,
+        "persample_cos8": 0.36,
+        "persample_var": 0.27,
+        "onset_fixed8": 0.34,
+        "calib_onset8": 0.32,
+        "calib_global8": 0.38
+      },
+      "sweep_best_window": [
+        9,
+        17
+      ],
+      "calib_global8_window": [
+        8,
+        16
+      ],
+      "calib_onset8_window": [
+        18,
+        26
+      ],
+      "mean_profile": {
+        "6": 0.05857302271761,
+        "8": 0.10116653181612492,
+        "10": 0.16273311395198106,
+        "12": -0.030798890156438573,
+        "14": 0.12495728973299265,
+        "16": -0.06487741185119375,
+        "18": 0.2834523648023605,
+        "20": -0.13934911168180406,
+        "22": -0.05452137476531789,
+        "24": -0.22825925648212433,
+        "26": -0.1944385815411806
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 9.29,
+          "t_start_std": 1.762356377126942
+        },
+        "persample_var": {
+          "t_start_mean": 10.93,
+          "t_start_std": 3.356352186526319
+        },
+        "onset_fixed8": {
+          "t_start_mean": 14.08,
+          "t_start_std": 4.75116827738189
+        }
+      }
+    }
+  }
+}

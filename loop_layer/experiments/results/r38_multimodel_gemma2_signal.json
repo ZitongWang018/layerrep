@@ -1,0 +1,442 @@
+{
+  "preset": "gemma2-2b",
+  "model_path": "/root/autodl-tmp/Gemma2-2B",
+  "arch": "gemma2",
+  "n_layers": 26,
+  "probe_layers": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22
+  ],
+  "min_start": 5,
+  "max_start": 16,
+  "sweep_best_source": {
+    "sweep_main": "/root/autodl-tmp/loop_layer/experiments/gemma2-2b/results/etd_layer_sweep_r30style.json",
+    "sweep_hard": "/root/autodl-tmp/loop_layer/experiments/gemma2-2b/results/hard_mc/etd_layer_sweep_r30style.json"
+  },
+  "results": {
+    "BoolQ": {
+      "benchmark": "BoolQ",
+      "n": 100,
+      "elapsed_s": 41.02770233154297,
+      "accuracies": {
+        "baseline": 0.68,
+        "sweep_best": 0.74,
+        "persample_cos8": 0.73,
+        "persample_var": 0.67,
+        "onset_fixed8": 0.73,
+        "calib_onset8": 0.54,
+        "calib_global8": 0.72
+      },
+      "sweep_best_window": [
+        16,
+        23
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": 0.1711730845272541,
+        "6": -0.23441792875528336,
+        "8": 0.04150802418589592,
+        "10": -0.20722232833504678,
+        "12": -0.18079135566949844,
+        "14": -0.24347237199544908,
+        "16": -0.2596549645066261,
+        "18": 0.3576772540807724,
+        "20": 0.31333334743976593,
+        "22": -0.022449064112151973
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 14.96,
+          "t_start_std": 0.27999999999999997
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 14.96,
+          "t_start_std": 0.27999999999999997
+        }
+      }
+    },
+    "ARC-C": {
+      "benchmark": "ARC-C",
+      "n": 100,
+      "elapsed_s": 71.04498982429504,
+      "accuracies": {
+        "baseline": 0.29,
+        "sweep_best": 0.35,
+        "persample_cos8": 0.25,
+        "persample_var": 0.21,
+        "onset_fixed8": 0.25,
+        "calib_onset8": 0.25,
+        "calib_global8": 0.25
+      },
+      "sweep_best_window": [
+        5,
+        11
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": 0.04881652341573499,
+        "6": -0.2955852076411247,
+        "8": -0.00026339289033785465,
+        "10": -0.2279852531850338,
+        "12": -0.22075239270925523,
+        "14": -0.2476307362318039,
+        "16": -0.28073264062404635,
+        "18": 0.34264733344316484,
+        "20": 0.23087290972471236,
+        "22": -0.059509649872779846
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 14.94,
+          "t_start_std": 0.3411744421846396
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 14.94,
+          "t_start_std": 0.3411744421846396
+        }
+      }
+    },
+    "TruthfulQA": {
+      "benchmark": "TruthfulQA",
+      "n": 50,
+      "elapsed_s": 50.122124671936035,
+      "accuracies": {
+        "baseline": 0.28,
+        "sweep_best": 0.32,
+        "persample_cos8": 0.24,
+        "persample_var": 0.28,
+        "onset_fixed8": 0.24,
+        "calib_onset8": 0.22,
+        "calib_global8": 0.24
+      },
+      "sweep_best_window": [
+        7,
+        24
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": 0.07980266008526087,
+        "6": -0.2780716814100742,
+        "8": 0.01953592906938866,
+        "10": -0.21824565753340722,
+        "12": -0.21691640615463256,
+        "14": -0.23750411346554756,
+        "16": -0.31484506726264955,
+        "18": 0.3449519872665405,
+        "20": 0.25356847867369653,
+        "22": -0.10343252960592508
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 14.96,
+          "t_start_std": 0.27999999999999997
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 14.96,
+          "t_start_std": 0.27999999999999997
+        }
+      }
+    },
+    "CSQA": {
+      "benchmark": "CSQA",
+      "n": 100,
+      "elapsed_s": 88.5110981464386,
+      "accuracies": {
+        "baseline": 0.21,
+        "sweep_best": 0.28,
+        "persample_cos8": 0.19,
+        "persample_var": 0.25,
+        "onset_fixed8": 0.19,
+        "calib_onset8": 0.16,
+        "calib_global8": 0.19
+      },
+      "sweep_best_window": [
+        6,
+        21
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": 0.0695075054652989,
+        "6": -0.2879777655005455,
+        "8": 0.032478234398877245,
+        "10": -0.22790381386876107,
+        "12": -0.21037960276007653,
+        "14": -0.25160123258829115,
+        "16": -0.30044627487659453,
+        "18": 0.3349566996097565,
+        "20": 0.24178593531250953,
+        "22": -0.0888444524956867
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 14.98,
+          "t_start_std": 0.19899748742132398
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 14.98,
+          "t_start_std": 0.19899748742132398
+        }
+      }
+    },
+    "MMLU-HS-Math": {
+      "benchmark": "MMLU-HS-Math",
+      "n": 100,
+      "elapsed_s": 70.04761743545532,
+      "accuracies": {
+        "baseline": 0.11,
+        "sweep_best": 0.2,
+        "persample_cos8": 0.14,
+        "persample_var": 0.14,
+        "onset_fixed8": 0.14,
+        "calib_onset8": 0.19,
+        "calib_global8": 0.14
+      },
+      "sweep_best_window": [
+        8,
+        10
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": 0.09219745979644359,
+        "6": -0.31947543025016784,
+        "8": -0.031916964222909884,
+        "10": -0.21339111179113388,
+        "12": -0.19002188816666604,
+        "14": -0.23401167020201682,
+        "16": -0.25650781467556955,
+        "18": 0.3133168138563633,
+        "20": 0.1803102359175682,
+        "22": -0.05743160039419308
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        }
+      }
+    },
+    "GPQA-Diamond": {
+      "benchmark": "GPQA-Diamond",
+      "n": 100,
+      "elapsed_s": 87.35609793663025,
+      "accuracies": {
+        "baseline": 0.28,
+        "sweep_best": 0.31,
+        "persample_cos8": 0.28,
+        "persample_var": 0.29,
+        "onset_fixed8": 0.28,
+        "calib_onset8": 0.27,
+        "calib_global8": 0.28
+      },
+      "sweep_best_window": [
+        15,
+        20
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": 0.14886369183659554,
+        "6": -0.3037628695368767,
+        "8": -0.05884703623596579,
+        "10": -0.23873933777213097,
+        "12": -0.1642709694802761,
+        "14": -0.20177672058343887,
+        "16": -0.27238246276974676,
+        "18": 0.35730772614479067,
+        "20": 0.15104922875761986,
+        "22": 0.01650070953182876
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 14.98,
+          "t_start_std": 0.19899748742132398
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 14.98,
+          "t_start_std": 0.19899748742132398
+        }
+      }
+    },
+    "AGIEval-Gaokao-MathQA": {
+      "benchmark": "AGIEval-Gaokao-MathQA",
+      "n": 100,
+      "elapsed_s": 75.70972275733948,
+      "accuracies": {
+        "baseline": 0.25,
+        "sweep_best": 0.3,
+        "persample_cos8": 0.25,
+        "persample_var": 0.25,
+        "onset_fixed8": 0.25,
+        "calib_onset8": 0.25,
+        "calib_global8": 0.25
+      },
+      "sweep_best_window": [
+        5,
+        11
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": -0.043366631306707856,
+        "6": -0.27689890563488007,
+        "8": -0.020709207421168684,
+        "10": -0.25895345136523246,
+        "12": -0.2206098459661007,
+        "14": -0.3023564890027046,
+        "16": -0.3726706445217133,
+        "18": 0.1905640173703432,
+        "20": 0.12925037713721393,
+        "22": 0.04641360148671083
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        }
+      }
+    },
+    "LogiQA": {
+      "benchmark": "LogiQA",
+      "n": 100,
+      "elapsed_s": 86.04024147987366,
+      "accuracies": {
+        "baseline": 0.22,
+        "sweep_best": 0.25,
+        "persample_cos8": 0.23,
+        "persample_var": 0.21,
+        "onset_fixed8": 0.23,
+        "calib_onset8": 0.22,
+        "calib_global8": 0.23
+      },
+      "sweep_best_window": [
+        5,
+        24
+      ],
+      "calib_global8_window": [
+        15,
+        23
+      ],
+      "calib_onset8_window": [
+        8,
+        16
+      ],
+      "mean_profile": {
+        "4": 0.1486424334347248,
+        "6": -0.2909779824316502,
+        "8": -0.018575292802415787,
+        "10": -0.23520392850041388,
+        "12": -0.17977375388145447,
+        "14": -0.20247665345668792,
+        "16": -0.29239965975284576,
+        "18": 0.381318162381649,
+        "20": 0.21064738258719445,
+        "22": 0.024038270075106994
+      },
+      "window_stats": {
+        "persample_cos8": {
+          "t_start_mean": 14.98,
+          "t_start_std": 0.19899748742132398
+        },
+        "persample_var": {
+          "t_start_mean": 15.0,
+          "t_start_std": 0.0
+        },
+        "onset_fixed8": {
+          "t_start_mean": 14.98,
+          "t_start_std": 0.19899748742132398
+        }
+      }
+    }
+  }
+}

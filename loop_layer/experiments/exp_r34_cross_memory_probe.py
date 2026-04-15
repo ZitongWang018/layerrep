@@ -13,6 +13,10 @@ R34: 基于方向与交叉交互的 FFN-Attention 信号探针
   figures/r34_cross_memory/{bench}_r34_signals_vs_layer.png
   results/r34_cross_memory_data_full.json
   results/r34_cross_memory_stats.json
+
+派生图（离线，见 plot_r34_derived_signals.py；run_r34.sh 成功后自动调用）：
+  figures/r34_cross_memory/derived/{bench}_r34_{demeaned,delta,var}_vs_layer.png
+  figures/r34_cross_memory/derived/r34_all_{demeaned,delta,var}_overlay.png
 """
 from __future__ import annotations
 
