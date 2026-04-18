@@ -2,6 +2,18 @@
 model_qwen/
 Llama3-8B/
 Gemma2-2B/
+*.safetensors
+*.gguf
+**/pytorch_model.bin
+checkpoints/
+
+# Third-party eval harness (nested .git; clone upstream separately)
+lm-evaluation-harness/
+
+# Training / logging artifacts
+wandb/
+runs/
+mlruns/
 
 # Local trash
 .Trash-0/

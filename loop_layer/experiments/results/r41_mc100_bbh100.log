@@ -1,0 +1,88 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model: /root/autodl-tmp/model_qwen
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<02:28,  2.68it/s]Loading weights:   1%|          | 2/399 [00:00<02:44,  2.42it/s]Loading weights:   2%|▏         | 6/399 [00:00<00:46,  8.39it/s]Loading weights:   4%|▍         | 16/399 [00:01<00:15, 24.51it/s]Loading weights:   6%|▋         | 25/399 [00:01<00:10, 35.87it/s]Loading weights:   8%|▊         | 32/399 [00:01<00:08, 42.79it/s]Loading weights:  10%|▉         | 38/399 [00:01<00:07, 46.82it/s]Loading weights:  12%|█▏        | 48/399 [00:01<00:06, 57.55it/s]Loading weights:  14%|█▍        | 56/399 [00:01<00:05, 61.02it/s]Loading weights:  16%|█▌        | 63/399 [00:01<00:05, 58.66it/s]Loading weights:  18%|█▊        | 71/399 [00:01<00:05, 61.59it/s]Loading weights:  20%|██        | 81/399 [00:01<00:04, 68.73it/s]Loading weights:  22%|██▏       | 89/399 [00:02<00:04, 69.86it/s]Loading weights:  24%|██▍       | 97/399 [00:02<00:04, 67.03it/s]Loading weights:  26%|██▌       | 104/399 [00:02<00:04, 65.84it/s]Loading weights:  29%|██▊       | 114/399 [00:02<00:03, 72.22it/s]Loading weights:  31%|███       | 122/399 [00:02<00:03, 71.99it/s]Loading weights:  33%|███▎      | 130/399 [00:02<00:03, 69.21it/s]Loading weights:  34%|███▍      | 137/399 [00:02<00:03, 68.53it/s]Loading weights:  37%|███▋      | 147/399 [00:02<00:03, 75.29it/s]Loading weights:  39%|███▉      | 155/399 [00:03<00:03, 73.71it/s]Loading weights:  41%|████      | 163/399 [00:03<00:03, 69.54it/s]Loading weights:  43%|████▎     | 171/399 [00:03<00:03, 63.72it/s]Loading weights:  45%|████▌     | 181/399 [00:03<00:03, 68.96it/s]Loading weights:  48%|████▊     | 191/399 [00:03<00:03, 67.14it/s]Loading weights:  51%|█████     | 202/399 [00:03<00:02, 68.25it/s]Loading weights:  53%|█████▎    | 212/399 [00:03<00:02, 72.35it/s]Loading weights:  55%|█████▌    | 221/399 [00:03<00:02, 74.60it/s]Loading weights:  57%|█████▋    | 229/399 [00:04<00:02, 71.15it/s]Loading weights:  59%|█████▉    | 237/399 [00:04<00:02, 64.67it/s]Loading weights:  62%|██████▏   | 246/399 [00:04<00:02, 68.41it/s]Loading weights:  64%|██████▍   | 257/399 [00:04<00:01, 75.97it/s]Loading weights:  66%|██████▋   | 265/399 [00:04<00:01, 75.29it/s]Loading weights:  68%|██████▊   | 273/399 [00:04<00:01, 70.56it/s]Loading weights:  70%|███████   | 281/399 [00:04<00:01, 64.54it/s]Loading weights:  73%|███████▎  | 291/399 [00:04<00:01, 71.16it/s]Loading weights:  75%|███████▌  | 301/399 [00:05<00:01, 74.17it/s]Loading weights:  77%|███████▋  | 309/399 [00:05<00:01, 73.78it/s]Loading weights:  79%|███████▉  | 317/399 [00:05<00:01, 70.43it/s]Loading weights:  81%|████████▏ | 325/399 [00:05<00:01, 65.76it/s]Loading weights:  84%|████████▍ | 335/399 [00:05<00:00, 72.00it/s]Loading weights:  86%|████████▋ | 345/399 [00:05<00:00, 75.48it/s]Loading weights:  88%|████████▊ | 353/399 [00:05<00:00, 73.47it/s]Loading weights:  90%|█████████ | 361/399 [00:05<00:00, 70.88it/s]Loading weights:  92%|█████████▏| 369/399 [00:06<00:00, 64.85it/s]Loading weights:  95%|█████████▍| 379/399 [00:06<00:00, 71.04it/s]Loading weights:  97%|█████████▋| 389/399 [00:06<00:00, 75.72it/s]Loading weights:  99%|█████████▉| 397/399 [00:06<00:00, 74.52it/s]Loading weights: 100%|██████████| 399/399 [00:06<00:00, 61.82it/s]
+  [ARC-C] neg_cos calib …
+  [ARC-C] compound (neg_cos × JSD attn) …
+    [10/100] baseline=0.50 sweep_be=0.50 neg_cos_=0.40 neg_cos_=0.50
+    [20/100] baseline=0.45 sweep_be=0.50 neg_cos_=0.40 neg_cos_=0.45
+    [30/100] baseline=0.50 sweep_be=0.57 neg_cos_=0.43 neg_cos_=0.50
+    [40/100] baseline=0.53 sweep_be=0.57 neg_cos_=0.47 neg_cos_=0.50
+    [50/100] baseline=0.56 sweep_be=0.60 neg_cos_=0.50 neg_cos_=0.54
+    [60/100] baseline=0.55 sweep_be=0.55 neg_cos_=0.48 neg_cos_=0.53
+    [70/100] baseline=0.54 sweep_be=0.56 neg_cos_=0.51 neg_cos_=0.54
+    [80/100] baseline=0.51 sweep_be=0.54 neg_cos_=0.49 neg_cos_=0.51
+    [90/100] baseline=0.54 sweep_be=0.58 neg_cos_=0.53 neg_cos_=0.56
+    [100/100] baseline=0.55 sweep_be=0.58 neg_cos_=0.55 neg_cos_=0.57
+  [ARC-C] 66s baseline=0.550 sweep=0.580 calib=0.550 prop=0.570
+  [MMLU-HS-Math] neg_cos calib …
+  [MMLU-HS-Math] compound (neg_cos × JSD attn) …
+    [10/100] baseline=0.20 sweep_be=0.20 neg_cos_=0.20 neg_cos_=0.20
+    [20/100] baseline=0.25 sweep_be=0.40 neg_cos_=0.20 neg_cos_=0.20
+    [30/100] baseline=0.40 sweep_be=0.47 neg_cos_=0.37 neg_cos_=0.37
+    [40/100] baseline=0.40 sweep_be=0.53 neg_cos_=0.45 neg_cos_=0.45
+    [50/100] baseline=0.40 sweep_be=0.52 neg_cos_=0.44 neg_cos_=0.44
+    [60/100] baseline=0.38 sweep_be=0.48 neg_cos_=0.43 neg_cos_=0.43
+    [70/100] baseline=0.39 sweep_be=0.44 neg_cos_=0.41 neg_cos_=0.41
+    [80/100] baseline=0.40 sweep_be=0.44 neg_cos_=0.45 neg_cos_=0.45
+    [90/100] baseline=0.40 sweep_be=0.43 neg_cos_=0.44 neg_cos_=0.44
+    [100/100] baseline=0.40 sweep_be=0.44 neg_cos_=0.43 neg_cos_=0.43
+  [MMLU-HS-Math] 69s baseline=0.400 sweep=0.440 calib=0.430 prop=0.430
+  [AGIEval-Gaokao-MathQA] neg_cos calib …
+  [AGIEval-Gaokao-MathQA] compound (neg_cos × JSD attn) …
+    [10/100] baseline=0.60 sweep_be=0.60 neg_cos_=0.70 neg_cos_=0.70
+    [20/100] baseline=0.60 sweep_be=0.60 neg_cos_=0.65 neg_cos_=0.65
+    [30/100] baseline=0.57 sweep_be=0.57 neg_cos_=0.60 neg_cos_=0.60
+    [40/100] baseline=0.55 sweep_be=0.55 neg_cos_=0.55 neg_cos_=0.55
+    [50/100] baseline=0.48 sweep_be=0.52 neg_cos_=0.50 neg_cos_=0.50
+    [60/100] baseline=0.47 sweep_be=0.52 neg_cos_=0.48 neg_cos_=0.48
+    [70/100] baseline=0.49 sweep_be=0.53 neg_cos_=0.46 neg_cos_=0.46
+    [80/100] baseline=0.49 sweep_be=0.55 neg_cos_=0.46 neg_cos_=0.46
+    [90/100] baseline=0.51 sweep_be=0.57 neg_cos_=0.50 neg_cos_=0.50
+    [100/100] baseline=0.52 sweep_be=0.58 neg_cos_=0.52 neg_cos_=0.52
+  [AGIEval-Gaokao-MathQA] 94s baseline=0.520 sweep=0.580 calib=0.520 prop=0.520
+[BBH] total budget=100 split as [17, 17, 17, 17, 16, 16]
+  [BBH:boolean_expressions] neg_cos calib …
+  [BBH:boolean_expressions] compound (neg_cos × JSD attn) …
+    [10/17] baseline=0.90 sweep_be=0.90 neg_cos_=1.00 neg_cos_=0.90
+  [BBH:boolean_expressions] 11s baseline=0.882 sweep=0.941 calib=0.941 prop=0.882
+  [BBH:causal_judgement] neg_cos calib …
+  [BBH:causal_judgement] compound (neg_cos × JSD attn) …
+    [10/17] baseline=0.50 sweep_be=0.50 neg_cos_=0.60 neg_cos_=0.60
+  [BBH:causal_judgement] 41s baseline=0.471 sweep=0.471 calib=0.471 prop=0.471
+  [BBH:date_understanding] neg_cos calib …
+  [BBH:date_understanding] compound (neg_cos × JSD attn) …
+    [10/17] baseline=0.70 sweep_be=0.80 neg_cos_=0.70 neg_cos_=0.70
+  [BBH:date_understanding] 65s baseline=0.765 sweep=0.765 calib=0.765 prop=0.765
+  [BBH:disambiguation_qa] neg_cos calib …
+  [BBH:disambiguation_qa] compound (neg_cos × JSD attn) …
+    [10/17] baseline=0.60 sweep_be=0.60 neg_cos_=0.60 neg_cos_=0.60
+  [BBH:disambiguation_qa] 25s baseline=0.647 sweep=0.588 calib=0.647 prop=0.588
+  [BBH:logical_deduction_three_objects] neg_cos calib …
+  [BBH:logical_deduction_three_objects] compound (neg_cos × JSD attn) …
+    [10/16] baseline=0.90 sweep_be=0.90 neg_cos_=1.00 neg_cos_=0.90
+  [BBH:logical_deduction_three_objects] 35s baseline=0.812 sweep=0.938 calib=0.938 prop=0.875
+  [BBH:object_counting] neg_cos calib …
+  [BBH:object_counting] compound (neg_cos × JSD attn) …
+    [10/16] baseline=0.40 sweep_be=0.40 neg_cos_=0.60 neg_cos_=0.60
+  [BBH:object_counting] 86s baseline=0.375 sweep=0.375 calib=0.562 prop=0.562
+[R41] wrote experiments/results/r41_qwen3_mc100_bbh100.json
+
+==================================================================================================
+R41 accuracy table (rows = benchmarks)
+==================================================================================================
+Benchmark                                 baseline      sweep_best neg_cos_am_cali neg_cos_am_prop
+--------------------------------------------------------------------------------------------------
+ARC-C                                       0.5500          0.5800          0.5500          0.5700
+MMLU-HS-Math                                0.4000          0.4400          0.4300          0.4300
+AGIEval-Gaokao-MathQA                       0.5200          0.5800          0.5200          0.5200
+BBH:boolean_expressions                     0.8824          0.9412          0.9412          0.8824
+BBH:causal_judgement                        0.4706          0.4706          0.4706          0.4706
+BBH:date_understanding                      0.7647          0.7647          0.7647          0.7647
+BBH:disambiguation_qa                       0.6471          0.5882          0.6471          0.5882
+BBH:logical_deduction_three_objects          0.8125          0.9375          0.9375          0.8750
+BBH:object_counting                         0.3750          0.3750          0.5625          0.5625
+BBH-macro (6 tasks)                         0.6587          0.6795          0.7206          0.6906
+==================================================================================================
+
+[R41] figure /root/autodl-tmp/loop_layer/experiments/figures/r41_qwen3/r41_accuracy_comparison.png
+[R41] figure /root/autodl-tmp/loop_layer/experiments/figures/r41_qwen3/neg_cos_am_profiles.png

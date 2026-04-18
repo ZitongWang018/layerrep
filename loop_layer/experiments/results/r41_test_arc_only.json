@@ -1,0 +1,86 @@
+{
+  "preset": "qwen3-8b",
+  "eval_conds": [
+    "baseline",
+    "sweep_best",
+    "neg_cos_am_calib",
+    "neg_cos_am_prop_attn"
+  ],
+  "n_calib": 10,
+  "probe_layers_compound": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28
+  ],
+  "qwen_sweep_windows": {
+    "ARC-C": [
+      14,
+      20
+    ],
+    "MMLU-HS-Math": [
+      10,
+      18
+    ],
+    "AGIEval-Gaokao-MathQA": [
+      13,
+      20
+    ],
+    "BBH": [
+      10,
+      22
+    ]
+  },
+  "smoke": true,
+  "n_samples_mc": 1,
+  "bbh_limit": 1,
+  "benchmarks": {
+    "ARC-C": {
+      "benchmark": "ARC-C",
+      "n": 1,
+      "accuracies": {
+        "baseline": 1.0,
+        "sweep_best": 1.0,
+        "neg_cos_am_calib": 1.0,
+        "neg_cos_am_prop_attn": 1.0
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "sweep_best": 0.0,
+        "neg_cos_am_calib": 0.0,
+        "neg_cos_am_prop_attn": 0.0
+      },
+      "sweep_lookup_key": "ARC-C",
+      "sweep_best_window": [
+        14,
+        20
+      ],
+      "neg_cos_am_calib_win": [
+        11,
+        19
+      ],
+      "neg_cos_am_prop_attn_win": [
+        9,
+        17
+      ],
+      "mean_profile": {
+        "6": 0.07447541505098343,
+        "8": 0.06334806233644485,
+        "10": 0.12524230778217316,
+        "12": 0.10831848531961441,
+        "14": 0.12785275280475616,
+        "16": 0.1536744087934494,
+        "18": 0.20987878739833832,
+        "20": 0.06354768574237823,
+        "22": -0.003143859561532736,
+        "24": -0.17750787734985352,
+        "26": -0.06698700040578842,
+        "28": -0.10616008937358856,
+        "30": -0.05983557179570198,
+        "32": 0.0034778143744915724
+      }
+    }
+  }
+}

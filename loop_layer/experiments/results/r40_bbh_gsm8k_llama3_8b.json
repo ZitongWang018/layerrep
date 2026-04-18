@@ -1,0 +1,130 @@
+{
+  "preset": "llama3-8b",
+  "bbh": {
+    "leaderboard_bbh_boolean_expressions": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.86,
+        "neg_cos_am_calib": 0.76,
+        "emp_logit_fixed": 0.76,
+        "neg_cos_am_ps_nt": 0.8
+      },
+      "neg_cos_am_calib_win": [
+        8,
+        14
+      ],
+      "emp_logit_win": [
+        8,
+        14
+      ],
+      "elapsed_s": 51.582910776138306
+    },
+    "leaderboard_bbh_causal_judgement": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.54,
+        "neg_cos_am_calib": 0.5,
+        "emp_logit_fixed": 0.54,
+        "neg_cos_am_ps_nt": 0.52
+      },
+      "neg_cos_am_calib_win": [
+        8,
+        14
+      ],
+      "emp_logit_win": null,
+      "elapsed_s": 188.7868173122406
+    },
+    "leaderboard_bbh_date_understanding": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.58,
+        "neg_cos_am_calib": 0.68,
+        "emp_logit_fixed": 0.62,
+        "neg_cos_am_ps_nt": 0.52
+      },
+      "neg_cos_am_calib_win": [
+        8,
+        14
+      ],
+      "emp_logit_win": [
+        10,
+        18
+      ],
+      "elapsed_s": 183.27358984947205
+    },
+    "leaderboard_bbh_disambiguation_qa": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.46,
+        "neg_cos_am_calib": 0.36,
+        "emp_logit_fixed": 0.4,
+        "neg_cos_am_ps_nt": 0.38
+      },
+      "neg_cos_am_calib_win": [
+        8,
+        14
+      ],
+      "emp_logit_win": [
+        10,
+        18
+      ],
+      "elapsed_s": 97.82390975952148
+    },
+    "leaderboard_bbh_logical_deduction_three_objects": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.42,
+        "neg_cos_am_calib": 0.48,
+        "emp_logit_fixed": 0.48,
+        "neg_cos_am_ps_nt": 0.52
+      },
+      "neg_cos_am_calib_win": [
+        8,
+        14
+      ],
+      "emp_logit_win": [
+        10,
+        18
+      ],
+      "elapsed_s": 130.05993819236755
+    },
+    "leaderboard_bbh_object_counting": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.46,
+        "neg_cos_am_calib": 0.5,
+        "emp_logit_fixed": 0.52,
+        "neg_cos_am_ps_nt": 0.48
+      },
+      "neg_cos_am_calib_win": [
+        8,
+        14
+      ],
+      "emp_logit_win": [
+        10,
+        14
+      ],
+      "elapsed_s": 237.28765487670898
+    }
+  },
+  "gsm8k": {
+    "n": 50,
+    "exact_match": {
+      "baseline": 0.52,
+      "neg_cos_am_calib": 0.4,
+      "emp_logit_fixed": 0.52,
+      "neg_cos_am_ps_nt": 0.34
+    },
+    "neg_cos_am_calib_win": [
+      8,
+      14
+    ],
+    "emp_logit_win": null,
+    "max_new_tokens": 256,
+    "elapsed_s": 6785.437603712082
+  },
+  "meta": {
+    "min_decoder": 8,
+    "n_calib": 20
+  }
+}

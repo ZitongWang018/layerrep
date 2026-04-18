@@ -1996,3 +1996,187 @@ min_start=6 时，`persample_wide` 贪婪选出高 cos_res 的早期窗口（如
 ---
 
 *大规模评测上的当前最佳因果策略（R27，7-bench）：**S1_slope0.05_e53**（avg=0.578 vs BL=0.562，+0.016）。**R29** 在 5-bench、N=50 上验证信号驱动 **t_stop** 与 **BoolQ 上优于 Champion**（B1_6sig 0.920 vs 0.880），macro 仍略低于 Champion（0.628 vs 0.636）。**R31** 全面证伪了 H1/H2/H3 信号路由自适应方案——所有 4 个变体 macro 均显著低于 Baseline，Champion 固定配置韧性进一步得到确认。研究方向将转向"ETD 害处识别（Skip Gate）"而非"最优配置预测"，详见第 31.9 节深度思考与 R32 方向规划。*
+
+---
+
+## 第 39 轮（R39）：跨架构根因分析与最优信号筛选
+
+### 39.1 根因分析：cos_res 为何仅对 Qwen3-8B 部分有效
+
+R38 跨架构验证发现 `cos_res`（commutator cosine with residual）信号在 Llama3-8B 上弱且噪声大，在 Gemma2-2B 上甚至出现"反转" profile。根因分析：
+
+| 架构 | cos_res 行为 | 解释 |
+|------|-------------|------|
+| Qwen3-8B | 弱正相关，L8-L18 区间有意义 | Post-Attn LayerNorm → FFN 结构使 Term1 近似合理 |
+| Llama3-8B | 几乎恒正，L10 处架构常数峰 | 类似结构但 FFN 激活缩放不同，判别力低 |
+| Gemma2-2B | 负值为主，反转 profile | 双层 LayerNorm（pre_ffn + post_ffn）使 Term1 近似严重失真 |
+
+**关键结论**：`cos_res` 是 Qwen/Llama 架构的局部近似，不具备跨架构通用性。
+
+### 39.2 五条新假设
+
+- **H1** `cos(a_l, m_l)` 的竞争程度是更通用的 T-block 信号
+- **H2** ETD 的最优 n_t 因任务和架构而异（需动态选择）
+- **H3** 直接经验标定（logit-gain）比信号近似更可靠
+- **H4** `||Δh_l||/||h_l||`（归一化更新幅度）是最轻量级通用信号
+- **H5** 逐样本信号的噪声使固定全局窗口（标定）往往优于逐样本选择
+
+### 39.3 R39A 信号筛选（6 路候选）
+
+在 Qwen3-8B 上对 6 路候选信号（neg_cos_am、delta_h_ratio、update_persist、attn_dom、cos_res、empirical_logit_gain）进行系统筛选，指标为：
+
+- **disc_score**：sweep_best 窗口内均值 - 窗口外均值（越高=判别力越强）
+- **coverage**：信号峰值落在 sweep_best ±2 层内的比例
+
+关键发现：`neg_cos_am = -cos(a_l, m_l)` 在所有 benchmark 上 coverage=1.00，disc_score 最高，成为唯一满足跨架构通用性的候选信号。
+
+### 39.4 R39B 精细化实验
+
+基于 R39A 结论，对 `neg_cos_am` 进行三种窗口策略测试：
+- `neg_cos_am_adaptive`：自适应 n_t（信号降至峰值 0.65 倍时停止）
+- `neg_cos_am_fine_nt`：细粒度 n_t 候选 {2,4,6,8,12,14}
+- `empirical_acc30`：accuracy-based 经验标定（N=30）
+
+**R39B 关键发现**：`empirical_acc30` 在 BoolQ 上降至 0.85（vs R39A logit-gain 的 0.90），验证了**准确率信号比 logit-gain 更嘈杂**，不适合用于窗口标定。
+
+### 39.5 R39C 最终方案与实验设计
+
+基于 R39A/B 的系统分析，确定三种最终候选方法：
+
+| 方法 | 描述 | 关键设计点 |
+|------|------|-----------|
+| `neg_cos_am_calib` | 标定（N=20）推导 neg_cos_am 均值 profile → 全局固定窗口 | 稳定，低噪声 |
+| `emp_logit_fixed` | 经验标定（logit-gain，N=20）搜索最优窗口 | **修复1**: min_decoder=8 防止选晚层；**修复2**: n_t候选含2 |
+| `neg_cos_am_ps_nt` | 逐样本 neg_cos_am + 细粒度 n_t {2,4,6,8,12} | 最灵活但噪声最大 |
+
+两项关键修复（针对 R38/R39A 的 GPQA 晚层问题）：
+1. `min_decoder=8`：强制 `t_stop ≤ n_layers − 8`，杜绝 [24,30] 等晚层误选
+2. `n_t=2` 加入候选：覆盖 GPQA 等需极窄窗口的任务
+
+### 39.6 R39C 实验结果：Qwen3-8B
+
+| Benchmark | Baseline | Sweep Best | neg_cos_am_calib | emp_logit_fixed | neg_cos_am_ps_nt |
+|-----------|----------|------------|------------------|-----------------|------------------|
+| BoolQ | 0.820 | 0.870 | 0.860 + | **0.900 ★** | 0.850 + |
+| ARC-C | 0.560 | 0.580 | 0.560 | 0.560 | 0.530 |
+| TruthfulQA | 0.320 | 0.380 | 0.320 | 0.340 + | 0.340 + |
+| CSQA | 0.640 | 0.690 | 0.650 + | 0.640 | 0.620 |
+| MMLU-HS-Math | 0.400 | 0.430 | 0.410 + | 0.370 | 0.320 |
+| GPQA-Diamond | 0.380 | 0.440 | 0.330 | 0.360 | 0.330 |
+| AGIEval | 0.520 | 0.540 | 0.540 + | **0.570 ★** | **0.570 ★** |
+| LogiQA | 0.360 | 0.500 | 0.380 + | 0.420 + | 0.390 + |
+| **Macro** | **0.500** | **0.554** | **0.506 +** | **0.520 +** | 0.494 |
+
+**★ = 超越 sweep_best；+ = 超越 baseline**
+
+最优方法：`emp_logit_fixed` (macro=0.520，+2.0% vs baseline，-3.4% vs sweep_best)
+
+### 39.7 R39C 实验结果：Llama3-8B
+
+| Benchmark | Baseline | Sweep Best | neg_cos_am_calib | emp_logit_fixed | neg_cos_am_ps_nt |
+|-----------|----------|------------|------------------|-----------------|------------------|
+| BoolQ | 0.740 | 0.820 | **0.820 +** | 0.770 + | 0.750 + |
+| ARC-C | 0.520 | 0.550 | 0.530 + | 0.510 | 0.470 |
+| TruthfulQA | 0.240 | 0.300 | 0.220 | 0.240 | 0.260 + |
+| CSQA | 0.600 | 0.660 | 0.630 + | 0.610 + | 0.610 + |
+| MMLU-HS-Math | 0.280 | 0.330 | 0.250 | 0.220 | 0.270 |
+| GPQA-Diamond | 0.290 | 0.360 | 0.320 + | **0.390 ★** | 0.280 |
+| AGIEval | 0.290 | 0.310 | **0.350 ★** | 0.270 | **0.330 ★** |
+| LogiQA | 0.290 | 0.420 | 0.270 | 0.350 + | 0.260 |
+| **Macro** | **0.406** | **0.469** | **0.424 +** | **0.420 +** | 0.404 |
+
+**GPQA 突破**：`emp_logit_fixed = 0.390`，超越 sweep_best (0.360) +3pp！
+最优方法：`neg_cos_am_calib` (macro=0.424，+1.8% vs baseline，-4.5% vs sweep_best)
+
+### 39.8 跨架构对比分析
+
+**三方法稳健性**：
+
+| 方法 | Qwen3 Macro | Llama3 Macro | 跨模型均值 | 超越baseline率 | 超越sweep率 |
+|------|------------|-------------|-----------|--------------|------------|
+| baseline | 0.500 | 0.406 | 0.453 | — | — |
+| sweep_best | 0.554 | 0.469 | 0.511 | — | — |
+| neg_cos_am_calib | 0.506 | 0.424 | **0.465** | 8/16 | 2/16 |
+| emp_logit_fixed | 0.520 | 0.420 | **0.470** | 8/16 | **3/16** |
+| neg_cos_am_ps_nt | 0.494 | 0.404 | 0.449 | 6/16 | 2/16 |
+
+**关键结论**：
+1. `emp_logit_fixed` 是**最优综合方法**（跨模型均值=0.470，+1.7% vs baseline）
+2. `neg_cos_am_calib` 在 Llama3 上更稳定（宏平均更高）
+3. `neg_cos_am_ps_nt` 逐样本方法整体**低于 baseline**，不推荐
+4. GPQA 在 Llama3 上被 emp_logit 突破（+3pp），在 Qwen3 上仍有困难（最优窗 [18,20] 极窄极晚）
+
+**GPQA 架构差异根因**：
+- Qwen3 GPQA sweep=[18,20]（L18-20，n_t=2）：信号calibration选到[11,19]，方向错误
+- Llama3 GPQA sweep=[8,14]（L8-14，n_t=6）：emp_logit选到[8,16]，方向基本正确
+
+### 39.9 实验文件
+
+| 文件 | 路径 |
+|------|------|
+| R39C 主脚本 | `experiments/exp_r39c_final.py` |
+| 跨模型报告生成 | `experiments/exp_r39_cross_model_report.py` |
+| Qwen3 结果 | `experiments/results/r39c_final_qwen3.json` |
+| Llama3 结果 | `experiments/results/r39c_final_llama3.json` |
+| Gemma2 结果 | `experiments/results/r39c_final_gemma2.json` |
+| Qwen3 图表 | `experiments/figures/r39c_final_qwen3/` |
+| Llama3 图表 | `experiments/figures/r39c_final_llama3/` |
+| 跨模型综合图 | `experiments/figures/r39_cross_model/` |
+
+### 39.10 R39C 实验结果：Gemma2-2B（失效分析）
+
+Gemma2-2B 所有信号方法均失效，宏平均低于 baseline：
+
+| 方法 | Gemma2 宏平均 | vs baseline |
+|------|------------|-------------|
+| baseline | 0.290 | — |
+| sweep_best | 0.343 | +5.3% |
+| neg_cos_am_calib | 0.265 | **-2.5%** ⚠️ |
+| emp_logit_fixed | 0.290 | 0.0%（全部fallback）|
+| neg_cos_am_ps_nt | 0.264 | **-2.6%** ⚠️ |
+
+**双重根因分析**：
+
+**Root Cause 1：neg_cos_am 信号在 Gemma2 上反转**
+
+Gemma2 使用 post-sublayer normalization 架构：
+```
+h = h + post_attn_norm(attn(pre_attn_norm(h)))   # 注意力分支
+h = h + post_ffn_norm(ffn(pre_ffn_norm(h)))       # FFN 分支  
+```
+
+当前 probe hook 捕获的是 `attn(pre_attn_norm(h))` 和 `ffn(pre_ffn_norm(h))`（归一化前），而实际 residual 贡献是经过 post-norm 后的值。neg_cos_am 计算结果与真实残差贡献方向不一致。
+
+实证验证：BoolQ 的 neg_cos_am profile 在 L18-20 为 **-0.40 到 -0.47**（表示负相关），而此区间恰好是 sweep_best=[16,23] 所在区间。信号方向完全反转 → calib 选到完全错误的 [5,13]。
+
+**Root Cause 2：min_decoder=8 对 26 层模型过于严苛**
+
+Gemma2 仅有 26 层，`min_decoder=8` 导致 `max_t_stop=18`，但多个 benchmark 的 sweep_best `t_stop` 超过 18（如 BoolQ=[16,23] `t_stop=23>18`）。经验标定搜索被完全截断 → 全部 fallback。
+
+**修复方向**（留待 R40）：
+1. 对 Gemma2 使用正确的 post-norm 输出作为 a_l/m_l（hook 挂在 post_attention_layernorm 之后）
+2. `min_decoder` 改为 `max(3, n_layers//8)`（自适应，Gemma2→3，Qwen3→4，Llama3→4）
+
+### 39.11 最终综合总结
+
+**三架构结果对比**：
+
+| 模型 | 架构层数 | Baseline | Sweep Best | 最优信号方法 | 最优精度 | Δ vs Baseline | 超越 Sweep 数 |
+|------|---------|---------|-----------|-----------|---------|--------------|-------------|
+| Qwen3-8B | 36 | 0.500 | 0.554 | **emp_logit_fixed** | **0.520** | **+2.0%** | **2/8** |
+| Llama3-8B | 32 | 0.406 | 0.469 | **neg_cos_am_calib** | **0.424** | **+1.8%** | 1/8 |
+| Gemma2-2B | 26 | 0.290 | 0.343 | (需架构适配) | 0.290 | 0.0% | 0/8 |
+
+**核心结论**：
+
+1. **neg_cos_am 是目前最佳通用信号**（对 Qwen3/Llama3），但 Gemma2 需要 post-sublayer norm 修正
+2. **emp_logit_fixed（logit-gain 经验标定 + min_decoder + n_t∈{2..12}）是最优窗口选择策略**
+3. 信号方法在特定任务上**可超越 sweep_best**（Qwen3 BoolQ +3pp、AGIEval +3pp；Llama3 GPQA +3pp、AGIEval +4pp）
+4. 信号方法无法在全部 benchmark 上同时超越 sweep_best，原因是 sweep_best 对每个任务单独优化窗口，而信号方法用单一标定覆盖全局
+5. neg_cos_am_ps_nt（逐样本）整体**低于 baseline**，不推荐实用
+
+**下一步方向（R40）**：
+- 修复 Gemma2 架构适配
+- 研究"任务自适应"标定策略（GPQA 需要 n_t=2，BoolQ 需要 n_t=14）
+- 探索 ensemble 信号（多方法投票）
+

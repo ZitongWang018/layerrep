@@ -1,0 +1,119 @@
+{
+  "preset": "gemma2-2b",
+  "bbh": {
+    "leaderboard_bbh_boolean_expressions": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.6,
+        "neg_cos_am_calib": 0.38,
+        "emp_logit_fixed": 0.6,
+        "neg_cos_am_ps_nt": 0.38
+      },
+      "neg_cos_am_calib_win": [
+        5,
+        13
+      ],
+      "emp_logit_win": null,
+      "elapsed_s": 36.82731652259827
+    },
+    "leaderboard_bbh_causal_judgement": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.5,
+        "neg_cos_am_calib": 0.5,
+        "emp_logit_fixed": 0.52,
+        "neg_cos_am_ps_nt": 0.5
+      },
+      "neg_cos_am_calib_win": [
+        5,
+        13
+      ],
+      "emp_logit_win": [
+        9,
+        23
+      ],
+      "elapsed_s": 81.00843214988708
+    },
+    "leaderboard_bbh_date_understanding": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.36,
+        "neg_cos_am_calib": 0.36,
+        "emp_logit_fixed": 0.36,
+        "neg_cos_am_ps_nt": 0.36
+      },
+      "neg_cos_am_calib_win": [
+        5,
+        13
+      ],
+      "emp_logit_win": null,
+      "elapsed_s": 92.22524929046631
+    },
+    "leaderboard_bbh_disambiguation_qa": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.32,
+        "neg_cos_am_calib": 0.36,
+        "emp_logit_fixed": 0.32,
+        "neg_cos_am_ps_nt": 0.36
+      },
+      "neg_cos_am_calib_win": [
+        5,
+        13
+      ],
+      "emp_logit_win": null,
+      "elapsed_s": 42.07409429550171
+    },
+    "leaderboard_bbh_logical_deduction_three_objects": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.4,
+        "neg_cos_am_calib": 0.4,
+        "emp_logit_fixed": 0.4,
+        "neg_cos_am_ps_nt": 0.38
+      },
+      "neg_cos_am_calib_win": [
+        5,
+        13
+      ],
+      "emp_logit_win": null,
+      "elapsed_s": 51.0290105342865
+    },
+    "leaderboard_bbh_object_counting": {
+      "n": 50,
+      "accuracies": {
+        "baseline": 0.2,
+        "neg_cos_am_calib": 0.06,
+        "emp_logit_fixed": 0.2,
+        "neg_cos_am_ps_nt": 0.06
+      },
+      "neg_cos_am_calib_win": [
+        5,
+        13
+      ],
+      "emp_logit_win": null,
+      "elapsed_s": 116.07260465621948
+    }
+  },
+  "gsm8k": {
+    "n": 50,
+    "exact_match": {
+      "baseline": 0.04,
+      "neg_cos_am_calib": 0.02,
+      "emp_logit_fixed": 0.04,
+      "neg_cos_am_ps_nt": 0.02
+    },
+    "neg_cos_am_calib_win": [
+      5,
+      13
+    ],
+    "emp_logit_win": null,
+    "max_new_tokens": 256,
+    "elapsed_s": 2995.3828921318054
+  },
+  "meta": {
+    "min_decoder": 3,
+    "n_calib": 20,
+    "gemma2_note": "min_decoder 已放宽；neg_cos_am 仍为 pre-norm hook，若与 Qwen/Llama 差异大属预期"
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "preset": "qwen3-8b",
+  "champion_ne_nt": [
+    8,
+    22
+  ],
+  "n_calib": 10,
+  "probe_layers_compound": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28
+  ],
+  "benchmarks": {
+    "BoolQ": {
+      "benchmark": "BoolQ",
+      "n": 25,
+      "accuracies": {
+        "baseline": 0.84,
+        "neg_cos_am_calib": 0.84,
+        "emp_logit_fixed": 0.8,
+        "reflux_rho_gate": 0.84,
+        "neg_cos_am_prop_attn": 0.84
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "neg_cos_am_calib": 0.0,
+        "emp_logit_fixed": -0.039999999999999925,
+        "reflux_rho_gate": 0.0,
+        "neg_cos_am_prop_attn": 0.0
+      },
+      "tau_rho": -0.0010172449244845972,
+      "neg_cos_am_calib_win": [
+        11,
+        19
+      ],
+      "emp_logit_win": [
+        12,
+        18
+      ],
+      "neg_cos_am_prop_attn_win": [
+        9,
+        17
+      ]
+    },
+    "ARC-C": {
+      "benchmark": "ARC-C",
+      "n": 25,
+      "accuracies": {
+        "baseline": 0.52,
+        "neg_cos_am_calib": 0.44,
+        "emp_logit_fixed": 0.56,
+        "reflux_rho_gate": 0.52,
+        "neg_cos_am_prop_attn": 0.52
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "neg_cos_am_calib": -0.08000000000000002,
+        "emp_logit_fixed": 0.040000000000000036,
+        "reflux_rho_gate": 0.0,
+        "neg_cos_am_prop_attn": 0.0
+      },
+      "tau_rho": 2.5851380553324876e-05,
+      "neg_cos_am_calib_win": [
+        11,
+        19
+      ],
+      "emp_logit_win": [
+        12,
+        16
+      ],
+      "neg_cos_am_prop_attn_win": [
+        9,
+        17
+      ]
+    },
+    "GPQA-Diamond": {
+      "benchmark": "GPQA-Diamond",
+      "n": 25,
+      "accuracies": {
+        "baseline": 0.4,
+        "neg_cos_am_calib": 0.32,
+        "emp_logit_fixed": 0.28,
+        "reflux_rho_gate": 0.4,
+        "neg_cos_am_prop_attn": 0.36
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "neg_cos_am_calib": -0.08000000000000002,
+        "emp_logit_fixed": -0.12,
+        "reflux_rho_gate": 0.0,
+        "neg_cos_am_prop_attn": -0.040000000000000036
+      },
+      "tau_rho": 0.000857553416026508,
+      "neg_cos_am_calib_win": [
+        11,
+        19
+      ],
+      "emp_logit_win": [
+        9,
+        11
+      ],
+      "neg_cos_am_prop_attn_win": [
+        13,
+        21
+      ]
+    },
+    "bbh": {
+      "boolean_expressions": {
+        "benchmark": "BBH:boolean_expressions",
+        "n": 12,
+        "accuracies": {
+          "baseline": 0.9166666666666666,
+          "neg_cos_am_calib": 1.0,
+          "emp_logit_fixed": 1.0,
+          "reflux_rho_gate": 0.9166666666666666,
+          "neg_cos_am_prop_attn": 0.9166666666666666
+        },
+        "delta_vs_baseline": {
+          "baseline": 0.0,
+          "neg_cos_am_calib": 0.08333333333333337,
+          "emp_logit_fixed": 0.08333333333333337,
+          "reflux_rho_gate": 0.0,
+          "neg_cos_am_prop_attn": 0.0
+        },
+        "tau_rho": 0.00931664959954339,
+        "neg_cos_am_calib_win": [
+          9,
+          17
+        ],
+        "emp_logit_win": [
+          9,
+          15
+        ],
+        "neg_cos_am_prop_attn_win": [
+          13,
+          21
+        ]
+      },
+      "causal_judgement": {
+        "benchmark": "BBH:causal_judgement",
+        "n": 12,
+        "accuracies": {
+          "baseline": 0.5,
+          "neg_cos_am_calib": 0.5,
+          "emp_logit_fixed": 0.5833333333333334,
+          "reflux_rho_gate": 0.5,
+          "neg_cos_am_prop_attn": 0.5
+        },
+        "delta_vs_baseline": {
+          "baseline": 0.0,
+          "neg_cos_am_calib": 0.0,
+          "emp_logit_fixed": 0.08333333333333337,
+          "reflux_rho_gate": 0.0,
+          "neg_cos_am_prop_attn": 0.0
+        },
+        "tau_rho": -0.007868050204701374,
+        "neg_cos_am_calib_win": [
+          9,
+          17
+        ],
+        "emp_logit_win": [
+          9,
+          13
+        ],
+        "neg_cos_am_prop_attn_win": [
+          9,
+          17
+        ]
+      },
+      "date_understanding": {
+        "benchmark": "BBH:date_understanding",
+        "n": 12,
+        "accuracies": {
+          "baseline": 0.75,
+          "neg_cos_am_calib": 0.75,
+          "emp_logit_fixed": 0.75,
+          "reflux_rho_gate": 0.75,
+          "neg_cos_am_prop_attn": 0.75
+        },
+        "delta_vs_baseline": {
+          "baseline": 0.0,
+          "neg_cos_am_calib": 0.0,
+          "emp_logit_fixed": 0.0,
+          "reflux_rho_gate": 0.0,
+          "neg_cos_am_prop_attn": 0.0
+        },
+        "tau_rho": -0.0006194251235390677,
+        "neg_cos_am_calib_win": [
+          9,
+          17
+        ],
+        "emp_logit_win": [
+          15,
+          21
+        ],
+        "neg_cos_am_prop_attn_win": [
+          9,
+          17
+        ]
+      },
+      "disambiguation_qa": {
+        "benchmark": "BBH:disambiguation_qa",
+        "n": 12,
+        "accuracies": {
+          "baseline": 0.5833333333333334,
+          "neg_cos_am_calib": 0.6666666666666666,
+          "emp_logit_fixed": 0.6666666666666666,
+          "reflux_rho_gate": 0.5833333333333334,
+          "neg_cos_am_prop_attn": 0.5833333333333334
+        },
+        "delta_vs_baseline": {
+          "baseline": 0.0,
+          "neg_cos_am_calib": 0.08333333333333326,
+          "emp_logit_fixed": 0.08333333333333326,
+          "reflux_rho_gate": 0.0,
+          "neg_cos_am_prop_attn": 0.0
+        },
+        "tau_rho": -0.002008914593593937,
+        "neg_cos_am_calib_win": [
+          15,
+          23
+        ],
+        "emp_logit_win": [
+          15,
+          19
+        ],
+        "neg_cos_am_prop_attn_win": [
+          9,
+          17
+        ]
+      },
+      "logical_deduction_three_objects": {
+        "benchmark": "BBH:logical_deduction_three_objects",
+        "n": 12,
+        "accuracies": {
+          "baseline": 0.8333333333333334,
+          "neg_cos_am_calib": 1.0,
+          "emp_logit_fixed": 0.9166666666666666,
+          "reflux_rho_gate": 0.9166666666666666,
+          "neg_cos_am_prop_attn": 0.9166666666666666
+        },
+        "delta_vs_baseline": {
+          "baseline": 0.0,
+          "neg_cos_am_calib": 0.16666666666666663,
+          "emp_logit_fixed": 0.08333333333333326,
+          "reflux_rho_gate": 0.08333333333333326,
+          "neg_cos_am_prop_attn": 0.08333333333333326
+        },
+        "tau_rho": -0.0017634242734385448,
+        "neg_cos_am_calib_win": [
+          11,
+          19
+        ],
+        "emp_logit_win": [
+          24,
+          26
+        ],
+        "neg_cos_am_prop_attn_win": [
+          9,
+          17
+        ]
+      },
+      "object_counting": {
+        "benchmark": "BBH:object_counting",
+        "n": 12,
+        "accuracies": {
+          "baseline": 0.3333333333333333,
+          "neg_cos_am_calib": 0.5,
+          "emp_logit_fixed": 0.3333333333333333,
+          "reflux_rho_gate": 0.3333333333333333,
+          "neg_cos_am_prop_attn": 0.5
+        },
+        "delta_vs_baseline": {
+          "baseline": 0.0,
+          "neg_cos_am_calib": 0.16666666666666669,
+          "emp_logit_fixed": 0.0,
+          "reflux_rho_gate": 0.0,
+          "neg_cos_am_prop_attn": 0.16666666666666669
+        },
+        "tau_rho": -0.0036796835970826095,
+        "neg_cos_am_calib_win": [
+          9,
+          17
+        ],
+        "emp_logit_win": null,
+        "neg_cos_am_prop_attn_win": [
+          9,
+          17
+        ]
+      }
+    }
+  },
+  "bbh_macro_mean": {
+    "baseline": 0.6527777777777778,
+    "neg_cos_am_calib": 0.736111111111111,
+    "emp_logit_fixed": 0.7083333333333334,
+    "reflux_rho_gate": 0.6666666666666666,
+    "neg_cos_am_prop_attn": 0.6944444444444443
+  },
+  "bbh_macro_delta_vs_baseline": {
+    "baseline": 0.0,
+    "neg_cos_am_calib": 0.08333333333333326,
+    "emp_logit_fixed": 0.05555555555555558,
+    "reflux_rho_gate": 0.01388888888888884,
+    "neg_cos_am_prop_attn": 0.04166666666666652
+  }
+}

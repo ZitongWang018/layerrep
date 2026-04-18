@@ -1,0 +1,132 @@
+{
+  "preset": "qwen3-8b",
+  "eval_conds": [
+    "baseline",
+    "sweep_best",
+    "neg_cos_am_calib",
+    "neg_cos_am_prop_attn"
+  ],
+  "n_calib": 10,
+  "probe_layers_compound": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28
+  ],
+  "qwen_sweep_windows": {
+    "ARC-C": [
+      14,
+      20
+    ],
+    "MMLU-HS-Math": [
+      10,
+      18
+    ],
+    "AGIEval-Gaokao-MathQA": [
+      13,
+      20
+    ],
+    "BBH": [
+      10,
+      22
+    ]
+  },
+  "smoke": false,
+  "n_samples_mc": 100,
+  "bbh_limit": 50,
+  "bbh_total": 100,
+  "benchmarks": {
+    "ARC-C": {
+      "benchmark": "ARC-C",
+      "n": 100,
+      "accuracies": {
+        "baseline": 0.55,
+        "sweep_best": 0.58,
+        "neg_cos_am_calib": 0.55,
+        "neg_cos_am_prop_attn": 0.57
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "sweep_best": 0.029999999999999916,
+        "neg_cos_am_calib": 0.0,
+        "neg_cos_am_prop_attn": 0.019999999999999907
+      },
+      "sweep_lookup_key": "ARC-C",
+      "sweep_best_window": [
+        14,
+        20
+      ],
+      "neg_cos_am_calib_win": [
+        11,
+        19
+      ],
+      "neg_cos_am_prop_attn_win": [
+        9,
+        17
+      ],
+      "mean_profile": {
+        "6": 0.06143068969249725,
+        "8": 0.06874107383191586,
+        "10": 0.13870731592178345,
+        "12": 0.11242604032158851,
+        "14": 0.1275372825562954,
+        "16": 0.203367118537426,
+        "18": 0.2742040574550629,
+        "20": 0.09409453645348549,
+        "22": 0.04941802234388888,
+        "24": -0.09083577934652567,
+        "26": -0.039440286718308924,
+        "28": -0.03428902220912278,
+        "30": -0.012679800728801639,
+        "32": -0.007000932213850319
+      }
+    },
+    "MMLU-HS-Math": {
+      "benchmark": "MMLU-HS-Math",
+      "n": 100,
+      "accuracies": {
+        "baseline": 0.4,
+        "sweep_best": 0.44,
+        "neg_cos_am_calib": 0.43,
+        "neg_cos_am_prop_attn": 0.43
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "sweep_best": 0.03999999999999998,
+        "neg_cos_am_calib": 0.02999999999999997,
+        "neg_cos_am_prop_attn": 0.02999999999999997
+      },
+      "sweep_lookup_key": "MMLU-HS-Math",
+      "sweep_best_window": [
+        10,
+        18
+      ],
+      "neg_cos_am_calib_win": [
+        13,
+        21
+      ],
+      "neg_cos_am_prop_attn_win": [
+        13,
+        21
+      ],
+      "mean_profile": {
+        "6": 0.0694043379276991,
+        "8": 0.07425529342144728,
+        "10": 0.0882433895021677,
+        "12": 0.11697092987596988,
+        "14": 0.18048879578709603,
+        "16": 0.3791879117488861,
+        "18": 0.34243942350149154,
+        "20": 0.15634627044200897,
+        "22": 0.033646165730897334,
+        "24": -0.079050159920007,
+        "26": -0.0004142834644881077,
+        "28": -0.01490636909729801,
+        "30": 0.009504022914916277,
+        "32": -0.05669387541711331
+      }
+    }
+  }
+}

@@ -1,0 +1,216 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+[sweep_best] BoolQ:(16, 23), ARC-C:(5, 11), TruthfulQA:(7, 24), CSQA:(6, 21), MMLU-HS-Math:(8, 10), GPQA-Diamond:(15, 20), AGIEval-Gaokao-MathQA:(5, 11), LogiQA:(5, 24)
+Loading model: /root/autodl-tmp/Gemma2-2B
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   3%|▎         | 9/288 [00:00<00:03, 86.04it/s]Loading weights:   6%|▋         | 18/288 [00:00<00:03, 78.71it/s]Loading weights:   9%|▉         | 26/288 [00:00<00:06, 42.87it/s]Loading weights:  12%|█▏        | 35/288 [00:00<00:05, 47.97it/s]Loading weights:  14%|█▍        | 41/288 [00:00<00:05, 47.15it/s]Loading weights:  16%|█▋        | 47/288 [00:00<00:05, 42.06it/s]Loading weights:  20%|██        | 58/288 [00:01<00:05, 40.26it/s]Loading weights:  23%|██▎       | 67/288 [00:01<00:05, 41.83it/s]Loading weights:  25%|██▌       | 72/288 [00:01<00:05, 40.61it/s]Loading weights:  28%|██▊       | 80/288 [00:01<00:05, 35.31it/s]Loading weights:  32%|███▏      | 91/288 [00:02<00:04, 41.85it/s]Loading weights:  35%|███▌      | 102/288 [00:02<00:04, 39.96it/s]Loading weights:  39%|███▉      | 113/288 [00:02<00:04, 43.72it/s]Loading weights:  43%|████▎     | 124/288 [00:02<00:03, 45.73it/s]Loading weights:  47%|████▋     | 135/288 [00:03<00:03, 38.72it/s]Loading weights:  51%|█████     | 146/288 [00:03<00:03, 41.34it/s]Loading weights:  54%|█████▍    | 155/288 [00:03<00:03, 44.17it/s]Loading weights:  56%|█████▌    | 160/288 [00:03<00:03, 37.58it/s]Loading weights:  58%|█████▊    | 168/288 [00:03<00:03, 39.22it/s]Loading weights:  61%|██████    | 176/288 [00:04<00:02, 40.04it/s]Loading weights:  63%|██████▎   | 181/288 [00:04<00:02, 39.10it/s]Loading weights:  64%|██████▍   | 185/288 [00:04<00:02, 35.30it/s]Loading weights:  66%|██████▌   | 189/288 [00:04<00:02, 35.83it/s]Loading weights:  68%|██████▊   | 197/288 [00:04<00:02, 37.56it/s]Loading weights:  70%|██████▉   | 201/288 [00:04<00:02, 37.31it/s]Loading weights:  73%|███████▎  | 210/288 [00:04<00:01, 48.36it/s]Loading weights:  75%|███████▌  | 216/288 [00:05<00:01, 37.00it/s]Loading weights:  77%|███████▋  | 221/288 [00:05<00:01, 37.88it/s]Loading weights:  80%|███████▉  | 230/288 [00:05<00:01, 40.33it/s]Loading weights:  82%|████████▏ | 235/288 [00:05<00:01, 32.65it/s]Loading weights:  85%|████████▌ | 245/288 [00:05<00:01, 39.97it/s]Loading weights:  89%|████████▉ | 256/288 [00:06<00:00, 42.39it/s]Loading weights:  92%|█████████▏| 264/288 [00:06<00:00, 45.17it/s]Loading weights:  93%|█████████▎| 269/288 [00:06<00:00, 41.40it/s]Loading weights:  97%|█████████▋| 278/288 [00:06<00:00, 44.38it/s]Loading weights: 100%|██████████| 288/288 [00:06<00:00, 42.35it/s]
+Using the latest cached version of the dataset since aps/super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /root/.cache/huggingface/datasets/aps___super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sun Apr  5 17:41:13 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /root/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Apr  5 17:41:34 2026).
+Using the latest cached version of the dataset since truthfulqa/truthful_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'multiple_choice' at /root/.cache/huggingface/datasets/truthfulqa___truthful_qa/multiple_choice/0.0.0/741b8276f2d1982aa3d5b832d3ee81ed3b896490 (last modified on Sun Apr  5 17:44:34 2026).
+Using the latest cached version of the dataset since tau/commonsense_qa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/tau___commonsense_qa/default/0.0.0/94630fe30dad47192a8546eb75f094926d47e155 (last modified on Sun Apr  5 17:40:59 2026).
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'high_school_mathematics' at /root/.cache/huggingface/datasets/cais___mmlu/high_school_mathematics/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Thu Apr  9 00:49:11 2026).
+Using the latest cached version of the dataset since Idavidrein/gpqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'gpqa_diamond' at /root/.cache/huggingface/datasets/Idavidrein___gpqa/gpqa_diamond/0.0.0/633f5ee89ab8ad4522a9f850766b73f62147ffdd (last modified on Mon Apr 13 15:05:27 2026).
+
+───────────────────────────────────────────────────────
+BoolQ  N=100  sweep_best=(16, 23)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 1.0s  peak=L6(0.362)  disc_vs_sweep=-0.388  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(9, 11)  gain=-1.5579
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 7.4s  win_emp=None  sweep=(16, 23)
+  [ 10/100] base=0.600 swee=0.800 neg_=0.400 emp_=0.600 neg_=0.200 | 3s ETA 26s
+  [ 20/100] base=0.700 swee=0.850 neg_=0.600 emp_=0.700 neg_=0.400 | 6s ETA 22s
+  [ 30/100] base=0.700 swee=0.867 neg_=0.533 emp_=0.700 neg_=0.400 | 8s ETA 19s
+  [ 40/100] base=0.700 swee=0.825 neg_=0.500 emp_=0.700 neg_=0.450 | 11s ETA 17s
+  [ 50/100] base=0.680 swee=0.800 neg_=0.520 emp_=0.680 neg_=0.460 | 14s ETA 14s
+  [ 60/100] base=0.700 swee=0.767 neg_=0.533 emp_=0.700 neg_=0.483 | 17s ETA 11s
+  [ 70/100] base=0.643 swee=0.743 neg_=0.514 emp_=0.643 neg_=0.529 | 20s ETA 8s
+  [ 80/100] base=0.675 swee=0.738 neg_=0.537 emp_=0.675 neg_=0.537 | 22s ETA 6s
+  [ 90/100] base=0.667 swee=0.733 neg_=0.544 emp_=0.667 neg_=0.567 | 25s ETA 3s
+  [100/100] base=0.680 swee=0.730 neg_=0.520 emp_=0.680 neg_=0.570 | 28s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+
+───────────────────────────────────────────────────────
+ARC-C  N=100  sweep_best=(5, 11)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 0.5s  peak=L6(0.393)  disc_vs_sweep=+0.079  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(7, 9)  gain=-21.2937
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 6.9s  win_emp=None  sweep=(5, 11)
+  [ 10/100] base=0.100 swee=0.000 neg_=0.100 emp_=0.100 neg_=0.000 | 5s ETA 44s
+  [ 20/100] base=0.250 swee=0.200 neg_=0.250 emp_=0.250 neg_=0.150 | 10s ETA 39s
+  [ 30/100] base=0.267 swee=0.200 neg_=0.233 emp_=0.267 neg_=0.233 | 15s ETA 34s
+  [ 40/100] base=0.275 swee=0.225 neg_=0.250 emp_=0.275 neg_=0.250 | 20s ETA 29s
+  [ 50/100] base=0.300 swee=0.280 neg_=0.320 emp_=0.300 neg_=0.300 | 24s ETA 24s
+  [ 60/100] base=0.267 swee=0.317 neg_=0.333 emp_=0.267 neg_=0.283 | 29s ETA 19s
+  [ 70/100] base=0.271 swee=0.314 neg_=0.329 emp_=0.271 neg_=0.257 | 34s ETA 15s
+  [ 80/100] base=0.237 swee=0.287 neg_=0.300 emp_=0.237 neg_=0.237 | 39s ETA 10s
+  [ 90/100] base=0.233 swee=0.300 neg_=0.300 emp_=0.233 neg_=0.233 | 44s ETA 5s
+  [100/100] base=0.290 swee=0.350 neg_=0.330 emp_=0.290 neg_=0.250 | 48s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+
+───────────────────────────────────────────────────────
+TruthfulQA  N=50  sweep_best=(7, 24)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 0.5s  peak=L6(0.394)  disc_vs_sweep=-0.443  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(15, 17)  gain=-21.8924
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 7.0s  win_emp=None  sweep=(7, 24)
+  [ 10/50] base=0.200 swee=0.400 neg_=0.200 emp_=0.200 neg_=0.200 | 8s ETA 31s
+  [ 20/50] base=0.350 swee=0.400 neg_=0.200 emp_=0.350 neg_=0.300 | 14s ETA 21s
+  [ 30/50] base=0.300 swee=0.333 neg_=0.200 emp_=0.300 neg_=0.233 | 21s ETA 14s
+  [ 40/50] base=0.275 swee=0.350 neg_=0.175 emp_=0.275 neg_=0.250 | 28s ETA 7s
+  [ 50/50] base=0.280 swee=0.320 neg_=0.180 emp_=0.280 neg_=0.280 | 35s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+
+───────────────────────────────────────────────────────
+CSQA  N=100  sweep_best=(6, 21)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 0.5s  peak=L6(0.395)  disc_vs_sweep=+0.000  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(13, 17)  gain=-1.2967
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 6.7s  win_emp=None  sweep=(6, 21)
+  [ 10/100] base=0.300 swee=0.400 neg_=0.300 emp_=0.300 neg_=0.100 | 6s ETA 55s
+  [ 20/100] base=0.350 swee=0.300 neg_=0.250 emp_=0.350 neg_=0.150 | 12s ETA 49s
+  [ 30/100] base=0.400 swee=0.367 neg_=0.333 emp_=0.400 neg_=0.267 | 18s ETA 43s
+  [ 40/100] base=0.350 swee=0.300 neg_=0.275 emp_=0.350 neg_=0.250 | 24s ETA 37s
+  [ 50/100] base=0.300 swee=0.300 neg_=0.220 emp_=0.300 neg_=0.260 | 31s ETA 31s
+  [ 60/100] base=0.250 swee=0.283 neg_=0.183 emp_=0.250 neg_=0.217 | 37s ETA 24s
+  [ 70/100] base=0.229 swee=0.300 neg_=0.171 emp_=0.229 neg_=0.214 | 43s ETA 18s
+  [ 80/100] base=0.225 swee=0.300 neg_=0.175 emp_=0.225 neg_=0.225 | 49s ETA 12s
+  [ 90/100] base=0.222 swee=0.289 neg_=0.167 emp_=0.222 neg_=0.211 | 55s ETA 6s
+  [100/100] base=0.210 swee=0.280 neg_=0.160 emp_=0.210 neg_=0.200 | 61s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+
+───────────────────────────────────────────────────────
+MMLU-HS-Math  N=100  sweep_best=(8, 10)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 0.5s  peak=L6(0.379)  disc_vs_sweep=-0.253  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(15, 17)  gain=-7.4613
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 6.8s  win_emp=None  sweep=(8, 10)
+  [ 10/100] base=0.100 swee=0.200 neg_=0.300 emp_=0.100 neg_=0.100 | 5s ETA 42s
+  [ 20/100] base=0.100 swee=0.200 neg_=0.200 emp_=0.100 neg_=0.100 | 9s ETA 37s
+  [ 30/100] base=0.100 swee=0.233 neg_=0.200 emp_=0.100 neg_=0.100 | 14s ETA 33s
+  [ 40/100] base=0.125 swee=0.225 neg_=0.175 emp_=0.125 neg_=0.075 | 19s ETA 28s
+  [ 50/100] base=0.120 swee=0.220 neg_=0.160 emp_=0.120 neg_=0.080 | 23s ETA 23s
+  [ 60/100] base=0.100 swee=0.200 neg_=0.150 emp_=0.100 neg_=0.083 | 28s ETA 19s
+  [ 70/100] base=0.114 swee=0.200 neg_=0.157 emp_=0.114 neg_=0.114 | 33s ETA 14s
+  [ 80/100] base=0.125 swee=0.188 neg_=0.175 emp_=0.125 neg_=0.113 | 37s ETA 9s
+  [ 90/100] base=0.111 swee=0.178 neg_=0.156 emp_=0.111 neg_=0.100 | 42s ETA 5s
+  [100/100] base=0.110 swee=0.200 neg_=0.150 emp_=0.110 neg_=0.100 | 47s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+
+───────────────────────────────────────────────────────
+GPQA-Diamond  N=100  sweep_best=(15, 20)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 0.6s  peak=L6(0.371)  disc_vs_sweep=-0.314  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(15, 17)  gain=-3.1444
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 8.3s  win_emp=None  sweep=(15, 20)
+  [ 10/100] base=0.400 swee=0.500 neg_=0.400 emp_=0.400 neg_=0.400 | 6s ETA 51s
+  [ 20/100] base=0.300 swee=0.400 neg_=0.300 emp_=0.300 neg_=0.400 | 12s ETA 47s
+  [ 30/100] base=0.300 swee=0.367 neg_=0.300 emp_=0.300 neg_=0.367 | 18s ETA 41s
+  [ 40/100] base=0.275 swee=0.350 neg_=0.275 emp_=0.275 neg_=0.325 | 24s ETA 36s
+  [ 50/100] base=0.320 swee=0.380 neg_=0.300 emp_=0.320 neg_=0.340 | 29s ETA 29s
+  [ 60/100] base=0.333 swee=0.383 neg_=0.317 emp_=0.333 neg_=0.333 | 34s ETA 23s
+  [ 70/100] base=0.343 swee=0.386 neg_=0.314 emp_=0.343 neg_=0.343 | 39s ETA 17s
+  [ 80/100] base=0.300 swee=0.338 neg_=0.287 emp_=0.300 neg_=0.300 | 46s ETA 12s
+  [ 90/100] base=0.300 swee=0.333 neg_=0.289 emp_=0.300 neg_=0.300 | 53s ETA 6s
+  [100/100] base=0.280 swee=0.310 neg_=0.280 emp_=0.280 neg_=0.270 | 58s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+Using the latest cached version of the dataset since hails/agieval-gaokao-mathqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/hails___agieval-gaokao-mathqa/default/0.0.0/c7810f0856cd8ac59bb9102bf4f10139849b70d7 (last modified on Mon Apr 13 14:58:10 2026).
+Using the latest cached version of the dataset since fireworks-ai/logiqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /root/.cache/huggingface/datasets/fireworks-ai___logiqa/default/0.0.0/d8ef7e0cc4373988ac01f8f342d4bc6cb27919ad (last modified on Mon Apr 13 14:59:23 2026).
+
+───────────────────────────────────────────────────────
+AGIEval-Gaokao-MathQA  N=100  sweep_best=(5, 11)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 0.5s  peak=L6(0.394)  disc_vs_sweep=+0.090  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(15, 17)  gain=-4.7829
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 7.1s  win_emp=None  sweep=(5, 11)
+  [ 10/100] base=0.100 swee=0.300 neg_=0.200 emp_=0.100 neg_=0.200 | 5s ETA 46s
+  [ 20/100] base=0.250 swee=0.350 neg_=0.300 emp_=0.250 neg_=0.250 | 10s ETA 41s
+  [ 30/100] base=0.233 swee=0.300 neg_=0.300 emp_=0.233 neg_=0.233 | 15s ETA 36s
+  [ 40/100] base=0.275 swee=0.300 neg_=0.300 emp_=0.275 neg_=0.225 | 21s ETA 31s
+  [ 50/100] base=0.280 swee=0.300 neg_=0.300 emp_=0.280 neg_=0.220 | 26s ETA 26s
+  [ 60/100] base=0.267 swee=0.317 neg_=0.317 emp_=0.267 neg_=0.233 | 31s ETA 21s
+  [ 70/100] base=0.257 swee=0.300 neg_=0.286 emp_=0.257 neg_=0.214 | 36s ETA 15s
+  [ 80/100] base=0.250 swee=0.287 neg_=0.275 emp_=0.250 neg_=0.212 | 41s ETA 10s
+  [ 90/100] base=0.244 swee=0.278 neg_=0.267 emp_=0.244 neg_=0.211 | 46s ETA 5s
+  [100/100] base=0.250 swee=0.300 neg_=0.270 emp_=0.250 neg_=0.220 | 51s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+
+───────────────────────────────────────────────────────
+LogiQA  N=100  sweep_best=(5, 24)
+  [Phase A] 标定 neg_cos_am (N=20) …
+  [Phase A] 0.6s  peak=L6(0.363)  disc_vs_sweep=+0.000  calib_win=(5, 13)
+  [Phase B] 经验标定 logit-gain (N=20) …
+  [emp_logit] candidates=14  best=(7, 9)  gain=-5.9863
+  [emp_logit] gain≤0, fallback baseline
+  [Phase B] 7.5s  win_emp=None  sweep=(5, 24)
+  [ 10/100] base=0.200 swee=0.200 neg_=0.300 emp_=0.200 neg_=0.200 | 5s ETA 49s
+  [ 20/100] base=0.200 swee=0.200 neg_=0.250 emp_=0.200 neg_=0.200 | 11s ETA 45s
+  [ 30/100] base=0.233 swee=0.267 neg_=0.267 emp_=0.233 neg_=0.233 | 18s ETA 41s
+  [ 40/100] base=0.225 swee=0.250 neg_=0.250 emp_=0.225 neg_=0.225 | 24s ETA 36s
+  [ 50/100] base=0.220 swee=0.240 neg_=0.240 emp_=0.220 neg_=0.220 | 30s ETA 30s
+  [ 60/100] base=0.217 swee=0.250 neg_=0.233 emp_=0.217 neg_=0.217 | 36s ETA 24s
+  [ 70/100] base=0.243 swee=0.271 neg_=0.257 emp_=0.243 neg_=0.243 | 41s ETA 18s
+  [ 80/100] base=0.237 swee=0.263 neg_=0.250 emp_=0.237 neg_=0.237 | 47s ETA 12s
+  [ 90/100] base=0.222 swee=0.244 neg_=0.233 emp_=0.222 neg_=0.222 | 53s ETA 6s
+  [100/100] base=0.220 swee=0.250 neg_=0.230 emp_=0.220 neg_=0.220 | 58s ETA 0s
+  checkpoint → /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json
+
+===============================================================================================
+R39C gemma2-2b 最终精度结果
+===============================================================================================
+  Benchmark                    baseline   sweep_best  neg_cos_am_  emp_logit_f  neg_cos_am_
+-----------------------------------------------------------------------------------------------
+  BoolQ                     0.680          0.730          0.520          0.680          0.570        
+  ARC-C                     0.290          0.350          0.330+         0.290          0.250        
+  TruthfulQA                0.280          0.320          0.180          0.280          0.280        
+  CSQA                      0.210          0.280          0.160          0.210          0.200        
+  MMLU-HS-Math              0.110          0.200          0.150+         0.110          0.100        
+  GPQA-Diamond              0.280          0.310          0.280          0.280          0.270        
+  AGIEval-Gaokao-MathQA     0.250          0.300          0.270+         0.250          0.220        
+  LogiQA                    0.220          0.250          0.230+         0.220          0.220        
+-----------------------------------------------------------------------------------------------
+  MACRO AVG                 0.290          0.343          0.265          0.290          0.264        
+
+  超越 sweep_best：0/24 (benchmark × method)  超越 baseline：4/24
+
+  窗口选择：
+    BoolQ                  sw=[16, 23]     calib=[5, 13]      emp=fallback    
+    ARC-C                  sw=[5, 11]      calib=[5, 13]      emp=fallback    
+    TruthfulQA             sw=[7, 24]      calib=[5, 13]      emp=fallback    
+    CSQA                   sw=[6, 21]      calib=[5, 13]      emp=fallback    
+    MMLU-HS-Math           sw=[8, 10]      calib=[5, 13]      emp=fallback    
+    GPQA-Diamond           sw=[15, 20]     calib=[5, 13]      emp=fallback    
+    AGIEval-Gaokao-MathQA  sw=[5, 11]      calib=[5, 13]      emp=fallback    
+    LogiQA                 sw=[5, 24]      calib=[5, 13]      emp=fallback    
+  → /root/autodl-tmp/loop_layer/experiments/figures/r39c_final_gemma2/01_accuracy_bars.png
+  → /root/autodl-tmp/loop_layer/experiments/figures/r39c_final_gemma2/02_delta_scatter.png
+  → /root/autodl-tmp/loop_layer/experiments/figures/r39c_final_gemma2/03_neg_cos_am_profiles.png
+  → /root/autodl-tmp/loop_layer/experiments/figures/r39c_final_gemma2/04_heatmap.png
+  → /root/autodl-tmp/loop_layer/experiments/figures/r39c_final_gemma2/05_macro_summary.png
+  → /root/autodl-tmp/loop_layer/experiments/figures/r39c_final_gemma2/06_window_alignment.png
+
+完成。结果: /root/autodl-tmp/loop_layer/experiments/results/r39c_final_gemma2.json

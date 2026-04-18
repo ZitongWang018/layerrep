@@ -1,0 +1,131 @@
+{
+  "preset": "qwen3-8b",
+  "eval_conds": [
+    "baseline",
+    "sweep_best",
+    "neg_cos_am_calib",
+    "neg_cos_am_prop_attn"
+  ],
+  "n_calib": 10,
+  "probe_layers_compound": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28
+  ],
+  "qwen_sweep_windows": {
+    "ARC-C": [
+      14,
+      20
+    ],
+    "MMLU-HS-Math": [
+      10,
+      18
+    ],
+    "AGIEval-Gaokao-MathQA": [
+      13,
+      20
+    ],
+    "BBH": [
+      10,
+      22
+    ]
+  },
+  "smoke": true,
+  "n_samples_mc": 1,
+  "bbh_limit": 1,
+  "benchmarks": {
+    "MMLU-HS-Math": {
+      "benchmark": "MMLU-HS-Math",
+      "n": 1,
+      "accuracies": {
+        "baseline": 0.0,
+        "sweep_best": 0.0,
+        "neg_cos_am_calib": 1.0,
+        "neg_cos_am_prop_attn": 0.0
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "sweep_best": 0.0,
+        "neg_cos_am_calib": 1.0,
+        "neg_cos_am_prop_attn": 0.0
+      },
+      "sweep_lookup_key": "MMLU-HS-Math",
+      "sweep_best_window": [
+        10,
+        18
+      ],
+      "neg_cos_am_calib_win": [
+        11,
+        19
+      ],
+      "neg_cos_am_prop_attn_win": [
+        9,
+        17
+      ],
+      "mean_profile": {
+        "6": 0.04907454550266266,
+        "8": 0.04602310433983803,
+        "10": 0.06436124444007874,
+        "12": 0.1279023438692093,
+        "14": 0.11054082959890366,
+        "16": 0.3828869163990021,
+        "18": 0.30523112416267395,
+        "20": 0.09237831085920334,
+        "22": 0.040524303913116455,
+        "24": -0.14089088141918182,
+        "26": 0.030099842697381973,
+        "28": -0.00564451003447175,
+        "30": -0.06546664983034134,
+        "32": -0.03867552429437637
+      }
+    },
+    "AGIEval-Gaokao-MathQA": {
+      "benchmark": "AGIEval-Gaokao-MathQA",
+      "n": 1,
+      "accuracies": {
+        "baseline": 1.0,
+        "sweep_best": 1.0,
+        "neg_cos_am_calib": 1.0,
+        "neg_cos_am_prop_attn": 1.0
+      },
+      "delta_vs_baseline": {
+        "baseline": 0.0,
+        "sweep_best": 0.0,
+        "neg_cos_am_calib": 0.0,
+        "neg_cos_am_prop_attn": 0.0
+      },
+      "sweep_lookup_key": "AGIEval-Gaokao-MathQA",
+      "sweep_best_window": [
+        13,
+        20
+      ],
+      "neg_cos_am_calib_win": [
+        13,
+        21
+      ],
+      "neg_cos_am_prop_attn_win": [
+        9,
+        17
+      ],
+      "mean_profile": {
+        "6": 0.03579721227288246,
+        "8": 0.09025786072015762,
+        "10": 0.05303569883108139,
+        "12": 0.07721362262964249,
+        "14": 0.12828148901462555,
+        "16": 0.08940718322992325,
+        "18": 0.13697902858257294,
+        "20": 0.10423518717288971,
+        "22": 0.0735681802034378,
+        "24": -0.1328616589307785,
+        "26": -0.05045175552368164,
+        "28": -0.10156961530447006,
+        "30": -0.16617266833782196,
+        "32": -0.1457597315311432
+      }
+    }
+  }
+}

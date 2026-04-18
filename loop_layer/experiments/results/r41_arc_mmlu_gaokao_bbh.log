@@ -1,0 +1,39 @@
+Loading model: /root/autodl-tmp/model_qwen
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<01:19,  5.02it/s]Loading weights:   2%|▏         | 6/399 [00:00<00:29, 13.45it/s]Loading weights:   4%|▍         | 16/399 [00:00<00:11, 34.07it/s]Loading weights:   7%|▋         | 26/399 [00:00<00:07, 48.73it/s]Loading weights:   8%|▊         | 33/399 [00:00<00:06, 54.12it/s]Loading weights:  10%|█         | 40/399 [00:01<00:06, 51.93it/s]Loading weights:  12%|█▏        | 49/399 [00:01<00:05, 59.83it/s]Loading weights:  15%|█▍        | 59/399 [00:01<00:05, 66.69it/s]Loading weights:  17%|█▋        | 67/399 [00:01<00:05, 66.29it/s]Loading weights:  19%|█▊        | 74/399 [00:01<00:05, 61.19it/s]Loading weights:  21%|██        | 82/399 [00:01<00:05, 62.99it/s]Loading weights:  23%|██▎       | 92/399 [00:01<00:04, 69.55it/s]Loading weights:  25%|██▌       | 100/399 [00:01<00:04, 69.35it/s]Loading weights:  27%|██▋       | 108/399 [00:01<00:04, 67.17it/s]Loading weights:  29%|██▉       | 115/399 [00:02<00:04, 66.36it/s]Loading weights:  31%|███▏      | 125/399 [00:02<00:03, 72.12it/s]Loading weights:  33%|███▎      | 133/399 [00:02<00:03, 71.92it/s]Loading weights:  35%|███▌      | 141/399 [00:02<00:03, 68.43it/s]Loading weights:  37%|███▋      | 148/399 [00:02<00:03, 66.51it/s]Loading weights:  40%|███▉      | 158/399 [00:02<00:03, 71.68it/s]Loading weights:  42%|████▏     | 166/399 [00:02<00:03, 70.96it/s]Loading weights:  44%|████▎     | 174/399 [00:02<00:03, 66.53it/s]Loading weights:  45%|████▌     | 181/399 [00:03<00:03, 62.79it/s]Loading weights:  48%|████▊     | 191/399 [00:03<00:03, 69.25it/s]Loading weights:  50%|████▉     | 199/399 [00:03<00:02, 70.00it/s]Loading weights:  52%|█████▏    | 207/399 [00:03<00:02, 67.56it/s]Loading weights:  54%|█████▎    | 214/399 [00:03<00:02, 66.02it/s]Loading weights:  56%|█████▌    | 224/399 [00:03<00:02, 69.31it/s]Loading weights:  58%|█████▊    | 232/399 [00:03<00:02, 70.15it/s]Loading weights:  60%|██████    | 240/399 [00:03<00:02, 67.52it/s]Loading weights:  62%|██████▏   | 247/399 [00:04<00:02, 65.80it/s]Loading weights:  64%|██████▍   | 257/399 [00:04<00:01, 71.39it/s]Loading weights:  66%|██████▋   | 265/399 [00:04<00:01, 71.26it/s]Loading weights:  68%|██████▊   | 273/399 [00:04<00:01, 67.54it/s]Loading weights:  70%|███████   | 280/399 [00:04<00:01, 65.52it/s]Loading weights:  73%|███████▎  | 290/399 [00:04<00:01, 71.37it/s]Loading weights:  75%|███████▍  | 298/399 [00:04<00:01, 71.29it/s]Loading weights:  77%|███████▋  | 306/399 [00:04<00:01, 68.46it/s]Loading weights:  78%|███████▊  | 313/399 [00:04<00:01, 66.66it/s]Loading weights:  81%|████████  | 323/399 [00:05<00:01, 71.79it/s]Loading weights:  83%|████████▎ | 331/399 [00:05<00:00, 71.68it/s]Loading weights:  85%|████████▍ | 339/399 [00:05<00:00, 67.90it/s]Loading weights:  87%|████████▋ | 346/399 [00:05<00:00, 65.12it/s]Loading weights: 100%|██████████| 399/399 [00:05<00:00, 71.98it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+  [ARC-C] neg_cos calib …
+  [ARC-C] compound (neg_cos × JSD attn) …
+    [10/100] baseline=0.50 sweep_be=0.50 neg_cos_=0.40 neg_cos_=0.50
+    [20/100] baseline=0.45 sweep_be=0.50 neg_cos_=0.40 neg_cos_=0.45
+    [30/100] baseline=0.50 sweep_be=0.57 neg_cos_=0.43 neg_cos_=0.50
+    [40/100] baseline=0.53 sweep_be=0.57 neg_cos_=0.47 neg_cos_=0.50
+    [50/100] baseline=0.56 sweep_be=0.60 neg_cos_=0.50 neg_cos_=0.54
+    [60/100] baseline=0.55 sweep_be=0.55 neg_cos_=0.48 neg_cos_=0.53
+    [70/100] baseline=0.54 sweep_be=0.56 neg_cos_=0.51 neg_cos_=0.54
+    [80/100] baseline=0.51 sweep_be=0.54 neg_cos_=0.49 neg_cos_=0.51
+    [90/100] baseline=0.54 sweep_be=0.58 neg_cos_=0.53 neg_cos_=0.56
+    [100/100] baseline=0.55 sweep_be=0.58 neg_cos_=0.55 neg_cos_=0.57
+  [ARC-C] 1275s baseline=0.550 sweep=0.580 calib=0.550 prop=0.570
+  [MMLU-HS-Math] neg_cos calib …
+  [MMLU-HS-Math] compound (neg_cos × JSD attn) …
+    [10/100] baseline=0.20 sweep_be=0.20 neg_cos_=0.20 neg_cos_=0.20
+    [20/100] baseline=0.25 sweep_be=0.40 neg_cos_=0.20 neg_cos_=0.20
+    [30/100] baseline=0.40 sweep_be=0.47 neg_cos_=0.37 neg_cos_=0.37
+    [40/100] baseline=0.40 sweep_be=0.53 neg_cos_=0.45 neg_cos_=0.45
+    [50/100] baseline=0.40 sweep_be=0.52 neg_cos_=0.44 neg_cos_=0.44
+    [60/100] baseline=0.38 sweep_be=0.48 neg_cos_=0.43 neg_cos_=0.43
+    [70/100] baseline=0.39 sweep_be=0.44 neg_cos_=0.41 neg_cos_=0.41
+    [80/100] baseline=0.40 sweep_be=0.44 neg_cos_=0.45 neg_cos_=0.45
+    [90/100] baseline=0.40 sweep_be=0.43 neg_cos_=0.44 neg_cos_=0.44
+    [100/100] baseline=0.40 sweep_be=0.44 neg_cos_=0.43 neg_cos_=0.43
+  [MMLU-HS-Math] 1232s baseline=0.400 sweep=0.440 calib=0.430 prop=0.430
+  [AGIEval-Gaokao-MathQA] neg_cos calib …
+  [AGIEval-Gaokao-MathQA] compound (neg_cos × JSD attn) …
+    [10/100] baseline=0.60 sweep_be=0.60 neg_cos_=0.70 neg_cos_=0.70
+    [20/100] baseline=0.60 sweep_be=0.60 neg_cos_=0.65 neg_cos_=0.65
+    [30/100] baseline=0.57 sweep_be=0.57 neg_cos_=0.60 neg_cos_=0.60
+    [40/100] baseline=0.55 sweep_be=0.55 neg_cos_=0.55 neg_cos_=0.55
+    [50/100] baseline=0.48 sweep_be=0.52 neg_cos_=0.50 neg_cos_=0.50
+    [60/100] baseline=0.47 sweep_be=0.52 neg_cos_=0.48 neg_cos_=0.48
+    [70/100] baseline=0.49 sweep_be=0.53 neg_cos_=0.46 neg_cos_=0.46

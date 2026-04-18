@@ -182,3 +182,9 @@ cos_res_l = safe_cos(term1, delta_h)                   # 对齐度（越高越�
 - **Gemma2 Term1**：`mlp(pre_feedforward_layernorm(h_i))`；Llama 与 Qwen：`mlp(post_attention_layernorm(h_i))`。
 - **探针范围**：Llama `min_start=8,max_start=20`，probe 6..26 步长 2；Gemma `min_start=5,max_start=16`，probe 4..22 步长 2。
 - **输出**：`results/r38_multimodel_llama3_signal.json`、`results/r38_multimodel_gemma2_signal.json`，图在 `figures/r38_multimodel_*/summary_multimodel.png`。
+
+## R40 BBH+GSM8K（lm-eval 任务 + Hub 数据）
+
+- **`httpx.ConnectTimeout` / SSL 握手超时**：常见于 `http_proxy`/`https_proxy` 指向不可达或慢速代理；`datasets` 经 `huggingface_hub` 下载 parquet 时会走该代理。**使用 `HF_ENDPOINT=https://hf-mirror.com` 时应在 shell 与脚本中 `unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY`**，勿再依赖 `source /etc/network_turbo` 强塞代理。
+- **`run_r40_bbh_gsm8k.sh`** 已在开头 unset 上述变量，并设置 `HF_HUB_DOWNLOAD_TIMEOUT`（默认 300s）；**`exp_r40_bbh_gsm8k_etd.py`** 在 import 重型库前同样 pop 代理并 `setdefault HF_HUB_DOWNLOAD_TIMEOUT`。
+- **小样本冒烟**：`--bbh-limit` 很小时原先 `len(items) < 5` 会跳过整个 BBH；已改为仅 `not items` 时跳过，便于 2 条文档仍跑通 MC+ETD 路径（标定子集自动缩短到可用条数）。
